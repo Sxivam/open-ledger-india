@@ -35,23 +35,17 @@ import {
   type Pathway,
 } from '@/lib/guide-data';
 
-const familyMeta: Record<
-  GuideFamily,
-  { label: string; count: string; note: string }
-> = {
+const familyMeta: Record<GuideFamily, { label: string; note: string }> = {
   vc: {
     label: 'Venture capital',
-    count: '03 paths',
     note: 'Most porous when you bring a sector, operator record or original access—not just finance vocabulary.',
   },
   pe: {
     label: 'Private capital',
-    count: '03 paths',
     note: 'The most credible route is usually adjacent work first: transactions, diligence, consulting, credit or sector operations.',
   },
   finance: {
     label: 'Finance',
-    count: '06 paths',
     note: 'A wide field. Choose by daily work and hiring test, because “finance” alone is not a career direction.',
   },
 };
@@ -59,6 +53,16 @@ const familyMeta: Record<
 const sourceById = new Map(
   guideSources.map((source) => [source.id, source] as const),
 );
+
+const pathwaysByFamily: Record<GuideFamily, Pathway[]> = {
+  vc: pathways.filter((pathway) => pathway.family === 'vc'),
+  pe: pathways.filter((pathway) => pathway.family === 'pe'),
+  finance: pathways.filter((pathway) => pathway.family === 'finance'),
+};
+
+function pathwayCount(family: GuideFamily) {
+  return `${String(pathwaysByFamily[family].length).padStart(2, '0')} paths`;
+}
 
 const decisionLanes = [
   {
@@ -322,14 +326,14 @@ function PathwayCard({ pathway, index }: { pathway: Pathway; index: number }) {
 }
 
 function FamilyPanel({ family }: { family: GuideFamily }) {
-  const items = pathways.filter((pathway) => pathway.family === family);
+  const items = pathwaysByFamily[family];
   const meta = familyMeta[family];
 
   return (
     <TabsContent value={family} className="mt-0">
       <div className="mb-5 grid gap-3 border border-[#3a3a3a] bg-[#111] p-4 sm:grid-cols-[160px_1fr] sm:items-center sm:p-5">
         <p className="font-mono text-[10px] uppercase tracking-[0.09em] text-[#76aaff]">
-          {meta.count}
+          {pathwayCount(family)}
         </p>
         <p className="text-sm leading-6 text-[#aaa7a0]">{meta.note}</p>
       </div>
@@ -748,9 +752,7 @@ export default function BreakInGuidePage() {
                   className="h-14 justify-between rounded-none border-b border-[#3a3a3a] px-4 font-mono text-[10px] uppercase tracking-[0.07em] text-[#8f8c86] after:inset-x-0 after:bottom-0 after:h-0.5 after:bg-[#2b7fff] hover:text-[#eee] data-active:bg-[#1f1f1f] data-active:text-[#eee] sm:border-r sm:border-b-0 sm:last:border-r-0"
                 >
                   <span>{familyMeta[family].label}</span>
-                  <span className="text-[#65625e]">
-                    {familyMeta[family].count}
-                  </span>
+                  <span className="text-[#65625e]">{pathwayCount(family)}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
