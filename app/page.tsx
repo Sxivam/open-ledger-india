@@ -11,6 +11,7 @@ import {
   Search,
   X,
 } from 'lucide-react';
+import Link from 'next/link';
 
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -577,7 +578,15 @@ export default function Home() {
             </span>
           </a>
           <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.07em] text-[#a4a19b] sm:gap-6">
-            <span>{research.opportunities.length} verified</span>
+            <Link
+              href="/guide"
+              className="border border-[#484848] bg-[#1f1f1f] px-2.5 py-2 text-[#eee] transition-colors hover:bg-[#262626]"
+            >
+              Break-in guide
+            </Link>
+            <span className="hidden md:inline">
+              {research.opportunities.length} verified
+            </span>
             <a
               href="#methodology"
               className="hidden underline-offset-4 hover:text-[#eee] hover:underline sm:inline"
@@ -648,6 +657,13 @@ export default function Home() {
             <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.07em] text-[#7e7b76]">
               Public access, not eligibility-free
             </p>
+            <Link
+              href="/guide"
+              className="mt-5 inline-flex items-center gap-1.5 text-sm text-[#9fbcf1] underline-offset-4 hover:underline"
+            >
+              See the realistic India break-in guide
+              <ChevronRight className="size-4" />
+            </Link>
           </div>
         </div>
       </section>
