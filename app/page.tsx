@@ -35,13 +35,18 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import research from '@/lib/research.json';
+import { research, type Opportunity } from '@/lib/research-data';
 import { cn } from '@/lib/utils';
 
-type Opportunity = (typeof research.opportunities)[number];
-
 const verifiedAt = research.verifiedAt;
-const urgentUndatedOrder = ['VC-02', 'VC-05', 'MK-01'];
+const launchDate = research.refresh.launchDate;
+const urgentUndatedOrder = ['PM-02', 'PM-08', 'CF-08', 'VC-05'];
+const exactDateCount = research.opportunities.filter(
+  (item) => item.deadline,
+).length;
+const newSinceLaunchCount = research.opportunities.filter(
+  (item) => item.firstVerifiedAt && item.firstVerifiedAt > launchDate,
+).length;
 
 const categoryOrder = [
   'Venture & private markets',
@@ -118,9 +123,18 @@ function deadlineTone(item: Opportunity) {
   return 'text-[#eee]';
 }
 
+function showExactDateUnderLabel(item: Opportunity) {
+  const days = daysFromVerification(item.deadline);
+  return days !== null && days >= 0 && days <= 14;
+}
+
 function sourceDateLabel(item: Opportunity) {
   if (item.sourceDate) return formatDate(item.sourceDate);
   return item.sourceDateText ?? 'Date not published';
+}
+
+function isNewSinceLaunch(item: Opportunity) {
+  return Boolean(item.firstVerifiedAt && item.firstVerifiedAt > launchDate);
 }
 
 function isExternal(url: string) {
@@ -154,7 +168,9 @@ function filterAndSortOpportunities(filters: FilterState) {
   return result.sort((a, b) => {
     if (filters.sort === 'organization') return a.org.localeCompare(b.org);
     if (filters.sort === 'newest') {
-      return (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '');
+      return (b.sourceDate ?? b.firstVerifiedAt ?? '').localeCompare(
+        a.sourceDate ?? a.firstVerifiedAt ?? '',
+      );
     }
     const aDate = a.deadline ?? '9999-12-31';
     const bDate = b.deadline ?? '9999-12-31';
@@ -278,7 +294,8 @@ function OpportunitySheet({
                     <div>
                       <p className="text-[#eee]">{item.sourceType}</p>
                       <p className="mt-1 text-[#a4a19b]">
-                        Published {sourceDateLabel(item)} · checked 09 Sep 2026
+                        Published {sourceDateLabel(item)} · checked{' '}
+                        {formatDate(verifiedAt)}
                       </p>
                     </div>
                     <a
@@ -391,7 +408,14 @@ function OpportunityCard({
   return (
     <article className="border border-[#3a3a3a] bg-[#1f1f1f] p-4">
       <div className="flex items-center justify-between gap-3 font-mono text-[11px] uppercase tracking-[0.07em] text-[#a4a19b]">
-        <span>{item.id}</span>
+        <span className="flex items-center gap-2">
+          {item.id}
+          {isNewSinceLaunch(item) ? (
+            <span className="border border-[#2b7fff]/60 bg-[#16345e] px-1.5 py-0.5 text-[9px] text-[#9fc2ff]">
+              New
+            </span>
+          ) : null}
+        </span>
         <span className={deadlineTone(item)}>{deadlineLabel(item)}</span>
       </div>
       <p className="mt-5 text-sm text-[#a4a19b]">{item.org}</p>
@@ -642,7 +666,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-[1240px] gap-7 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-16 lg:px-8 lg:py-16">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-[#76aaff]">
-              Source-backed · India · 09 Sep 2026
+              Source-backed · India · {formatDate(verifiedAt)}
             </p>
             <h1 className="mt-5 max-w-[860px] font-display text-[clamp(2.55rem,6vw,5.25rem)] font-normal leading-[0.98] tracking-[-0.045em] text-[#f1f0ed]">
               India’s open finance opportunities, verified.
@@ -670,10 +694,19 @@ export default function Home() {
 
       <section className="border-b border-[#3a3a3a] bg-[#111]">
         <div className="mx-auto grid max-w-[1240px] grid-cols-2 px-4 sm:grid-cols-4 sm:px-6 lg:px-8">
-          <Metric value="34" label="Opportunities" />
-          <Metric value="10" label="Exact dates" />
-          <Metric value="1" label="Remote route" />
-          <Metric value="28" label="Ruled out" />
+          <Metric
+            value={research.opportunities.length.toString()}
+            label="Live opportunities"
+          />
+          <Metric
+            value={newSinceLaunchCount.toString()}
+            label="New since launch"
+          />
+          <Metric value={exactDateCount.toString()} label="Dated deadlines" />
+          <Metric
+            value={research.exclusions.length.toString()}
+            label="Ruled out"
+          />
         </div>
       </section>
 
@@ -831,8 +864,15 @@ export default function Home() {
                         className="border-[#3a3a3a] bg-[#1f1f1f] hover:bg-[#262626]"
                       >
                         <TableCell className="whitespace-normal px-4 py-4">
-                          <p className="text-xs text-[#8e8b85]">
-                            {item.org} · {item.statusLabel}
+                          <p className="flex flex-wrap items-center gap-2 text-xs text-[#8e8b85]">
+                            <span>
+                              {item.org} · {item.statusLabel}
+                            </span>
+                            {isNewSinceLaunch(item) ? (
+                              <span className="border border-[#2b7fff]/60 bg-[#16345e] px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.06em] text-[#9fc2ff]">
+                                New since launch
+                              </span>
+                            ) : null}
                           </p>
                           <p className="mt-1 line-clamp-2 text-[15px] font-medium leading-5 text-[#eee]">
                             {item.opportunity}
@@ -859,7 +899,7 @@ export default function Home() {
                           >
                             {deadlineLabel(item)}
                           </span>
-                          {item.deadline ? (
+                          {showExactDateUnderLabel(item) ? (
                             <span className="mt-1 block text-xs text-[#7e7b76]">
                               {formatDate(item.deadline)}
                             </span>
@@ -918,14 +958,15 @@ export default function Home() {
       <section className="border-t border-[#3a3a3a] bg-[#111]">
         <div className="mx-auto grid max-w-[1240px] gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.3fr_.7fr] lg:px-8">
           <div>
-            <p className="section-kicker">Separate discovery route</p>
+            <p className="section-kicker">Discovery & upcoming windows</p>
             <h2 className="mt-2 font-display text-3xl font-normal text-[#eee]">
-              One portal worth monitoring
+              Routes worth monitoring
             </h2>
             <p className="mt-3 max-w-[66ch] text-[15px] leading-6 text-[#a4a19b]">
-              This is intentionally not counted among the 34 opportunities: the
-              portal is accessible, but no specific finance role was verified
-              within it.
+              These are intentionally not counted among the{' '}
+              {research.opportunities.length} live opportunities. They are
+              discovery portals or recurring programmes whose next application
+              window has not opened yet.
             </p>
           </div>
           {research.resources.map((resource) => (
@@ -944,6 +985,12 @@ export default function Home() {
               <h3 className="mt-1 text-lg font-medium leading-6 text-[#eee]">
                 {resource.opportunity}
               </h3>
+              <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.07em] text-[#76aaff]">
+                {resource.statusLabel}
+              </p>
+              <p className="mt-2 text-sm leading-5 text-[#8e8b85]">
+                {resource.deadlineNote}
+              </p>
             </a>
           ))}
         </div>
@@ -970,7 +1017,7 @@ export default function Home() {
             icon={<CalendarClock className="size-4" />}
             number="02"
             title="Time-stamped evidence"
-            text="Every record carries its source type, available publication date, open-evidence note and a verification date of 09 September 2026 in Asia/Kolkata."
+            text={`Every record carries its source type, available publication date, open-evidence note and a verification date of ${formatDate(verifiedAt)} in Asia/Kolkata.`}
           />
           <div className="md:col-start-2">
             <MethodItem
@@ -993,7 +1040,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-[1240px] flex-col gap-4 px-4 py-7 text-sm text-[#7e7b76] sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>Open Ledger · independent opportunity research</p>
           <p className="font-mono text-[11px] uppercase tracking-[0.07em]">
-            Last verified 09 Sep 2026 · Asia/Kolkata
+            Last verified {formatDate(verifiedAt)} · Asia/Kolkata
           </p>
         </div>
       </footer>
