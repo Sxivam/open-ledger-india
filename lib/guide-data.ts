@@ -32,20 +32,21 @@ export type Pathway = {
 export const guideSources: GuideSource[] = [
   {
     id: 'S01',
-    organization: 'Bank of America',
-    title: 'Global Investment Banking Summer Analyst 2027 — Mumbai',
-    url: 'https://careers.bankofamerica.com/en-us/students/job-detail/14534/global-investment-banking-summer-analyst-2027-mumbai-mumbai-india',
+    organization: 'Morgan Stanley',
+    title:
+      '2027 Investment Banking / Global Capital Markets GC Summer Analyst — Mumbai',
+    url: 'https://morganstanley.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-7397c0455c03/candidate/so/pm/1/pl/1/opp/21362-2027-Investment-Banking-Global-Capital-Markets-GC-Summer-Analyst-Program-Mumbai/en-GB',
     supports:
-      'A current India front-office internship asks for outstanding academic achievement, modelling, valuation and research, but publishes no numeric grade cutoff.',
+      'The live employer campus page requires a postgraduate degree plus strong analytical and numerical ability, and covers modelling, valuation, research and execution support without publishing a numeric grade cutoff. Checked 10 October 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
     id: 'S02',
-    organization: 'EQT',
-    title: 'Deal Team Analyst — Bengaluru',
-    url: 'https://job-boards.eu.greenhouse.io/eqtpartners/jobs/4780888101',
+    organization: 'IFC — International Finance Corporation',
+    title: 'Investment Analyst, Private Equity and Venture Capital — req38557',
+    url: 'https://in.linkedin.com/jobs/view/investment-analyst-private-equity-and-venture-capital-req38557-at-ifc-international-finance-corporation-4475895633',
     supports:
-      'A current private-capital role asks for a postgraduate degree and at least one year of relevant deal experience; work spans origination, valuation, IC materials, execution and monitoring.',
+      'The live employer-attributed Mumbai requisition requires a relevant bachelor’s or master’s degree and at least two years in VC, PE, consulting, investment banking or equity research; work spans sourcing, diligence, structuring, closing and portfolio monitoring. Checked 10 October 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -167,11 +168,11 @@ export const guideSources: GuideSource[] = [
   },
   {
     id: 'S16',
-    organization: 'JPMorganChase',
-    title: 'Private Credit Due Diligence and Analytics Analyst',
-    url: 'https://in.linkedin.com/jobs/view/private-credit-due-diligence-and-analytics-analyst-at-jpmorganchase-4461295004',
+    organization: 'Ares Management',
+    title: 'Analyst, Portfolio Management — US Direct Lending',
+    url: 'https://in.linkedin.com/jobs/view/analyst-portfolio-management-us-direct-lending-at-ares-management-4472684755',
     supports:
-      'A company-attributable India listing accepts feeder experience across credit analysis, investment banking or asset management and asks for at least two years of relevant work.',
+      'The live employer-attributed Mumbai role asks for an MBA or equivalent and 0–3 years across investment banking, funds, advisory, credit analysis or valuation; work covers direct-lending portfolio monitoring, quarterly valuation and restructuring analysis. Checked 10 October 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -186,10 +187,10 @@ export const guideSources: GuideSource[] = [
   {
     id: 'S18',
     organization: 'Goldman Sachs',
-    title: 'India New Analyst Program',
+    title: 'India New Analyst Program — 2027 cycle eligibility benchmark',
     url: 'https://www.goldmansachs.com/careers/students/programs-and-internships/india/new-analyst-program',
     supports:
-      'A large-bank graduate route publishes degree and graduation-year eligibility across investment banking, research, markets, risk and wealth, without a universal numeric percentage or certificate requirement.',
+      'Historical eligibility benchmark only: the 2027 cycle closed on 4 October 2026. The programme page shows how a large-bank graduate route defines degree and graduation-year eligibility across investment banking, research, markets, risk and wealth without a universal numeric percentage or certificate requirement.',
     sourceType: 'Official programme',
   },
   {
@@ -623,7 +624,7 @@ export const pathways: Pathway[] = [
     reality:
       'Analysts build valuations and models, research companies, draft presentations and support diligence and execution. The hours can be severe and the work is detail-heavy.',
     academicSignal:
-      '8.0–8.5+/10 is the safest competitive target for large-bank campus funnels. Current official roles often say “outstanding academics” without publishing a number.',
+      '8.0–8.5+/10 is the safest competitive target for large-bank campus funnels. Current official roles often ask for strong analytical and numerical ability without publishing a grade cutoff.',
     entryDoors: [
       'Large-bank internship or analyst programme',
       'Boutique investment bank',

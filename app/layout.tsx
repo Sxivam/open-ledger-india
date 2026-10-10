@@ -12,6 +12,7 @@ const libreBaskerville = Libre_Baskerville({
   variable: '--font-libre-baskerville',
   subsets: ['latin'],
   weight: '400',
+  style: ['normal', 'italic'],
   display: 'swap',
 });
 
@@ -22,16 +23,27 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: 'Open Ledger — India Finance Opportunities',
+  title: 'Open Ledger · Finance Opportunities in India · Shivam Meet',
   description:
-    'A source-backed index of publicly accessible venture capital, banking, investing and early-career finance opportunities in India.',
+    'Shivam Meet’s researched opportunity desk for venture capital, private equity, banking and finance careers in India. Explore current applications and a realistic guide to getting in.',
+  metadataBase: new URL('https://open-ledger-india.vercel.app'),
+  icons: { icon: '/favicon.svg' },
+  openGraph: {
+    title: 'Open Ledger · Your next move in finance',
+    description:
+      'Current finance opportunities in India, researched by Shivam Meet. Original sources. Clear requirements. Realistic routes in.',
+    url: 'https://open-ledger-india.vercel.app',
+    siteName: 'Open Ledger by Shivam Meet',
+    locale: 'en_IN',
+    type: 'website',
+  },
 };
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#181818',
-  colorScheme: 'dark',
+  themeColor: '#f5f2e9',
+  colorScheme: 'light',
 };
 
 export default function RootLayout({
