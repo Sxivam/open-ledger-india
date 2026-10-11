@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Fira_Code, Inter, Libre_Baskerville } from 'next/font/google';
+import { Fira_Code, Inter, Newsreader } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -8,10 +8,10 @@ const inter = Inter({
   display: 'swap',
 });
 
-const libreBaskerville = Libre_Baskerville({
-  variable: '--font-libre-baskerville',
+const newsreader = Newsreader({
+  variable: '--font-display',
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '500'],
   style: ['normal', 'italic'],
   display: 'swap',
 });
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     'Shivam Meet’s researched opportunity desk for venture capital, private equity, banking and finance careers in India. Explore current applications and a realistic guide to getting in.',
   metadataBase: new URL('https://open-ledger-india.vercel.app'),
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: '/favicon.svg', apple: '/shivam.jpg' },
   openGraph: {
     title: 'Open Ledger · Your next move in finance',
     description:
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#f5f2e9',
+  themeColor: '#f6f2e9',
   colorScheme: 'light',
 };
 
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${libreBaskerville.variable} ${firaCode.variable}`}
+      className={`${inter.variable} ${newsreader.variable} ${firaCode.variable}`}
     >
       <body>{children}</body>
     </html>
