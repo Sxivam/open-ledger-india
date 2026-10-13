@@ -17,7 +17,7 @@ publication dates. The India break-in guide separates editorial grade targets
 from published eligibility rules.
 
 The paper-and-forest editorial identity is shared across the ledger and guide.
-Wispr Flow's three-month offer uses `SHIVAMMEETSWISPR`; the examples are
+Wispr Flow's three-month offer uses `SHIVAMEETSWISPR`; the examples are
 illustrative, not a live recording or transcription integration.
 
 ## Local development

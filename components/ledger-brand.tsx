@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, Copy, Mic2 } from 'lucide-react';
 
 export const wisprUrl =
-  'https://wisprflow.ai/?promo_code=SHIVAMMEETSWISPR&months=3';
+  'https://wisprflow.ai/?promo_code=SHIVAMEETSWISPR&months=3';
 
 export function FlowMark() {
   return (
@@ -140,7 +140,7 @@ export function WisprSection() {
             <div>
               <h3>Wispr Flow Pro, free.</h3>
               <p>
-                My code <code>SHIVAMMEETSWISPR</code> is included in the link.
+                My code <code>SHIVAMEETSWISPR</code> is included in the link.
               </p>
             </div>
           </div>
