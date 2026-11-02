@@ -18,18 +18,27 @@ declare global {
   }
 }
 
-const KIT_VERSION = '2';
+const KIT_VERSION = '3';
 let mounts = 0; // the newest mount owns the gate
 
-export function WisprGate({ count }: { count: number }) {
+// page="guide": no lock there; Wispr claim links send visitors who have not signed up to the home page gate.
+export function WisprGate({
+  count = 0,
+  page = 'home',
+}: {
+  count?: number;
+  page?: 'home' | 'guide';
+}) {
   useEffect(() => {
     const n = count > 0 ? String(count) : 'every';
+    const home = page === 'home';
     window.WISPR_GATE = {
       base: '/wispr/',
-      lock: '#opportunities',
+      gateHref: home ? null : '/',
+      lock: home ? '#opportunities' : null,
       peek: '.opportunity-list',
       peekExtra: 560,
-      offerAt: '.hero-actions',
+      offerAt: home ? '.hero-actions' : null,
       title: 'Unlock the full ledger',
       lede: `Free. Drop your name and email to open all ${n} live opportunities and claim Wispr Flow Pro for 3 months FREE.`,
       perks: [
@@ -66,7 +75,7 @@ export function WisprGate({ count }: { count: number }) {
       window.WisprGate?.destroy?.();
       script.remove();
     };
-  }, [count]);
+  }, [count, page]);
 
   return null;
 }

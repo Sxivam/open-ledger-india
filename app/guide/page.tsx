@@ -39,6 +39,7 @@ import {
   type GuideFamily,
   type Pathway,
 } from '@/lib/guide-data';
+import { WisprGate } from '@/components/wispr-gate';
 
 const familyMeta: Record<GuideFamily, { label: string; note: string }> = {
   vc: {
@@ -933,6 +934,7 @@ export default function BreakInGuidePage() {
         </section>
 
         <WisprSection />
+        <WisprGate page="guide" />
       </main>
       <LedgerFooter />
     </>

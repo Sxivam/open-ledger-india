@@ -2735,3 +2735,9 @@ html:root {
   font-weight: 400;
   letter-spacing: -0.02em;
 }
+
+/* Before signup the promo code stays hidden; the claim links go to the gate (kit: gateClaims). */
+.wg-is-locked .wispr-offer code {
+  filter: blur(5px);
+  user-select: none;
+}

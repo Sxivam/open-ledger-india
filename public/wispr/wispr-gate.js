@@ -19,6 +19,8 @@
     peek: null,                 // element inside the preview that should still show (e.g. "#grid"): preview runs to its top + peekExtra px
     peekExtra: 300,
     offerAt: null,              // put the "Plus: claim Wispr Flow Pro..." line after this element (optional)
+    gateClaims: true,           // before signup, the page's own Wispr claim links (wisprflow.ai) go to the gate instead
+    gateHref: null,             // on a page with no gate: where those clicks go instead, e.g. "/" (opens at its #wg-gate)
     title: "Unlock everything",
     lede: "Free. Drop your name and email to open the full list and claim Wispr Flow Pro for 3 months FREE.",
     perks: [],                  // ticks above the Wispr row, e.g. ["All 54 sources", "Notes on how to use each"]
@@ -150,6 +152,7 @@
   function setLocked(on) {
     locked = on;
     lockEls.forEach((e, i) => e.classList.toggle(i ? "wg-hidden" : "wg-locked", on));
+    document.documentElement.classList.toggle("wg-is-locked", on); // lets the site hide its own copies of the code until signup
     if (lockEl) { if (on) requestAnimationFrame(sizePeek); else lockEl.style.maxHeight = ""; }
     if (gate) gate.hidden = !on;
     const o = $("#wg-offer");
@@ -201,15 +204,23 @@
   };
 
   /* ---------- links into locked sections ---------- */
+  function toGate() {
+    $(".wg-card", gate).scrollIntoView({ behavior: "smooth", block: "center" });
+    setTimeout(() => $("#wg-name").focus({ preventScroll: true }), 500);
+  }
   document.addEventListener("click", e => {
+    const claim = C.gateClaims && locked && e.target.closest && e.target.closest('a[href*="wisprflow.ai"]');
+    if (claim && !claim.closest(".wg-pop,.wg-dock,.wg-gate,.wg-offer") && (gate || C.gateHref)) {
+      e.preventDefault(); e.stopPropagation();
+      if (gate) toGate(); else location.href = C.gateHref + "#wg-gate";
+      return;
+    }
     const a = e.target.closest && e.target.closest('a[href^="#"]');
     if (!a || !locked || !gate) return;
     const id = a.getAttribute("href").slice(1); if (!id || id === "wg-gate") return;
     const t = document.getElementById(id);
     if (!t || !lockEls.some(l => l === t || l.contains(t))) return;
-    e.preventDefault(); e.stopPropagation(); pending = id;
-    $(".wg-card", gate).scrollIntoView({ behavior: "smooth", block: "center" });
-    setTimeout(() => $("#wg-name").focus({ preventScroll: true }), 500);
+    e.preventDefault(); e.stopPropagation(); pending = id; toGate();
   }, { capture: true, signal: AC_.signal });
 
   /* ---------- submit ---------- */
@@ -243,6 +254,7 @@
     if (AC_.dead) return;
     setLocked(!d.unlocked);
     if (d.unlocked) setTimeout(showDock, 900);
+    else if (gate && location.hash === "#wg-gate") setTimeout(toGate, 400); // sent here from another page's claim link
     else try { localStorage.removeItem("wg-in"); } catch {}
   }).catch(() => { if (!AC_.dead) setLocked(false); }); // API unreachable: never hold the content hostage
 
@@ -250,6 +262,7 @@
     AC_.abort(); clearInterval(dockTimer); run++;
     AC_.dead = true; if (gateIO) gateIO.disconnect();
     lockEls.forEach(e => { e.classList.remove("wg-locked", "wg-hidden"); e.style.maxHeight = ""; });
+    document.documentElement.classList.remove("wg-is-locked");
     [pop, dock, gate, $("#wg-offer")].forEach(e => e && e.remove());
     if (window.WisprGate && window.WisprGate.destroy === destroy) delete window.WisprGate;
   }
