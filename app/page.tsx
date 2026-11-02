@@ -27,7 +27,9 @@ import {
   LedgerHeader,
   WisprSection,
 } from '@/components/ledger-brand';
-import { research, type Opportunity } from '@/lib/research-data';
+import { editions, research, type Opportunity } from '@/lib/research-data';
+import { CountUp, LedgerTicker, useReveal } from '@/components/ledger-motion';
+import { LedgerIndex, MarketBoard } from '@/components/market-board';
 import { cn } from '@/lib/utils';
 
 const previousUpdate = research.previousVerifiedAt;
@@ -418,6 +420,22 @@ export default function Home() {
       .filter((item): item is Opportunity => Boolean(item));
     return acrossTracks.length ? acrossTracks : latest.slice(0, 3);
   }, [newRecords, liveRecords]);
+  const tickerItems = useMemo(
+    () =>
+      sortRecords(liveRecords, 'deadline').map((item) => {
+        const days = daysUntil(item.deadline, today);
+        return {
+          id: item.id,
+          org: item.org.split(' — ')[0],
+          role: item.opportunity,
+          signal: timing(item, today),
+          urgent: days !== null && days <= 7,
+          fresh: isNew(item),
+        };
+      }),
+    [liveRecords, today],
+  );
+  useReveal(liveRecords.length);
   const activeSaved = saved.filter((id) =>
     liveRecords.some((item) => item.id === id),
   );
@@ -575,6 +593,12 @@ export default function Home() {
   return (
     <div className="ledger-home">
       <LedgerHeader />
+      <LedgerTicker
+        items={tickerItems}
+        onPick={(id) =>
+          setSelected(liveRecords.find((item) => item.id === id) ?? null)
+        }
+      />
       <main id="main">
         <section className="ledger-hero">
           <div className="ledger-container hero-grid">
@@ -583,10 +607,15 @@ export default function Home() {
                 <span className="live-dot" /> The subcontinent’s finance
                 opportunity desk
               </p>
-              <h1>
-                Your next move
-                <br />
-                in <em>finance.</em>
+              <h1 className="hero-headline">
+                <span className="hl">
+                  <span>Your next move</span>
+                </span>
+                <span className="hl">
+                  <span>
+                    in <em>finance.</em>
+                  </span>
+                </span>
               </h1>
               <p>
                 Venture capital. Private equity. Banking. Source-checked
@@ -602,49 +631,59 @@ export default function Home() {
                 </Link>
               </div>
               <div className="hero-byline">
-                <span className="byline-mark">sm.</span>
+                {/* oxlint-disable-next-line next/no-img-element -- tiny static avatar */}
+                <img
+                  className="byline-photo"
+                  src="/shivam.jpg"
+                  alt="Shivam Meet"
+                  width={46}
+                  height={46}
+                />
                 <span>
                   Curated by <strong>Shivam Meet</strong>
                   <small>
-                    Public applications · Clear eligibility · Original sources
+                    131K+ on Instagram · Rank 1 on Unstop · Growth at Sprinto
                   </small>
                 </span>
               </div>
             </div>
-            <div className="hero-ledger">
-              <div className="issue-top">
-                <span>OPEN LEDGER</span>
-                <span>No. 04 / November 2026</span>
+            <div className="hero-stage">
+              <LedgerIndex editions={editions} />
+              <div className="hero-ledger">
+                <div className="issue-top">
+                  <span>OPEN LEDGER</span>
+                  <span>No. 04 / November 2026</span>
+                </div>
+                <div className="issue-title">
+                  <span>The opportunity</span>
+                  <em>brief.</em>
+                  <p>Checked {formatDate(research.verifiedAt, true)}</p>
+                </div>
+                <div className="issue-rule" />
+                <div className="issue-records">
+                  {previewRecords.map((item, index) => (
+                    <button
+                      type="button"
+                      key={item.id}
+                      onClick={() => setSelected(item)}
+                    >
+                      <span className="issue-index">0{index + 1}</span>
+                      <span>
+                        <strong>{item.org}</strong>
+                        <small>{item.opportunity}</small>
+                      </span>
+                      <ArrowUpRight size={17} />
+                    </button>
+                  ))}
+                </div>
+                <div className="issue-bottom">
+                  <span>
+                    <i /> {liveRecords.length} open routes
+                  </span>
+                  <span>{newRecords.length} added this edition</span>
+                </div>
+                <div className="paper-tab">RESEARCHED. READY TO EXPLORE.</div>
               </div>
-              <div className="issue-title">
-                <span>The opportunity</span>
-                <em>brief.</em>
-                <p>Checked {formatDate(research.verifiedAt, true)}</p>
-              </div>
-              <div className="issue-rule" />
-              <div className="issue-records">
-                {previewRecords.map((item, index) => (
-                  <button
-                    type="button"
-                    key={item.id}
-                    onClick={() => setSelected(item)}
-                  >
-                    <span className="issue-index">0{index + 1}</span>
-                    <span>
-                      <strong>{item.org}</strong>
-                      <small>{item.opportunity}</small>
-                    </span>
-                    <ArrowUpRight size={17} />
-                  </button>
-                ))}
-              </div>
-              <div className="issue-bottom">
-                <span>
-                  <i /> {liveRecords.length} open routes
-                </span>
-                <span>{newRecords.length} added this edition</span>
-              </div>
-              <div className="paper-tab">RESEARCHED. READY TO EXPLORE.</div>
             </div>
           </div>
         </section>
@@ -657,8 +696,10 @@ export default function Home() {
               [datedCount, 'Published deadlines'],
               [activeCountries.length, 'Markets with live listings'],
             ].map(([number, label]) => (
-              <div key={label}>
-                <strong>{number}</strong>
+              <div key={label} className="reveal">
+                <strong>
+                  <CountUp value={Number(number)} />
+                </strong>
                 <span>{label}</span>
               </div>
             ))}
@@ -713,9 +754,10 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <MarketBoard records={liveRecords} today={today} />
 
         {deadlineDesk.length ? (
-          <section className="ledger-container deadline-section">
+          <section className="ledger-container deadline-section reveal">
             <div className="section-heading-row">
               <div>
                 <p className="eyebrow">The deadline desk</p>
@@ -729,7 +771,11 @@ export default function Home() {
             </div>
             <div className="deadline-grid">
               {deadlineDesk.map((item, index) => (
-                <article key={item.id} className="deadline-card">
+                <article
+                  key={item.id}
+                  className="deadline-card"
+                  style={{ ['--i' as string]: index }}
+                >
                   <div className="deadline-card-top">
                     <span>0{index + 1}</span>
                     <span
@@ -769,7 +815,7 @@ export default function Home() {
 
         <section id="opportunities" className="opportunities-section">
           <div className="ledger-container">
-            <div className="section-heading-row ledger-heading">
+            <div className="section-heading-row ledger-heading reveal">
               <div>
                 <p className="eyebrow">The full ledger</p>
                 <h2 className="editorial-heading">Find your opening.</h2>
@@ -1065,7 +1111,7 @@ export default function Home() {
         </section>
 
         <section className="guide-promo">
-          <div className="ledger-container guide-promo-grid">
+          <div className="ledger-container guide-promo-grid reveal">
             <div>
               <p className="eyebrow">The India break-in guide</p>
               <h2 className="editorial-heading">
@@ -1103,7 +1149,7 @@ export default function Home() {
         </section>
 
         {research.resources.length ? (
-          <section className="ledger-container discovery-section">
+          <section className="ledger-container discovery-section reveal">
             <div className="section-heading-row">
               <div>
                 <p className="eyebrow">Beyond today’s ledger</p>
@@ -1138,7 +1184,7 @@ export default function Home() {
 
         <section
           id="methodology"
-          className="ledger-container methodology-section"
+          className="ledger-container methodology-section reveal"
         >
           <div className="section-heading-row">
             <div>

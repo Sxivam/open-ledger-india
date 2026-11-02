@@ -254,3 +254,11 @@ export const research = {
     reopenedIds: novemberReopenedIds,
   },
 };
+
+/** Size of the open ledger at each published refresh, oldest first. */
+export const editions = [
+  { date: baseResearch.verifiedAt, count: baseResearch.opportunities.length },
+  { date: refresh.verifiedAt, count: previousOpportunities.length },
+  { date: verifiedAt, count: opportunities.length },
+  { date: novemberVerifiedAt, count: novemberOpportunities.length },
+];

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Check, Copy, Mic2 } from 'lucide-react';
 
 export const wisprUrl =
-  'https://wisprflow.ai/?promo_code=SHIVAMMEETSWISPR&months=3';
+  'https://wisprflow.ai/?promo_code=SHIVAMEETSWISPR&months=3';
 
 export function FlowMark() {
   return (
@@ -29,7 +29,14 @@ export function LedgerHeader({ guide = false }: { guide?: boolean }) {
           className="brand-lockup"
           aria-label="Shivam Meet — Open Ledger home"
         >
-          <span className="brand-monogram">sm.</span>
+          {/* oxlint-disable-next-line next/no-img-element -- tiny static avatar */}
+          <img
+            className="brand-photo"
+            src="/shivam.jpg"
+            alt=""
+            width={44}
+            height={44}
+          />
           <span>
             <strong>Shivam Meet</strong>
             <em>Open Ledger</em>
@@ -133,7 +140,7 @@ export function WisprSection() {
             <div>
               <h3>Wispr Flow Pro, free.</h3>
               <p>
-                My code <code>SHIVAMMEETSWISPR</code> is included in the link.
+                My code <code>SHIVAMEETSWISPR</code> is included in the link.
               </p>
             </div>
           </div>
@@ -252,6 +259,16 @@ export function LedgerFooter() {
               <br />
               Better evidence for your next move.
             </p>
+            <div className="footer-creator">
+              {/* oxlint-disable-next-line next/no-img-element -- tiny static avatar */}
+              <img src="/shivam.jpg" alt="Shivam Meet" width={52} height={52} />
+              <span>
+                <strong>Shivam Meet</strong>
+                <small>
+                  131K+ on Instagram · Rank 1 on Unstop · 25+ case comp wins
+                </small>
+              </span>
+            </div>
           </div>
           <div>
             <p className="eyebrow">The ledger</p>
