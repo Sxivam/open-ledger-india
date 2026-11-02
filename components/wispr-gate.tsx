@@ -40,10 +40,10 @@ export function WisprGate({
       peekExtra: 560,
       offerAt: home ? '.hero-actions' : null,
       title: 'Unlock the full ledger',
-      lede: `Free. Drop your name and email to open all ${n} live opportunities and claim Wispr Flow Pro for 3 months FREE.`,
+      lede: `Free. Drop your name and email to open all ${n} live opportunities in India and claim Wispr Flow Pro for 3 months FREE.`,
       perks: [
-        `All ${n} live openings in VC, PE, banking and finance`,
-        'Filter by track, country and candidate type, with the original source for each',
+        `All ${n} India-based openings in VC, PE, banking and finance`,
+        'Filter by track, work mode and candidate type, with the original source for each',
       ],
       button: 'Unlock the ledger for FREE',
       welcome: [`All ${n} opportunities, unlocked`],
