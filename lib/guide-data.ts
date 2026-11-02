@@ -37,16 +37,16 @@ export const guideSources: GuideSource[] = [
       '2027 Investment Banking / Global Capital Markets GC Summer Analyst — Mumbai',
     url: 'https://morganstanley.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-7397c0455c03/candidate/so/pm/1/pl/1/opp/21362-2027-Investment-Banking-Global-Capital-Markets-GC-Summer-Analyst-Program-Mumbai/en-GB',
     supports:
-      'The live employer campus page requires a postgraduate degree plus strong analytical and numerical ability, and covers modelling, valuation, research and execution support without publishing a numeric grade cutoff. Checked 10 October 2026.',
+      'The live employer campus page requires current postgraduate study or equivalent plus strong analytical and numerical ability, and covers modelling, valuation, research and execution support without publishing a numeric grade cutoff. Checked 2 November 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
     id: 'S02',
-    organization: 'IFC — International Finance Corporation',
-    title: 'Investment Analyst, Private Equity and Venture Capital — req38557',
-    url: 'https://in.linkedin.com/jobs/view/investment-analyst-private-equity-and-venture-capital-req38557-at-ifc-international-finance-corporation-4475895633',
+    organization: 'Goldman Sachs',
+    title: 'Private Credit Investing — Associate, Mumbai',
+    url: 'https://higher.gs.com/roles/160621',
     supports:
-      'The live employer-attributed Mumbai requisition requires a relevant bachelor’s or master’s degree and at least two years in VC, PE, consulting, investment banking or equity research; work spans sourcing, diligence, structuring, closing and portfolio monitoring. Checked 10 October 2026.',
+      'The live official Mumbai requisition requires 3–6 years in investment banking, private equity, leveraged finance or private credit and a relevant bachelor’s, master’s or equivalent qualification with a strong academic record; no numeric grade cutoff is published. This is experienced hiring, not a fresher route. Small deal teams cover origination, financial modelling, diligence, structuring, execution, investment-committee theses, monitoring and exits. Checked 2 November 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -55,7 +55,7 @@ export const guideSources: GuideSource[] = [
     title: 'Kalaari Fellowship',
     url: 'https://kalaari.com/fellowship',
     supports:
-      'A paid two-year VC apprenticeship states that no specific academic or professional background is required and tests candidates through cases and interviews.',
+      'Historical programme benchmark, not an open application: the 2026 intake closed in October. The paid two-year apprenticeship describes a background-flexible VC route assessed through cases and interviews.',
     sourceType: 'Official programme',
   },
   {
@@ -172,7 +172,7 @@ export const guideSources: GuideSource[] = [
     title: 'Analyst, Portfolio Management — US Direct Lending',
     url: 'https://in.linkedin.com/jobs/view/analyst-portfolio-management-us-direct-lending-at-ares-management-4472684755',
     supports:
-      'The live employer-attributed Mumbai role asks for an MBA or equivalent and 0–3 years across investment banking, funds, advisory, credit analysis or valuation; work covers direct-lending portfolio monitoring, quarterly valuation and restructuring analysis. Checked 10 October 2026.',
+      'The live employer-attributed Mumbai role asks for an MBA or equivalent and 0–3 years across investment banking, funds, advisory, credit analysis or valuation; work supports the US direct-lending portfolio through monitoring, quarterly valuation and restructuring analysis. Applications remain rolling while the search is active. Checked 2 November 2026.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -211,6 +211,15 @@ export const guideSources: GuideSource[] = [
       'The published process assigns weight to Class X, Class XII and bachelor’s marks before and after interview, while also considering test, interview and work-experience signals.',
     sourceType: 'Official programme',
   },
+  {
+    id: 'S21',
+    organization: 'Rockstud Capital',
+    title: 'Investment Associate — Venture Capital',
+    url: 'https://in.linkedin.com/jobs/view/investment-associate-%E2%80%93-venture-capital-at-rockstud-capital-4481047255',
+    supports:
+      'The current employer-attributed role requests relevant investing, banking, advisory, consulting or sector experience and a relevant degree; CA, CFA progress or MBA are advantageous. It names sourcing, modelling and investment writing, but publishes no numerical years or grade cutoff. Checked 2 November 2026.',
+    sourceType: 'Official hiring evidence',
+  },
 ];
 
 export const gradeBands = [
@@ -222,7 +231,7 @@ export const gradeBands = [
       'Aim for the top 10–20% of your class, strong Class X/XII consistency and no active backlogs. Direct megafund PE remains an unusually narrow funnel even with these marks.',
     recovery:
       'Enter through boutique IB, Big Four deals/FDD, valuation, CA industrial training or strategy consulting; build 18–36 months of transaction evidence before a lateral move.',
-    sources: ['S01', 'S02', 'S04', 'S05', 'S18'],
+    sources: ['S01', 'S04', 'S05', 'S18'],
   },
   {
     lane: 'Venture capital · growth investing',
@@ -232,7 +241,7 @@ export const gradeBands = [
       'Growth investing resembles PE and screens harder. Seed VC can trade some pedigree for sector knowledge, startup operating credibility, original writing and a real founder network.',
     recovery:
       'Work in a founder’s office, accelerator, product/strategy team or sector startup; publish two defensible IC-style memos and a market map.',
-    sources: ['S02', 'S03'],
+    sources: ['S03', 'S21'],
   },
   {
     lane: 'Public markets · credit · deals',
@@ -474,7 +483,7 @@ export const pathways: Pathway[] = [
     hiringTest:
       'Timed operating model, company case, valuation, accounting questions, IC presentation and references.',
     usefulCredentials:
-      'CA, CFA or a top recruiting MBA can help. Two years of live diligence and execution usually beat a certificate-only profile.',
+      'CA, CFA or a top recruiting MBA can help. Relevant diligence and execution work is stronger proof than a certificate-only profile; the required experience varies by team.',
     proof:
       'A driver-based model, public/private comps, cap-table and dilution work, a downside case and a 6–10 page investment memo.',
     roadmap: [
@@ -492,8 +501,8 @@ export const pathways: Pathway[] = [
       },
     ],
     hardTruth:
-      'CFA Level I without execution reps rarely substitutes for two years of relevant work.',
-    sources: ['S02', 'S04', 'S05', 'S06'],
+      'CFA Level I alone does not demonstrate that you can execute diligence or underwrite an investment. The roadmap is planning guidance, not a published minimum-experience rule.',
+    sources: ['S04', 'S05', 'S06'],
   },
   {
     id: 'buyout-pe',
@@ -533,7 +542,7 @@ export const pathways: Pathway[] = [
     ],
     hardTruth:
       'For a non-target graduate with no feeder experience, direct megafund entry is not a realistic primary plan. Use a two-step route.',
-    sources: ['S02', 'S04', 'S05'],
+    sources: ['S04', 'S05'],
   },
   {
     id: 'private-credit',
@@ -573,7 +582,7 @@ export const pathways: Pathway[] = [
     ],
     hardTruth:
       'This can be the most accessible private-markets lane from a non-elite college—but only if you become genuinely strong at accounting and downside analysis.',
-    sources: ['S06', 'S07', 'S16'],
+    sources: ['S02', 'S06', 'S07', 'S16'],
   },
   {
     id: 'impact-investing',

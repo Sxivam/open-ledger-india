@@ -390,8 +390,8 @@ export default function BreakInGuidePage() {
           <div className="mx-auto grid max-w-[1240px] gap-10 px-4 py-11 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-16 lg:px-8 lg:py-20">
             <div>
               <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-[var(--green)]">
-                India · entry level to year five · hiring examples refreshed 10
-                Oct 2026
+                India · entry level to year five · hiring examples refreshed 2
+                Nov 2026
               </p>
               <h1 className="mt-5 max-w-[900px] font-display text-[clamp(2.65rem,6.5vw,5.6rem)] font-normal leading-[0.97] tracking-[-0.05em] text-[var(--ink)]">
                 How finance hiring actually works in India.
@@ -875,7 +875,7 @@ export default function BreakInGuidePage() {
                 <p className="mt-5 text-sm leading-6 text-[var(--muted-ink)]">
                   Direct programme pages, regulations and company-attributable
                   hiring evidence. Guidance researched 9 September; selected
-                  hiring examples refreshed 10 October 2026. Historical
+                  hiring examples refreshed 2 November 2026. Historical
                   benchmarks are not open applications. Roles and rules can
                   change.
                 </p>

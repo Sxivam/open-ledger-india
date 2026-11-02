@@ -197,3 +197,174 @@ console.log(
     2,
   ),
 );
+
+const novemberDate = '2026-11-02';
+const novemberAudits = [
+  'november-private-audit.json',
+  'november-finance-audit.json',
+  'november-banking-audit.json',
+].map(read);
+const regional = read('november-regional-additions.json');
+const novemberRetained = novemberAudits.flatMap((audit) => audit.verifiedIds);
+const novemberRemoved = novemberAudits.flatMap((audit) =>
+  audit.removals.map((item) => item.id),
+);
+const novemberAudited = [...novemberRetained, ...novemberRemoved];
+assert.equal(
+  new Set(novemberAudited).size,
+  novemberAudited.length,
+  'November audit IDs overlap',
+);
+assert.deepEqual(
+  [...novemberAudited].sort(),
+  live.map((item) => item.id).sort(),
+  'Every October listing must have a November audit',
+);
+const novemberUpdates = Object.assign(
+  {},
+  ...novemberAudits.map((audit) => audit.updates),
+);
+const novemberAdditions = [
+  ...novemberAudits.flatMap((audit) => audit.additions),
+  ...regional.additions,
+];
+const countryNames = new Set([
+  'India',
+  'Pakistan',
+  'Bangladesh',
+  'Sri Lanka',
+  'Nepal',
+  'Bhutan',
+  'Maldives',
+]);
+const historicalIds = new Set([...oldRecords, ...live].map((item) => item.id));
+assert.equal(regional.verifiedAt, novemberDate);
+assert.equal(
+  new Set(novemberAdditions.map((item) => item.id)).size,
+  novemberAdditions.length,
+  'Duplicate November additions',
+);
+for (const audit of novemberAudits) {
+  assert.equal(audit.verifiedAt, novemberDate);
+  for (const id of Object.keys(audit.updates))
+    assert.ok(
+      audit.verifiedIds.includes(id),
+      id + ': November update must be retained',
+    );
+  for (const id of audit.verifiedIds)
+    assert.equal(
+      audit.updates[id]?.lastVerifiedAt,
+      novemberDate,
+      id + ': missing November verification date',
+    );
+  for (const removal of audit.removals)
+    assert.ok(removal.reason && /^https?:\/\//.test(removal.sourceUrl));
+  for (const exclusion of audit.exclusions)
+    assert.ok(
+      exclusion.title &&
+        exclusion.reason &&
+        exclusion.detail &&
+        /^https?:\/\//.test(exclusion.url),
+    );
+}
+for (const item of novemberAdditions) {
+  for (const key of [...required, 'country'])
+    assert.ok(Object.hasOwn(item, key), item.id + ': missing ' + key);
+  assert.ok(!historicalIds.has(item.id), item.id + ': historical ID reused');
+  assert.ok(categories.has(item.category), item.id + ': unknown track');
+  assert.ok(
+    candidates.has(item.candidateGroup),
+    item.id + ': unknown candidate group',
+  );
+  assert.ok(modes.has(item.modeGroup), item.id + ': unknown work mode');
+  assert.ok(countryNames.has(item.country), item.id + ': unknown country');
+  assert.equal(item.firstVerifiedAt, novemberDate);
+  assert.equal(item.lastVerifiedAt, novemberDate);
+  assert.ok(
+    !item.sourceDate ||
+      (item.sourceDate > verifiedAt && item.sourceDate <= novemberDate),
+    item.id + ': publication outside refresh window',
+  );
+  assert.ok(
+    !item.deadline || item.deadline >= novemberDate,
+    item.id + ': expired addition',
+  );
+  assert.ok(
+    /^https?:\/\//.test(item.sourceUrl),
+    item.id + ': invalid source URL',
+  );
+  assert.ok(
+    /^(https?:\/\/|mailto:)/.test(item.applyUrl),
+    item.id + ': invalid apply URL',
+  );
+  if (item.deadlineAt)
+    assert.ok(
+      Number.isFinite(Date.parse(item.deadlineAt)),
+      item.id + ': invalid deadline timestamp',
+    );
+}
+const novemberLive = [
+  ...live
+    .filter((item) => novemberRetained.includes(item.id))
+    .map((item) => ({
+      ...item,
+      ...novemberUpdates[item.id],
+      country: 'India',
+    })),
+  ...novemberAdditions,
+];
+assert.equal(
+  new Set(novemberLive.map((item) => item.id)).size,
+  novemberLive.length,
+  'Duplicate November live IDs',
+);
+assert.ok(
+  novemberLive.every((item) => !item.deadline || item.deadline >= novemberDate),
+  'Expired dated listing retained in November',
+);
+const clockDate = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Kolkata',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
+if (clockDate === novemberDate)
+  for (const item of novemberLive) {
+    if (item.deadlineAt)
+      assert.ok(
+        Date.parse(item.deadlineAt) > Date.now(),
+        item.id + ': exact cutoff already elapsed',
+      );
+  }
+assert.deepEqual(
+  regional.coverage.map((item) => item.country).sort(),
+  [...countryNames].filter((item) => item !== 'India').sort(),
+  'Every neighbouring market must have a coverage note',
+);
+for (const item of regional.coverage)
+  assert.ok(item.summary && Array.isArray(item.sourceUrls));
+const countsByCountry = Object.fromEntries(
+  [...countryNames].map((country) => [
+    country,
+    novemberLive.filter((item) => item.country === country).length,
+  ]),
+);
+console.log(
+  JSON.stringify(
+    {
+      verifiedAt: novemberDate,
+      previousListings: live.length,
+      retained: novemberRetained.length,
+      removed: novemberRemoved.length,
+      additions: novemberAdditions.length,
+      reopenedWindows: novemberAudits.flatMap(
+        (audit) => audit.reopenedIds ?? [],
+      ).length,
+      live: novemberLive.length,
+      dated: novemberLive.filter((item) => item.deadline).length,
+      countries: countsByCountry,
+    },
+    null,
+    2,
+  ),
+);

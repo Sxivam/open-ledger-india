@@ -23,15 +23,16 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: 'Open Ledger · Finance Opportunities in India · Shivam Meet',
+  title:
+    'Open Ledger · Finance Opportunities across the Indian Subcontinent · Shivam Meet',
   description:
-    'Shivam Meet’s researched opportunity desk for venture capital, private equity, banking and finance careers in India. Explore current applications and a realistic guide to getting in.',
+    'Shivam Meet’s researched desk for current venture capital, private equity, banking and finance opportunities across India and neighbouring South Asian markets. Original sources and clear local eligibility.',
   metadataBase: new URL('https://open-ledger-india.vercel.app'),
   icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'Open Ledger · Your next move in finance',
     description:
-      'Current finance opportunities in India, researched by Shivam Meet. Original sources. Clear requirements. Realistic routes in.',
+      'Current finance opportunities across the Indian subcontinent, researched by Shivam Meet. Original sources. Clear country and eligibility requirements.',
     url: 'https://open-ledger-india.vercel.app',
     siteName: 'Open Ledger by Shivam Meet',
     locale: 'en_IN',

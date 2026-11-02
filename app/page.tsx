@@ -32,6 +32,16 @@ import { cn } from '@/lib/utils';
 
 const previousUpdate = research.previousVerifiedAt;
 const reopenedIds = new Set(research.refresh.reopenedIds);
+const countries = [
+  'India',
+  'Bangladesh',
+  'Pakistan',
+  'Sri Lanka',
+  'Nepal',
+  'Bhutan',
+  'Maldives',
+];
+const countryOf = (item: Opportunity) => item.country ?? 'India';
 const categories = [
   'Venture & private markets',
   'Banking & markets',
@@ -58,6 +68,7 @@ const candidates = [
 const modes = ['In person', 'Hybrid', 'Remote', 'Not stated'];
 type Filters = {
   query: string;
+  country: string;
   category: string;
   candidate: string;
   mode: string;
@@ -66,6 +77,7 @@ type Filters = {
 };
 const defaultFilters: Filters = {
   query: '',
+  country: 'All countries',
   category: 'All tracks',
   candidate: 'All candidates',
   mode: 'All modes',
@@ -105,6 +117,17 @@ function daysUntil(date: string | null, today: string) {
   );
 }
 function timing(item: Opportunity, today: string) {
+  if (item.deadlineAt)
+    return (
+      new Intl.DateTimeFormat('en-IN', {
+        day: 'numeric',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit',
+        hourCycle: 'h23',
+        timeZone: 'Asia/Kolkata',
+      }).format(new Date(item.deadlineAt)) + ' IST'
+    );
   const days = daysUntil(item.deadline, today);
   if (days === 0) return 'Closes today';
   if (days === 1) return '1 day left';
@@ -123,8 +146,9 @@ function sortRecords(records: Opportunity[], sort: string) {
   return [...records].sort((a, b) => {
     if (sort === 'organization') return a.org.localeCompare(b.org);
     if (sort === 'newest')
-      return (b.sourceDate ?? b.firstVerifiedAt ?? '').localeCompare(
-        a.sourceDate ?? a.firstVerifiedAt ?? '',
+      return (
+        (b.firstVerifiedAt ?? '').localeCompare(a.firstVerifiedAt ?? '') ||
+        (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '')
       );
     return (
       (a.deadline ?? '9999-12-31').localeCompare(b.deadline ?? '9999-12-31') ||
@@ -144,12 +168,15 @@ function matchRecords(records: Opportunity[], filters: Filters) {
             item.opportunity,
             item.track,
             item.location,
+            countryOf(item),
             item.eligibility,
             item.type,
           ]
             .join(' ')
             .toLowerCase()
             .includes(query)) &&
+        (filters.country === 'All countries' ||
+          countryOf(item) === filters.country) &&
         (filters.category === 'All tracks' ||
           item.category === filters.category) &&
         (filters.candidate === 'All candidates' ||
@@ -188,7 +215,7 @@ function RecordSheet({
                 {item.opportunity}
               </SheetTitle>
               <SheetDescription className="mt-3 text-[var(--muted-ink)]">
-                {item.location} · {item.type}
+                {countryOf(item)} · {item.location} · {item.type}
               </SheetDescription>
               <div className="sheet-badges">
                 <span className="status-badge">
@@ -352,6 +379,9 @@ export default function Home() {
   );
   const newRecords = useMemo(() => liveRecords.filter(isNew), [liveRecords]);
   const datedCount = liveRecords.filter((item) => item.deadline).length;
+  const activeCountries = countries.filter((country) =>
+    liveRecords.some((item) => countryOf(item) === country),
+  );
   const filtered = useMemo(
     () =>
       matchRecords(
@@ -393,6 +423,7 @@ export default function Home() {
   );
   const hasFilters =
     filters.query ||
+    filters.country !== 'All countries' ||
     filters.category !== 'All tracks' ||
     filters.candidate !== 'All candidates' ||
     filters.mode !== 'All modes' ||
@@ -435,6 +466,10 @@ export default function Home() {
             type: 'object',
             properties: {
               query: { type: 'string' },
+              country: {
+                type: 'string',
+                enum: ['All countries', ...countries],
+              },
               category: { type: 'string', enum: ['All tracks', ...categories] },
               candidate: {
                 type: 'string',
@@ -457,6 +492,7 @@ export default function Home() {
             const next = { ...defaultFilters };
             for (const key of [
               'query',
+              'country',
               'category',
               'candidate',
               'mode',
@@ -474,6 +510,7 @@ export default function Home() {
               next.newOnly = values.newOnly;
             }
             if (
+              !['All countries', ...countries].includes(next.country) ||
               !['All tracks', ...categories].includes(next.category) ||
               !['All candidates', ...candidates].includes(next.candidate) ||
               !['All modes', ...modes].includes(next.mode) ||
@@ -519,6 +556,7 @@ export default function Home() {
             return {
               id,
               organization: item.org,
+              country: countryOf(item),
               opportunity: item.opportunity,
               deadline: item.deadline,
             };
@@ -542,7 +580,8 @@ export default function Home() {
           <div className="ledger-container hero-grid">
             <div className="hero-copy">
               <p className="eyebrow">
-                <span className="live-dot" /> India’s finance opportunity desk
+                <span className="live-dot" /> The subcontinent’s finance
+                opportunity desk
               </p>
               <h1>
                 Your next move
@@ -550,8 +589,9 @@ export default function Home() {
                 in <em>finance.</em>
               </h1>
               <p>
-                Venture capital. Private equity. Banking. The openings worth
-                your attention, with the evidence to apply well.
+                Venture capital. Private equity. Banking. Source-checked
+                openings across India and neighbouring markets, with the
+                evidence to apply well.
               </p>
               <div className="hero-actions">
                 <a className="ledger-button" href="#opportunities">
@@ -574,7 +614,7 @@ export default function Home() {
             <div className="hero-ledger">
               <div className="issue-top">
                 <span>OPEN LEDGER</span>
-                <span>No. 03 / October 2026</span>
+                <span>No. 04 / November 2026</span>
               </div>
               <div className="issue-title">
                 <span>The opportunity</span>
@@ -615,7 +655,7 @@ export default function Home() {
               [liveRecords.length, 'Open opportunities'],
               [newRecords.length, 'Added this update'],
               [datedCount, 'Published deadlines'],
-              [categories.length, 'Finance career tracks'],
+              [activeCountries.length, 'Markets with live listings'],
             ].map(([number, label]) => (
               <div key={label}>
                 <strong>{number}</strong>
@@ -629,13 +669,49 @@ export default function Home() {
           <CircleCheck size={18} />
           <p>
             <strong>Refreshed {formatDate(research.verifiedAt, true)}.</strong>{' '}
-            New openings since {formatDate(previousUpdate)}, with older listings
-            rechecked. Each record includes its source and the conditions that
-            matter.
+            New and refreshed listings since {formatDate(previousUpdate)}, with
+            older listings rechecked. Each record includes its source, location
+            and eligibility.
           </p>
           <a href="#methodology">
             How we check <ArrowRight size={13} />
           </a>
+        </section>
+
+        <section
+          className="ledger-container region-desk"
+          aria-labelledby="region-heading"
+        >
+          <div>
+            <p id="region-heading" className="eyebrow">
+              A wider field. The same standards.
+            </p>
+            <p>
+              Explore the Indian subcontinent. Public applications do not imply
+              cross-border work rights; local eligibility still applies.
+            </p>
+          </div>
+          <div className="region-links" aria-label="Browse by country">
+            {activeCountries.map((country) => (
+              <a
+                href="#opportunities"
+                key={country}
+                onClick={() => {
+                  setFilters({ ...defaultFilters, country });
+                  setSavedOnly(false);
+                }}
+              >
+                {country}
+                <span>
+                  {
+                    liveRecords.filter((item) => countryOf(item) === country)
+                      .length
+                  }
+                </span>
+                <ArrowUpRight size={12} />
+              </a>
+            ))}
+          </div>
         </section>
 
         {deadlineDesk.length ? (
@@ -648,7 +724,7 @@ export default function Home() {
               <p>
                 Start with the windows closing soonest.
                 <br />
-                Deadlines follow India time.
+                Check the source’s local cutoff. Exact times use India time.
               </p>
             </div>
             <div className="deadline-grid">
@@ -741,8 +817,31 @@ export default function Home() {
                     onChange={(event) =>
                       changeFilter('query', event.target.value)
                     }
-                    placeholder="Search a firm, role or city…"
+                    placeholder="Search a firm, role, city or country…"
                   />
+                </label>
+                <label className="filter-select">
+                  <span>Country</span>
+                  <select
+                    aria-label="Filter by country"
+                    value={filters.country}
+                    onChange={(event) =>
+                      changeFilter('country', event.target.value)
+                    }
+                  >
+                    <option>All countries</option>
+                    {countries.map((country) => (
+                      <option key={country} value={country}>
+                        {country} (
+                        {
+                          liveRecords.filter(
+                            (item) => countryOf(item) === country,
+                          ).length
+                        }
+                        )
+                      </option>
+                    ))}
+                  </select>
                 </label>
                 <label className="filter-select">
                   <span>Candidate</span>
@@ -784,7 +883,7 @@ export default function Home() {
                     }
                   >
                     <option value="deadline">Closing soonest</option>
-                    <option value="newest">Newest source</option>
+                    <option value="newest">Recently added</option>
                     <option value="organization">Firm A–Z</option>
                   </select>
                 </label>
@@ -864,6 +963,7 @@ export default function Home() {
                       <span className="record-type">{item.type}</span>
                     </div>
                     <div className="row-location">
+                      <span className="country-label">{countryOf(item)}</span>
                       <p>{item.track}</p>
                       <span>{item.location}</span>
                       <small>{item.modeGroup}</small>
@@ -890,6 +990,7 @@ export default function Home() {
                         {timing(item, today)}
                       </span>
                       {item.deadline &&
+                      !item.deadlineAt &&
                       daysUntil(item.deadline, today)! <= 14 ? (
                         <small>{formatDate(item.deadline, true)}</small>
                       ) : null}
@@ -1069,7 +1170,7 @@ export default function Home() {
               [
                 '03',
                 'Honest eligibility',
-                'Degree, graduation year, CA stage and experience requirements stay visible. An analyst title does not automatically mean a fresher can apply.',
+                'Country, degree, CA stage and experience requirements stay visible. Local citizenship or work rights may be required; a public listing is not a visa or sponsorship promise.',
               ],
               [
                 '04',
@@ -1084,6 +1185,36 @@ export default function Home() {
               </article>
             ))}
           </div>
+          <details className="coverage-notes">
+            <summary>
+              Regional coverage and research limits{' '}
+              <span>{formatDate(research.verifiedAt, true)}</span>
+            </summary>
+            <p>
+              This is a curated, source-checked collection—not a claim to every
+              vacancy. Markets without a verified current listing are not padded
+              with expired notices.
+            </p>
+            <div>
+              {research.regionalCoverage.map((market) => (
+                <section key={market.country}>
+                  <h3>{market.country}</h3>
+                  <p>{market.summary}</p>
+                  {market.sourceUrls.map((url, index) => (
+                    <a
+                      key={url}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source {index + 1}
+                      <ArrowUpRight size={11} />
+                    </a>
+                  ))}
+                </section>
+              ))}
+            </div>
+          </details>
         </section>
       </main>
       <LedgerFooter />

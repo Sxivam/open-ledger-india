@@ -5,6 +5,10 @@ import refresh from './research-refresh.json';
 import privateAudit from './october-private-audit.json';
 import financeAudit from './october-finance-audit.json';
 import bankingAudit from './october-banking-audit.json';
+import novemberPrivateAudit from './november-private-audit.json';
+import novemberFinanceAudit from './november-finance-audit.json';
+import novemberBankingAudit from './november-banking-audit.json';
+import regionalResearch from './november-regional-additions.json';
 
 export type Opportunity = {
   id: string;
@@ -14,6 +18,7 @@ export type Opportunity = {
   track: string;
   type: string;
   location: string;
+  country?: string;
   mode: string;
   deadline: string | null;
   deadlineAt?: string;
@@ -28,7 +33,7 @@ export type Opportunity = {
   evidence: string;
   sourceType: string;
   sourceDate: string | null;
-  sourceDateText?: string;
+  sourceDateText?: string | null;
   sourceUrl: string;
   applyUrl: string;
   caveat: string;
@@ -74,6 +79,7 @@ type Audit = {
   }>;
   resourceUpdates?: Record<string, Partial<Opportunity>>;
   promoteResourceIds?: string[];
+  reopenedIds?: string[];
 };
 
 const audits = [privateAudit, financeAudit, bankingAudit] as unknown as Audit[];
@@ -156,18 +162,95 @@ const resources = updatedResources.filter(
   (item) => !promoteResourceIds.has(item.id),
 );
 
+const novemberAudits = [
+  novemberPrivateAudit,
+  novemberFinanceAudit,
+  novemberBankingAudit,
+] as unknown as Audit[];
+const novemberVerifiedAt = '2026-11-02';
+const novemberRemovedIds = new Set(
+  novemberAudits.flatMap((audit) => audit.removals.map((item) => item.id)),
+);
+const novemberVerifiedIds = new Set(
+  novemberAudits.flatMap((audit) => audit.verifiedIds),
+);
+const missingNovemberAudit = opportunities.filter(
+  (item) =>
+    !novemberRemovedIds.has(item.id) && !novemberVerifiedIds.has(item.id),
+);
+if (missingNovemberAudit.length)
+  throw new Error(
+    'November audit missing: ' +
+      missingNovemberAudit.map((item) => item.id).join(', '),
+  );
+const novemberUpdates = Object.assign(
+  {},
+  ...novemberAudits.map((audit) => audit.updates),
+) as Record<string, Partial<Opportunity>>;
+const novemberAdditions = [
+  ...novemberAudits.flatMap((audit) => audit.additions),
+  ...regionalResearch.additions,
+] as Opportunity[];
+const novemberResourceUpdates = Object.assign(
+  {},
+  ...novemberAudits.map((audit) => audit.resourceUpdates ?? {}),
+) as Record<string, Partial<Opportunity>>;
+const novemberPromotions = new Set(
+  novemberAudits.flatMap((audit) => audit.promoteResourceIds ?? []),
+);
+const novemberResources = resources.map((item) => ({
+  ...item,
+  ...novemberResourceUpdates[item.id],
+}));
+const novemberOpportunities = [
+  ...opportunities
+    .filter((item) => novemberVerifiedIds.has(item.id))
+    .map((item) => ({
+      ...item,
+      ...novemberUpdates[item.id],
+      lastVerifiedAt: novemberVerifiedAt,
+    })),
+  ...novemberAdditions,
+  ...novemberResources.filter((item) => novemberPromotions.has(item.id)),
+]
+  .map((item) => ({ ...item, country: item.country ?? 'India' }))
+  .filter((item) => !item.deadline || item.deadline >= novemberVerifiedAt);
+const novemberReopenedIds = [
+  ...new Set([
+    ...novemberAudits.flatMap((audit) => audit.reopenedIds ?? []),
+    ...novemberPromotions,
+  ]),
+];
+const novemberExclusions = [
+  ...novemberAudits.flatMap((audit) => audit.exclusions),
+  ...regionalResearch.exclusions,
+].map((item) => [item.title, item.reason, item.detail, item.url]);
+
 export const research = {
   ...baseResearch,
-  verifiedAt,
-  previousVerifiedAt: refresh.verifiedAt,
-  opportunities,
-  resources,
-  exclusions,
+  verifiedAt: novemberVerifiedAt,
+  previousVerifiedAt: verifiedAt,
+  scope:
+    'Publicly accessible finance opportunities across India and neighbouring South Asian markets; country-specific eligibility applies.',
+  opportunities: novemberOpportunities,
+  resources: novemberResources.filter(
+    (item) => !novemberPromotions.has(item.id),
+  ),
+  exclusions: [...exclusions, ...novemberExclusions],
+  regionalCoverage: [
+    {
+      country: 'India',
+      summary:
+        'Existing Indian listings were re-audited, expired and unverified routes removed, and newly surfaced employer/decision-maker postings added. Programmes are included only within a verified current window.',
+      sourceUrls: [] as string[],
+    },
+    ...regionalResearch.coverage,
+  ],
   refresh: {
-    verifiedAt,
-    previousVerifiedAt: refresh.verifiedAt,
-    removedIds: [...currentRemovedIds],
-    addedIds: audits.flatMap((audit) => audit.additions.map((item) => item.id)),
-    reopenedIds: [...promoteResourceIds],
+    verifiedAt: novemberVerifiedAt,
+    previousVerifiedAt: verifiedAt,
+    removedIds: [...novemberRemovedIds],
+    addedIds: novemberAdditions.map((item) => item.id),
+    reopenedIds: novemberReopenedIds,
   },
 };

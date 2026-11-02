@@ -1,18 +1,24 @@
 # Open Ledger by Shivam Meet
 
 A source-backed index of publicly accessible venture capital, banking,
-investing, valuation and early-career finance opportunities in India.
+investing, valuation and early-career finance opportunities across India and
+the neighbouring South Asian markets.
 
-The current dataset was verified on 10 October 2026 in Asia/Kolkata, following
-the 25 September refresh. Every
+The current dataset was verified on 2 November 2026 in Asia/Kolkata, following
+the 10 October refresh. The snapshot contains 67 listings across six countries,
+with 41 additions, 29 removals and four refreshed monthly windows. Every
 included record exposes its source, application route, eligibility, deadline
 notes and caveats. Programme pages are labelled separately from direct role
 openings. Exact dated listings expire automatically in the browser, including
 UTC deadlines converted to India time. Undated roles are snapshots, not a
 guarantee that the employer will keep accepting applications.
 
-The October audit files preserve retained records, removals, additions and
-excluded leads. Relative listing ages are kept as evidence, not invented
+The October and November audit files preserve retained records, removals,
+additions and excluded leads. Regional coverage includes honest zero results:
+no current Bhutan match met this audit's evidence requirements. Country filters,
+original-currency pay and explicit citizenship/work-rights caveats prevent
+regional availability from implying that every Indian applicant is eligible.
+Relative listing ages are kept as evidence, not invented
 publication dates. The India break-in guide separates editorial grade targets
 from published eligibility rules.
 
