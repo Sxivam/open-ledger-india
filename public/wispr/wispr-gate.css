@@ -29,9 +29,6 @@
 .wg-btn .fbar i{background:var(--wg-accent-ink)}
 .wg-err{color:#b3261e;font-size:14px;margin:10px 0 0;min-height:1em}
 .wg-fine{font-size:12.5px;color:var(--wg-sub);margin:10px 0 0}
-.wg-sticker{position:absolute;top:-64px;right:-38px;width:96px;transform:rotate(9deg) scale(0);transform-origin:50% 70%;pointer-events:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.15))}
-.wg-sticker.on{animation:wg-stick .7s var(--w-ease) forwards}
-@keyframes wg-stick{0%{transform:rotate(-14deg) scale(0)}60%{transform:rotate(12deg) scale(1.08)}100%{transform:rotate(9deg) scale(1)}}
 
 /* ---------- the hero line, visible to everyone ---------- */
 .wg-offer{display:inline-flex;align-items:center;gap:10px;max-width:100%;margin:16px 0 0;background:var(--w-ink);color:#FFFCF6;padding:10px 14px;text-decoration:none;font:500 14.5px/1.3 var(--wg-font);border-radius:calc(var(--wg-radius) * .6)}
@@ -108,11 +105,11 @@
   .wg-psticker{width:70px;right:-12px;top:auto;bottom:-40px}
   .wg-stage .fbar:not(.sm){width:250px;height:80px}
 }
-@media (max-width:600px){.wg-gate{padding:0 16px}.wg-sticker{right:-6px;width:70px;top:-58px}}
+@media (max-width:600px){.wg-gate{padding:0 16px}}
 @media (max-width:420px){.wg-dock a span:not(.fbar){display:none}}
 /* reduced motion: no card rise or sticker spin; the small Flow Bar still talks */
 @media (prefers-reduced-motion:reduce){
-  .wg-pcard:before,.wg-cta.on,.wg-cta.on:after,.wg-sticker.on,.wg-psticker.on{animation:none!important}
-  .wg-sticker.on,.wg-psticker.on{transform:rotate(8deg)}
+  .wg-pcard:before,.wg-cta.on,.wg-cta.on:after,.wg-psticker.on{animation:none!important}
+  .wg-psticker.on{transform:rotate(8deg)}
   .wg-pcard,.wg-say span,.wg-list li,.wg-cta,.wg-dock{transition:none}
 }

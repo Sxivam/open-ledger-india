@@ -24,7 +24,7 @@
     title: "Unlock everything",
     lede: "Free. Drop your name and email to open the full list and claim Wispr Flow Pro for 3 months FREE.",
     perks: [],                  // ticks above the Wispr row, e.g. ["All 54 sources", "Notes on how to use each"]
-    button: "Unlock + claim Wispr Pro",
+    button: "Unlock for FREE",
     welcome: ["Unlimited access to everything here"],   // ticks in the pop-up, before the Wispr one
     note: "Speak your prompts and notes instead of typing them. It works in every app.",
     skip: "Explore",
@@ -101,11 +101,10 @@
     $(C.offerAt).insertAdjacentElement("afterend", o);
   }
 
-  let gate = null, gateIO = null;
+  let gate = null;
   if (gateAnchor) {
     gate = el("section", "wg-gate"); gate.id = "wg-gate"; gate.hidden = true;
     gate.innerHTML = `<form class="wg-card" novalidate>
-      <img class="wg-sticker" src="${A("just-speak.webp")}" alt="" width="96">
       <h2>${esc(C.title)}</h2>
       <p>${esc(C.lede)}</p>
       ${C.perks.map(p => `<div class="wg-perk">✓ ${esc(p)}</div>`).join("")}
@@ -119,8 +118,6 @@
       <p class="wg-fine">${esc(C.fine)}</p>
     </form>`;
     gateAnchor.insertAdjacentElement("afterend", gate);
-    gateIO = new IntersectionObserver((es, o) => es.forEach(e => { if (e.isIntersecting) { $(".wg-sticker", gate).classList.add("on"); o.disconnect(); } }), { threshold: .4 });
-    gateIO.observe($(".wg-card", gate));
   }
 
   const pop = el("div", "wg-pop", `<div class="wg-pcard" role="dialog" aria-modal="true" aria-labelledby="wg-say">
@@ -260,7 +257,7 @@
 
   function destroy() {
     AC_.abort(); clearInterval(dockTimer); run++;
-    AC_.dead = true; if (gateIO) gateIO.disconnect();
+    AC_.dead = true;
     lockEls.forEach(e => { e.classList.remove("wg-locked", "wg-hidden"); e.style.maxHeight = ""; });
     document.documentElement.classList.remove("wg-is-locked");
     [pop, dock, gate, $("#wg-offer")].forEach(e => e && e.remove());

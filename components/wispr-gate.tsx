@@ -18,7 +18,7 @@ declare global {
   }
 }
 
-const KIT_VERSION = '3';
+const KIT_VERSION = '5';
 let mounts = 0; // the newest mount owns the gate
 
 // page="guide": no lock there; Wispr claim links send visitors who have not signed up to the home page gate.
@@ -45,7 +45,7 @@ export function WisprGate({
         `All ${n} live openings in VC, PE, banking and finance`,
         'Filter by track, country and candidate type, with the original source for each',
       ],
-      button: 'Unlock the ledger + Wispr Pro',
+      button: 'Unlock the ledger for FREE',
       welcome: [`All ${n} opportunities, unlocked`],
       note: 'Dictate your cover notes and cold emails instead of typing them. It works in every app.',
       skip: 'Open the ledger',
