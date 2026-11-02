@@ -204,7 +204,6 @@ const novemberAudits = [
   'november-finance-audit.json',
   'november-banking-audit.json',
 ].map(read);
-const regional = read('november-regional-additions.json');
 const novemberRetained = novemberAudits.flatMap((audit) => audit.verifiedIds);
 const novemberRemoved = novemberAudits.flatMap((audit) =>
   audit.removals.map((item) => item.id),
@@ -224,21 +223,14 @@ const novemberUpdates = Object.assign(
   {},
   ...novemberAudits.map((audit) => audit.updates),
 );
-const novemberAdditions = [
-  ...novemberAudits.flatMap((audit) => audit.additions),
-  ...regional.additions,
-];
-const countryNames = new Set([
-  'India',
-  'Pakistan',
-  'Bangladesh',
-  'Sri Lanka',
-  'Nepal',
-  'Bhutan',
-  'Maldives',
-]);
+const novemberAdditions = novemberAudits.flatMap((audit) => audit.additions);
+const assertIndiaOnly = (item) =>
+  assert.equal(
+    item.country ?? 'India',
+    'India',
+    item.id + ': the ledger accepts India-based opportunities only',
+  );
 const historicalIds = new Set([...oldRecords, ...live].map((item) => item.id));
-assert.equal(regional.verifiedAt, novemberDate);
 assert.equal(
   new Set(novemberAdditions.map((item) => item.id)).size,
   novemberAdditions.length,
@@ -246,11 +238,13 @@ assert.equal(
 );
 for (const audit of novemberAudits) {
   assert.equal(audit.verifiedAt, novemberDate);
-  for (const id of Object.keys(audit.updates))
+  for (const id of Object.keys(audit.updates)) {
     assert.ok(
       audit.verifiedIds.includes(id),
       id + ': November update must be retained',
     );
+    assertIndiaOnly({ ...audit.updates[id], id });
+  }
   for (const id of audit.verifiedIds)
     assert.equal(
       audit.updates[id]?.lastVerifiedAt,
@@ -277,7 +271,7 @@ for (const item of novemberAdditions) {
     item.id + ': unknown candidate group',
   );
   assert.ok(modes.has(item.modeGroup), item.id + ': unknown work mode');
-  assert.ok(countryNames.has(item.country), item.id + ': unknown country');
+  assertIndiaOnly(item);
   assert.equal(item.firstVerifiedAt, novemberDate);
   assert.equal(item.lastVerifiedAt, novemberDate);
   assert.ok(
@@ -309,7 +303,7 @@ const novemberLive = [
     .map((item) => ({
       ...item,
       ...novemberUpdates[item.id],
-      country: 'India',
+      country: novemberUpdates[item.id]?.country ?? item.country ?? 'India',
     })),
   ...novemberAdditions,
 ];
@@ -317,6 +311,13 @@ assert.equal(
   new Set(novemberLive.map((item) => item.id)).size,
   novemberLive.length,
   'Duplicate November live IDs',
+);
+for (const item of novemberLive) assertIndiaOnly(item);
+assert.equal(novemberAdditions.length, 24, 'Unexpected November additions');
+assert.equal(
+  novemberLive.length,
+  50,
+  'Unexpected November India snapshot size',
 );
 assert.ok(
   novemberLive.every((item) => !item.deadline || item.deadline >= novemberDate),
@@ -336,19 +337,6 @@ if (clockDate === novemberDate)
         item.id + ': exact cutoff already elapsed',
       );
   }
-assert.deepEqual(
-  regional.coverage.map((item) => item.country).sort(),
-  [...countryNames].filter((item) => item !== 'India').sort(),
-  'Every neighbouring market must have a coverage note',
-);
-for (const item of regional.coverage)
-  assert.ok(item.summary && Array.isArray(item.sourceUrls));
-const countsByCountry = Object.fromEntries(
-  [...countryNames].map((country) => [
-    country,
-    novemberLive.filter((item) => item.country === country).length,
-  ]),
-);
 console.log(
   JSON.stringify(
     {
@@ -362,7 +350,7 @@ console.log(
       ).length,
       live: novemberLive.length,
       dated: novemberLive.filter((item) => item.deadline).length,
-      countries: countsByCountry,
+      countries: { India: novemberLive.length },
     },
     null,
     2,

@@ -8,7 +8,6 @@ import bankingAudit from './october-banking-audit.json';
 import novemberPrivateAudit from './november-private-audit.json';
 import novemberFinanceAudit from './november-finance-audit.json';
 import novemberBankingAudit from './november-banking-audit.json';
-import regionalResearch from './november-regional-additions.json';
 
 export type Opportunity = {
   id: string;
@@ -187,10 +186,7 @@ const novemberUpdates = Object.assign(
   {},
   ...novemberAudits.map((audit) => audit.updates),
 ) as Record<string, Partial<Opportunity>>;
-const novemberAdditions = [
-  ...novemberAudits.flatMap((audit) => audit.additions),
-  ...regionalResearch.additions,
-] as Opportunity[];
+const novemberAdditions = novemberAudits.flatMap((audit) => audit.additions);
 const novemberResourceUpdates = Object.assign(
   {},
   ...novemberAudits.map((audit) => audit.resourceUpdates ?? {}),
@@ -215,37 +211,34 @@ const novemberOpportunities = [
 ]
   .map((item) => ({ ...item, country: item.country ?? 'India' }))
   .filter((item) => !item.deadline || item.deadline >= novemberVerifiedAt);
+// Keep the published ledger and its discovery resources strictly India-only.
+for (const item of [...novemberOpportunities, ...novemberResources]) {
+  if ((item.country ?? 'India') !== 'India')
+    throw new Error(
+      'India-only ledger contains an out-of-scope record: ' + item.id,
+    );
+}
 const novemberReopenedIds = [
   ...new Set([
     ...novemberAudits.flatMap((audit) => audit.reopenedIds ?? []),
     ...novemberPromotions,
   ]),
 ];
-const novemberExclusions = [
-  ...novemberAudits.flatMap((audit) => audit.exclusions),
-  ...regionalResearch.exclusions,
-].map((item) => [item.title, item.reason, item.detail, item.url]);
+const novemberExclusions = novemberAudits
+  .flatMap((audit) => audit.exclusions)
+  .map((item) => [item.title, item.reason, item.detail, item.url]);
 
 export const research = {
   ...baseResearch,
   verifiedAt: novemberVerifiedAt,
   previousVerifiedAt: verifiedAt,
   scope:
-    'Publicly accessible finance opportunities across India and neighbouring South Asian markets; country-specific eligibility applies.',
+    'Publicly accessible finance opportunities in India only; each listing has its own eligibility requirements.',
   opportunities: novemberOpportunities,
   resources: novemberResources.filter(
     (item) => !novemberPromotions.has(item.id),
   ),
   exclusions: [...exclusions, ...novemberExclusions],
-  regionalCoverage: [
-    {
-      country: 'India',
-      summary:
-        'Existing Indian listings were re-audited, expired and unverified routes removed, and newly surfaced employer/decision-maker postings added. Programmes are included only within a verified current window.',
-      sourceUrls: [] as string[],
-    },
-    ...regionalResearch.coverage,
-  ],
   refresh: {
     verifiedAt: novemberVerifiedAt,
     previousVerifiedAt: verifiedAt,
