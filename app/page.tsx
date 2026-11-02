@@ -30,6 +30,7 @@ import {
 import { editions, research, type Opportunity } from '@/lib/research-data';
 import { CountUp, LedgerTicker, useReveal } from '@/components/ledger-motion';
 import { LedgerIndex, MarketBoard } from '@/components/market-board';
+import { WisprGate } from '@/components/wispr-gate';
 import { cn } from '@/lib/utils';
 
 const previousUpdate = research.previousVerifiedAt;
@@ -1153,6 +1154,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <WisprGate count={liveRecords.length} />
       </main>
       <LedgerFooter />
       <RecordSheet

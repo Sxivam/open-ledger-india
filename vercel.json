@@ -3,5 +3,16 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
   "installCommand": "npm install",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    }
+  ]
 }

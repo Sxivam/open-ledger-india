@@ -37,3 +37,5 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+.admin-key.local
+.env.local
