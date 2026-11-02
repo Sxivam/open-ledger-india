@@ -9,9 +9,9 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vite preview --outDir dist/client",
-    "lint": "oxlint app lib next.config.ts vite.config.ts components/ledger-brand.tsx components/ledger-motion.tsx components/market-board.tsx components/wispr-gate.tsx components/ui/button.tsx components/ui/input.tsx components/ui/native-select.tsx components/ui/sheet.tsx components/ui/table.tsx",
+    "lint": "oxlint app lib next.config.ts vite.config.ts components/finance-desk.tsx components/ledger-brand.tsx components/ledger-motion.tsx components/market-board.tsx components/wispr-gate.tsx components/ui/button.tsx components/ui/input.tsx components/ui/native-select.tsx components/ui/sheet.tsx components/ui/table.tsx",
     "format": "oxfmt",
-    "verify:data": "node scripts/verify-research.mjs"
+    "verify:data": "node scripts/verify-research.mjs && node --experimental-strip-types scripts/verify-catalogue.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

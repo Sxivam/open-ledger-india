@@ -1,0 +1,501 @@
+{
+  "checkedAt": "2026-11-02",
+  "records": [
+    {
+      "id": "ongc-finance-accounts-apprentices-2026",
+      "org": "Oil and Natural Gas Corporation (ONGC)",
+      "title": "Finance & Accounts Apprenticeships 2026–27",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Multiple Indian work centres; finance trade in Agartala",
+      "format": "On-site",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": "2026-11-20",
+      "opensOn": "2026-10-29",
+      "benefit": "₹12,300/month graduate stipend; no promise of permanent employment.",
+      "duration": "12 months",
+      "eligibility": "B.Com/commerce graduates; age 18–24 on 29 November 2026, with category relaxations. Less than three years since qualifying. No previous/current apprenticeship. Residence or qualifying institution must match the work centre's eligible districts in Annexure 1.",
+      "description": "Two commerce routes: Executive Finance (Oil & Gas), including nine Agartala places, and Accounts Executive across several Indian work centres. The advertised 3,047 total covers all trades, not finance alone.",
+      "applicationSteps": "Read the work-centre table. Apply for Executive Finance through apprenticeshipindia.gov.in (NAPS), or Accounts Executive through nats.education.gov.in (NATS), by 20 November.",
+      "sourceUrl": "https://ongcindia.com/documents/77751/2660534/Advertisement-engagement-Apprentices2026-27.pdf/e926a825-c08b-6403-60f1-ea0232bcaab8",
+      "applyUrl": "https://ongcapprentices.ongc.co.in/",
+      "evidence": "Official advertisement ONGC/APPR/1/2026 downloaded and read; applications run 29 October–20 November 2026.",
+      "sourceDate": "2026-10-29",
+      "checkedAt": "2026-11-02",
+      "caveat": "Local eligibility matters. Read all exclusions in the notice; work-centre seats are subject to the official selection process. Portal can be slow."
+    },
+    {
+      "id": "illumina-finance-apprentice-43668",
+      "org": "Illumina",
+      "title": "Finance Apprentice — 2026 graduates",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Bengaluru, Karnataka",
+      "format": "On-site",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Paid stipend; amount not disclosed. Finance systems training and mentorship.",
+      "duration": "12 months",
+      "eligibility": "2026 graduates; commerce, accounting or finance bachelor's/master's preferred. No experience required. Basic accounting, Excel, PowerPoint and analytical ability. Local Bengaluru candidates preferred.",
+      "description": "Practical work in reconciliations, invoices, journals, financial reporting, dashboards, ERP tools and Excel models.",
+      "applicationSteps": "Apply through Illumina Workday requisition 43668-JOB with your own application and academic details.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/apprentice-finance-at-illumina-4483379823",
+      "applyUrl": "https://illumina.wd1.myworkdayjobs.com/illumina-careers/job/India---Bengaluru---Manyata/Apprentice-Finance-_43668-JOB",
+      "evidence": "Employer-attributed LinkedIn posting inspected; describes the 2026-graduate programme and remains published until filled or sufficient applicants are received.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "No published cutoff or stipend amount. Workday is script-rendered. Illumina prohibits generative AI in applications/interviews; no visa sponsorship."
+    },
+    {
+      "id": "ssei-analyst-arena-2026",
+      "org": "Sanjay Saraf Educational Institute (SSEI)",
+      "title": "Analyst Arena — equity research competition",
+      "kind": "Competition",
+      "country": "India",
+      "location": "India; college teams, with in-person final",
+      "format": "Hybrid",
+      "careerTracks": [
+        "Investment research"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": "2026-08-15",
+      "benefit": "Free entry. Top-three cash prizes: ₹1 lakh, ₹75,000 and ₹50,000; additional education benefits have separate terms.",
+      "duration": "Three rounds; timeline assigned by organiser",
+      "eligibility": "Undergraduates in Indian colleges/universities. Team of 3–4 students from the same college; no individual entry. Multiple teams per college allowed.",
+      "description": "Build company research, sector analysis and a final investment presentation. The organiser's own site accepts direct team registration, including colleges without an SSEI seminar.",
+      "applicationSteps": "Form your team and complete the registration form on the official site. Confirm your round-one submission schedule before starting.",
+      "sourceUrl": "https://analyst-arena.ssei.co.in/",
+      "applyUrl": "https://analyst-arena.ssei.co.in/",
+      "evidence": "Official competition page shows the registration form, free entry, eligibility, round structure and prizes.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "No universal closing date published. Campus timelines run relative to the seminar; direct entrants must obtain their schedule. Placement support is not a job guarantee."
+    },
+    {
+      "id": "nism-sebi-investor-awareness-level1",
+      "org": "SEBI & National Institute of Securities Markets (NISM)",
+      "title": "SEBI Investor Awareness Test — Level 1",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online across India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Banking & markets",
+        "Investment research"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free study materials and exam; certificate after passing. No stipend or employment.",
+      "duration": "Self-paced preparation; 60-minute exam",
+      "eligibility": "No age or educational qualification threshold. Registration requires email and Aadhaar verification through the official portal.",
+      "description": "An accessible introduction to Indian securities markets, savings, investment risk and investor rights. Useful for financial literacy, not a professional licence or job qualification by itself.",
+      "applicationSteps": "Register on the NISM SIAT portal, download the materials and take the exam when ready.",
+      "sourceUrl": "https://www.nism.ac.in/sebi-investor-awareness-test",
+      "applyUrl": "https://siat.nism.ac.in/",
+      "evidence": "Official live course page and linked FAQ confirm free access, no age/education threshold and on-demand examination.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Learning only: no job, internship or income. Distinct from the paid role-specific NISM professional examinations."
+    },
+    {
+      "id": "forage-boa-investment-banking",
+      "org": "Bank of America · Forage",
+      "title": "Investment Banking — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Investment banking"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free exercises and completion certificate. No pay.",
+      "duration": "4–5 hours",
+      "eligibility": "Open online enrolment; no recruiting application. Advanced-level exercise; accounting and valuation familiarity helps.",
+      "description": "Practise company valuation, a DCF model, M&A analysis, financing considerations and a client presentation.",
+      "applicationSteps": "Create a Forage account, start the free simulation and complete the tasks at your own pace.",
+      "sourceUrl": "https://www.theforage.com/simulations/bank-of-america/investment-banking-bwp7",
+      "applyUrl": "https://www.theforage.com/simulations/bank-of-america/investment-banking-bwp7",
+      "evidence": "Official Forage programme page inspected with an active Start Free Simulation route.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "A global online learning exercise accessible in India, not an Indian job vacancy, actual internship, work experience or income source."
+    },
+    {
+      "id": "forage-pgim-public-private-credit",
+      "org": "PGIM · Forage",
+      "title": "Public & Private Credit — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Banking & markets",
+        "VC & private capital",
+        "Investment research"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free tasks, model answers and completion certificate. No pay.",
+      "duration": "6–7 hours",
+      "eligibility": "Open online enrolment; intermediate-level practice. Familiarity with financial statements and Excel is useful.",
+      "description": "Explore public-credit research, private-credit research and portfolio analysis using financial ratios and fixed-income concepts.",
+      "applicationSteps": "Start the free programme on Forage and work through its credit-investment assignments.",
+      "sourceUrl": "https://www.theforage.com/simulations/pgim/fixed-income-fqv9",
+      "applyUrl": "https://www.theforage.com/simulations/pgim/fixed-income-fqv9",
+      "evidence": "Official programme page inspected; free self-paced start remains available.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Learning only, accessible online from India. It is not an internship, employment contract, income opportunity or promise of a PGIM interview."
+    },
+    {
+      "id": "forage-fidelity-investment-management",
+      "org": "Fidelity International · Forage",
+      "title": "Investment Management — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Investment research",
+        "Banking & markets"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free practice and completion certificate. No income.",
+      "duration": "4–5 hours",
+      "eligibility": "Online programme open to learners; provider explicitly welcomes students of all backgrounds. Intermediate difficulty.",
+      "description": "Explore asset classes, portfolio work, Excel analysis and fund distribution through an investment-manager simulation.",
+      "applicationSteps": "Start the free Forage programme and complete the six learning modules.",
+      "sourceUrl": "https://www.theforage.com/simulations/fidelity-international/investment-management-bqoj",
+      "applyUrl": "https://www.theforage.com/simulations/fidelity-international/investment-management-bqoj",
+      "evidence": "Official programme page inspected with free enrolment and stated course duration.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Accessible online in India; practice only. No employment, internship, stipend or guaranteed interview."
+    },
+    {
+      "id": "forage-boa-global-markets",
+      "org": "Bank of America · Forage",
+      "title": "Global Markets Sales & Trading — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free exercises and completion certificate. No pay.",
+      "duration": "3–4 hours",
+      "eligibility": "Open online enrolment; introductory programme without a recruiting selection process.",
+      "description": "Practise financial-data interpretation, market analysis and client recommendations in a simulated sales-and-trading setting.",
+      "applicationSteps": "Start the free simulation on Forage and follow the task instructions.",
+      "sourceUrl": "https://www.theforage.com/simulations/bank-of-america/sales-and-trading-analyst-i5jo",
+      "applyUrl": "https://www.theforage.com/simulations/bank-of-america/sales-and-trading-analyst-i5jo",
+      "evidence": "Official live programme page inspected; Start Free Simulation available.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Global online practice accessible from India. Not a trading job, actual internship, income opportunity or access to live trading capital."
+    },
+    {
+      "id": "forage-aig-actuarial",
+      "org": "AIG · Forage",
+      "title": "Actuarial Analyst — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free exercises and completion certificate. No pay.",
+      "duration": "2–3 hours",
+      "eligibility": "Open online enrolment; intermediate difficulty. Quantitative and spreadsheet familiarity helps.",
+      "description": "Explore actuarial risk assessment, marine-liability pricing and analytical reporting in a simulated insurance assignment.",
+      "applicationSteps": "Register on Forage, start the free simulation and complete its analysis tasks.",
+      "sourceUrl": "https://www.theforage.com/simulations/aig/actuarial-analyst-dcil",
+      "applyUrl": "https://www.theforage.com/simulations/aig/actuarial-analyst-dcil",
+      "evidence": "Official programme page inspected with active free enrolment.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Online practice accessible from India; not an actuarial qualification, professional exam exemption, internship or paid job."
+    },
+    {
+      "id": "forage-vista-private-equity",
+      "org": "Vista Equity Partners · Forage",
+      "title": "Private Equity Deal Lifecycle — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "VC & private capital"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free introductory exercises and completion certificate. No pay.",
+      "duration": "1–2 hours",
+      "eligibility": "Open online enrolment; introductory difficulty and no hiring application.",
+      "description": "Explore the private-equity transaction lifecycle, valuation and how investment and operating teams contribute to a deal.",
+      "applicationSteps": "Create a Forage account and start the free deal-lifecycle simulation.",
+      "sourceUrl": "https://www.theforage.com/simulations/vista-equity-partners/understanding-the-private-equity-deal-lifecycle-at-vista-equity-partners-tlv0",
+      "applyUrl": "https://www.theforage.com/simulations/vista-equity-partners/understanding-the-private-equity-deal-lifecycle-at-vista-equity-partners-tlv0",
+      "evidence": "Official programme page opened with active free start and introductory course details.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Global online learning available from India. Not a PE internship, professional work experience, income opportunity or Indian hiring opening."
+    },
+    {
+      "id": "forage-goldman-controllers",
+      "org": "Goldman Sachs · Forage",
+      "title": "Controllers — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free exercises and completion certificate. No pay.",
+      "duration": "30–60 minutes",
+      "eligibility": "Open online enrolment; introductory-level practice without a hiring selection process.",
+      "description": "Try controllers work involving financial information, net asset value and data reconciliation.",
+      "applicationSteps": "Start the free Goldman Sachs Controllers simulation on Forage and complete the exercise.",
+      "sourceUrl": "https://www.theforage.com/simulations/goldman-sachs/controllers-8npc",
+      "applyUrl": "https://www.theforage.com/simulations/goldman-sachs/controllers-8npc",
+      "evidence": "Official live Forage page inspected with stated duration and free start.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Online learning accessible from India. Not a Goldman Sachs internship, job, income opportunity or guarantee of recruitment."
+    },
+    {
+      "id": "forage-h2-venture-capital",
+      "org": "H2 Ventures · Forage",
+      "title": "Venture Capital — free job simulation",
+      "kind": "Learning programme",
+      "country": "India",
+      "location": "Online; accessible from India",
+      "format": "Self-paced online",
+      "careerTracks": [
+        "VC & private capital",
+        "Investment research"
+      ],
+      "audience": [
+        "Anyone"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Free exercises and completion certificate. No stipend.",
+      "duration": "3–4 hours",
+      "eligibility": "Open online enrolment; introductory-level practice without a recruiting application.",
+      "description": "Evaluate a startup, practise financial modelling and compare investment opportunities using a venture-capital case study.",
+      "applicationSteps": "Start the free H2 Ventures programme on Forage and work through the simulation tasks.",
+      "sourceUrl": "https://www.theforage.com/simulations/h2-ventures/venture-capital-comi",
+      "applyUrl": "https://www.theforage.com/simulations/h2-ventures/venture-capital-comi",
+      "evidence": "Official Forage programme page inspected with an available free simulation.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Global online learning accessible in India. Despite older 'virtual internship' wording, this is a simulation, not employment, income or an Indian internship vacancy."
+    },
+    {
+      "id": "cfa-india-research-challenge-watch",
+      "org": "CFA Society India / CFA Institute",
+      "title": "CFA Institute Research Challenge — India route",
+      "kind": "Competition",
+      "country": "India",
+      "location": "Indian university teams; local and national rounds",
+      "format": "Institution-led",
+      "careerTracks": [
+        "Investment research"
+      ],
+      "audience": [
+        "Student",
+        "Educator"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Equity-research practice, faculty guidance and industry mentoring; competition participation, not paid employment.",
+      "duration": "Annual competition; confirm current Indian schedule",
+      "eligibility": "Team entry through a participating university. Students must satisfy the current year's CFA Institute rules; not unrestricted solo registration.",
+      "description": "Research a company, prepare a written equity report and defend the recommendation in presentations across competition rounds.",
+      "applicationSteps": "Ask your faculty coordinator and contact team@iaipirc.org through the official India page about 2026–27 participation.",
+      "sourceUrl": "https://cfasocietyindia.org/research-challenge/",
+      "applyUrl": "https://cfasocietyindia.org/research-challenge/",
+      "evidence": "Official India route remains published, but the inspected page linked prior-cycle rules and did not establish an open 2026–27 team-entry deadline.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Watchlist only: current new-team admission is unverified. Institution/team restrictions apply; do not treat the existence of an annual programme as an open call."
+    },
+    {
+      "id": "nism-national-financial-literacy-quiz-watch",
+      "org": "SEBI & NISM",
+      "title": "National Financial Literacy Quiz 2026 — college route",
+      "kind": "Competition",
+      "country": "India",
+      "location": "Indian colleges; regional and national rounds",
+      "format": "Institution-led",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Student",
+        "Educator"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Financial-literacy practice and participation recognition; prizes depend on the competition round. No job or stipend.",
+      "duration": "Four rounds; confirm remaining 2026 eligibility",
+      "eligibility": "Undergraduate and postgraduate college students, in separate competition cohorts; college coordination required.",
+      "description": "A financial-literacy competition progressing from online and college rounds to regional and national stages.",
+      "applicationSteps": "Use the official page's college-round interest route and ask NISM whether your college can still enter.",
+      "sourceUrl": "https://nflq.nism.ac.in/",
+      "applyUrl": "https://nflq.nism.ac.in/",
+      "evidence": "Official homepage has a college-round enquiry link but already announces college winners and regional qualifiers; fresh-entry availability is not established.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Watchlist/enquiry only, not verified open registration. Existing competitors and new applicants have different timelines."
+    },
+    {
+      "id": "rbi-summer-placement-2027-watch",
+      "org": "Reserve Bank of India",
+      "title": "Summer Placement 2027 — verify current RBI notice",
+      "kind": "Internship",
+      "country": "India",
+      "location": "RBI offices in India; allocation rules apply",
+      "format": "On-site",
+      "careerTracks": [
+        "Public finance",
+        "Banking & markets"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Research placement; check the current RBI notice for stipend and expenses before applying.",
+      "duration": "Typically up to three months, April–July 2027",
+      "eligibility": "Indian citizens studying in India, generally penultimate-year postgraduate/integrated programmes in relevant finance, economics, management, statistics or law disciplines; verify degree-specific rules with RBI.",
+      "description": "A separate student summer-placement route from RBI's longer Research Internship programme.",
+      "applicationSteps": "Read RBI's Summer Placement page, confirm 2027 eligibility and use its official online application route.",
+      "sourceUrl": "https://www.aaglegal.in/internships/rbi-summer-placement-2027/",
+      "applyUrl": "https://opportunities.rbi.org.in/Scripts/Summer.aspx",
+      "evidence": "AAG Legal's 6 October 2026 listing identifies the 15 October–15 December application window. RBI's linked page presented a human-verification challenge during this audit.",
+      "sourceDate": "2026-10-06",
+      "checkedAt": "2026-11-02",
+      "caveat": "Watchlist pending direct RBI verification; dates are third-party corroboration, not a freshly verified open form. No assumed ₹25,000 stipend without the current primary notice."
+    }
+  ],
+  "exclusions": [
+    {
+      "org": "IFSCA",
+      "title": "February 2026 internship notification",
+      "reason": "Official 1 May 2026 follow-up states the selection process is complete and all advertised positions are filled. The original rolling-window language no longer applies.",
+      "sourceUrl": "https://ifsca.gov.in/CommonDirect/ViewFile?fileName=Internship_20260501_0624.pdf&id=91427247c5628a865846d173bc04c04e"
+    },
+    {
+      "org": "NIPFP",
+      "title": "Research Fellow — cigarette tax/GST project",
+      "reason": "Official call closed 31 August 2026; no fresh reopening verified.",
+      "sourceUrl": "https://www.nipfp.org.in/media/documents/Call_for_Applications_Research_Fellow_260819_172302.pdf"
+    },
+    {
+      "org": "NIPFP",
+      "title": "Research Fellows — NITI Aayog macro/oil-price project",
+      "reason": "Official advertisement dated 1 July 2026 closed 8 July 2026, 5 pm.",
+      "sourceUrl": "https://www.nipfp.org.in/media/documents/Advertisement_Research_Fellow_NITI_Aayog_Project.pdf"
+    },
+    {
+      "org": "SEBI",
+      "title": "Young Professional Programme 2026",
+      "reason": "Official page shows February applications and June final selections, not a new open intake.",
+      "sourceUrl": "https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doInternships=yes"
+    },
+    {
+      "org": "State Bank of India",
+      "title": "Apprentice intake CRPD/APPR/2026-27/07",
+      "reason": "June application window has ended; official careers page shows selection updates.",
+      "sourceUrl": "https://sbi.bank.in/en/web/careers/current-openings"
+    },
+    {
+      "org": "LIC Housing Finance",
+      "title": "232 apprentices — October 2026 intake",
+      "reason": "BFSI Sector Skill Council listing gives 1 November 2026 as the final application date, already past at this audit.",
+      "sourceUrl": "https://bfsissc.com/blog2/post.php?slug=lic-hfl-apprenticeship-2026-232-vacancies-stipend-eligibility-and-apply-online"
+    },
+    {
+      "org": "State Street",
+      "title": "Apprentice — Accounting/Finance, R-798960",
+      "reason": "Current third-party leads found, but the specific employer requisition and its live application state could not be verified. Unsubstantiated aggregator salary ranges were discarded.",
+      "sourceUrl": "https://jobrise.io/en/jobs/listing/workday-statestreet-global-R-798960/"
+    },
+    {
+      "org": "IHCL",
+      "title": "Taj Taal Kutir Finance Apprentice, requisition 23732",
+      "reason": "Current official search index shows the role, but the opened listing returned an older cached result and no verifiable role detail/application. Held for verification.",
+      "sourceUrl": "https://careers.ihcltata.com/IHCL/go/Finance/677780/"
+    }
+  ]
+}

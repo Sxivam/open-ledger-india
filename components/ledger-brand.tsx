@@ -44,6 +44,8 @@ export function LedgerHeader({ guide = false }: { guide?: boolean }) {
         </Link>
         <div className="header-links">
           <Link href="/#opportunities">Opportunities</Link>
+          {/* oxlint-disable-next-line next/no-html-link-for-pages -- document navigation initializes the shared catalogue filters */}
+          <a href="/?lane=Fund%20your%20studies#opportunities">Scholarships</a>
           <Link
             className={guide ? 'active' : ''}
             aria-current={guide ? 'page' : undefined}
@@ -273,6 +275,10 @@ export function LedgerFooter() {
           <div>
             <p className="eyebrow">The ledger</p>
             <Link href="/#opportunities">Find an opportunity</Link>
+            {/* oxlint-disable-next-line next/no-html-link-for-pages -- document navigation initializes the shared catalogue filters */}
+            <a href="/?lane=Fund%20your%20studies#opportunities">
+              Scholarships & fee support
+            </a>
             <Link href="/guide">The India break-in guide</Link>
             <a href={wisprUrl} target="_blank" rel="noopener noreferrer">
               Wispr Flow · 3 months free <ArrowUpRight size={12} />

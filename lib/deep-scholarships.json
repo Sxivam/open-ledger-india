@@ -1,0 +1,379 @@
+{
+  "checkedAt": "2026-11-02",
+  "records": [
+    {
+      "id": "scholarship-cfa-access-august-2027",
+      "org": "CFA Institute",
+      "title": "Access Scholarship — August 2027 CFA exams",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — eligible residents applying to the global CFA programme",
+      "format": "Online application",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "Early career",
+        "Experienced"
+      ],
+      "status": "upcoming",
+      "deadline": "2026-11-23",
+      "opensOn": "2026-11-03",
+      "benefit": "Exam registration reduced to US$400 plus applicable tax, including the Premium package and Practice Pack.",
+      "duration": "One exam cycle: August 2027, Levels I, II or III",
+      "eligibility": "Meet CFA programme entry requirements and demonstrate financial need. Current exam registration, employer funding and overlapping scholarship applications can make you ineligible.",
+      "description": "A finance qualification subsidy accessible from India. The next application window begins on 3 November; it is not open on the verification date.",
+      "applicationSteps": "Read the scholarship rules before paying for an exam. Apply through CFA Institute's linked scholarship portal using a computer during the window.",
+      "sourceUrl": "https://www.cfainstitute.org/programs/cfa-program/scholarships/access",
+      "applyUrl": "https://www.cfainstitute.org/programs/cfa-program/scholarships/access",
+      "evidence": "Official schedule lists 3–23 November 2026 for August 2027 exams; decisions are scheduled for 18 December.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Competitive fee reduction, not a fully funded qualification. The remaining US$400 and tax are payable; the award cannot move to another exam cycle."
+    },
+    {
+      "id": "scholarship-cfa-student-2026-27",
+      "org": "CFA Institute",
+      "title": "CFA Student Scholarship",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — students at participating CFA-affiliated institutions",
+      "format": "Online application through an affiliated institution",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "open",
+      "deadline": "2027-07-15",
+      "deadlineAt": "2027-07-15T23:59:00-04:00",
+      "opensOn": "2026-09-01",
+      "benefit": "CFA exam registration reduced to US$600 plus applicable tax.",
+      "duration": "One scholarship award; use within the award's permitted exam period",
+      "eligibility": "Enrolled at an institution participating in CFA Institute's University Affiliation Program, meeting CFA entry requirements and not already registered for an exam.",
+      "description": "Institution-linked assistance for India-based students preparing for the CFA qualification. Check your university's participation before applying.",
+      "applicationSteps": "Check your university's affiliation and any additional documents or internal deadline. Submit the application through the official scholarship portal.",
+      "sourceUrl": "https://cfai.smapply.io/prog/cfa_program_student_scholarship/",
+      "applyUrl": "https://cfai.smapply.io/prog/cfa_program_student_scholarship/",
+      "evidence": "Live application portal specifies 1 September 2026 opening and 15 July 2027, 11:59 p.m. EDT deadline.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Restricted to affiliated institutions; awards are not automatic. US$600 plus tax remains payable. The displayed portal deadline is in US Eastern time; university cutoffs may be earlier."
+    },
+    {
+      "id": "scholarship-cfa-professor-2026-27",
+      "org": "CFA Institute",
+      "title": "CFA Professor Scholarship",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — eligible university faculty",
+      "format": "Online application",
+      "careerTracks": [
+        "Investment research",
+        "Public finance"
+      ],
+      "audience": [
+        "Educator"
+      ],
+      "status": "open",
+      "deadline": "2027-08-15",
+      "deadlineAt": "2027-08-15T23:59:00-04:00",
+      "opensOn": "2026-09-01",
+      "benefit": "CFA exam registration reduced to US$600 plus applicable tax.",
+      "duration": "One award, subject to the specified exam-use period",
+      "eligibility": "Full-time university professors teaching at least six credit hours per semester/quarter, or administrators/department heads teaching at least three. CFA entry and registration restrictions apply.",
+      "description": "Supports eligible faculty in India pursuing the CFA programme alongside their teaching work.",
+      "applicationSteps": "Prepare employment evidence, CV and an institution letter confirming teaching hours. Apply through the official Professor Scholarship portal.",
+      "sourceUrl": "https://cfai.smapply.io/prog/cfa_program_professor_scholarship/",
+      "applyUrl": "https://cfai.smapply.io/prog/cfa_program_professor_scholarship/",
+      "evidence": "The live 2026–27 portal lists 1 September opening and 15 August 2027 closing; teaching thresholds appear on CFA Institute's programme page.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "US$600 plus tax remains payable. Deadline conflict: the live portal says 15 August; the general information page says 31 July annually. Apply by July and verify with CFA Institute."
+    },
+    {
+      "id": "scholarship-icai-student-support-2026",
+      "org": "Institute of Chartered Accountants of India",
+      "title": "CA student scholarships and merit awards",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — registered ICAI students",
+      "format": "Online application through SSP",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Student",
+        "CA / CMA / CS"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Monthly support: Foundation ₹1,500; need-based Intermediate/Final ₹2,500; Final merit-need ₹4,000; Final merit ₹5,000.",
+      "duration": "Foundation: four months. Intermediate: eight months, with conditional extensions. Final: up to 24 months or remaining articleship.",
+      "eligibility": "Registered CA students. Need-based parental income ceiling: ₹5 lakh/year. Final merit-need requires Intermediate ranks 11–50; merit award ranks 1–10. Final students must commence articleship.",
+      "description": "Stage-specific funding under ICAI's revised 2026 scholarship scheme.",
+      "applicationSteps": "Apply in the Self Service Portal with income and registration evidence as relevant. Arrange the required CA/principal recommendation; applications are considered quarterly.",
+      "sourceUrl": "https://icai-call-sahayata.icai.org/assets/pdf/Scholarship-FAQ.pdf",
+      "applyUrl": "https://eservices.icai.org/",
+      "evidence": "Official FAQ updated 15 May 2026 explicitly permits applications at any time and shows the revised award table.",
+      "sourceDate": "2026-05-15",
+      "checkedAt": "2026-11-02",
+      "caveat": "Payments and continuation depend on the applicable scheme, verification and progress. These are scholarships, separate from an employer's articleship stipend."
+    },
+    {
+      "id": "scholarship-kerala-minority-ca-cma-cs-2026",
+      "org": "Government of Kerala — Directorate of Minority Welfare",
+      "title": "CA / CMA / CS scholarship — Kerala minorities",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "Kerala",
+      "format": "Online application with supporting documents",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Student",
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": "2026-11-25",
+      "deadlineAt": "2026-11-25T23:59:59+05:30",
+      "opensOn": "2026-10-13",
+      "benefit": "₹15,000 education support for eligible CA, CMA or CS students.",
+      "duration": "2026–27 scholarship cycle; award subject to department rules",
+      "eligibility": "Kerala residents from notified minority communities preparing for CA/CMA/CS Intermediate or Final. BPL applicants receive priority; published income ceiling is ₹8 lakh. Academic and residence documents are required.",
+      "description": "A targeted professional-accountancy scholarship, with a currently published application window.",
+      "applicationSteps": "Register on the minority-welfare scholarship portal and complete your profile and qualifications. Select CA/ICWA CMA/CS, upload evidence and follow the current notification's submission requirements.",
+      "sourceUrl": "https://www.mwdscholarship.kerala.gov.in/admin/viewguidelines",
+      "applyUrl": "https://www.mwdscholarship.kerala.gov.in/",
+      "evidence": "Government portal lists 13 October–25 November 2026. Kerala's Career Prayanam government portal confirms ₹15,000 and the ₹8 lakh income ceiling.",
+      "sourceDate": "2026-10-13",
+      "checkedAt": "2026-11-02",
+      "caveat": "Kerala and community eligibility apply; this is not an all-India scholarship. The English guideline download still carries a 2025–26 heading, so use the 2026–27 notification for final document and academic conditions."
+    },
+    {
+      "id": "fellowship-bits-hyderabad-finance-phd-2027",
+      "org": "BITS Pilani — Hyderabad Campus",
+      "title": "Funded PhD in Economics & Finance — January 2027",
+      "kind": "Fellowship",
+      "country": "India",
+      "location": "Hyderabad, Telangana",
+      "format": "On campus, full-time doctoral research",
+      "careerTracks": [
+        "Investment research",
+        "Corporate finance",
+        "Accounting & tax",
+        "Public finance"
+      ],
+      "audience": [
+        "Graduate",
+        "Experienced",
+        "Educator"
+      ],
+      "status": "open",
+      "deadline": "2026-11-06",
+      "opensOn": "2026-09-10",
+      "benefit": "Institute fellowship ₹37,000/month; potential increase to ₹40,000–₹42,000 after two years based on performance, plus ₹20,000 annual contingency.",
+      "duration": "Full-time PhD; fellowship support up to five years",
+      "eligibility": "A qualifying relevant degree, normally at least 60% under the central admissions criteria; departmental shortlisting and written test/interview apply. Check the brochure for your exact qualification.",
+      "description": "Research areas include quantitative finance, corporate finance, accounting and economics. The department has a specific January 2027 admission call.",
+      "applicationSteps": "Read the current PhD brochure and departmental research areas. Use the application link on the official BITS admissions page before 6 November; the department lists its test/interview on 27 November.",
+      "sourceUrl": "https://www.bits-pilani.ac.in/news/call-for-ph-d-applications-january-2027/",
+      "applyUrl": "https://admissions.bits-pilani.ac.in/PhD/phd.html",
+      "evidence": "Official department notice and its poster confirm the finance intake and deadline; the central 2026–27 admissions page details fellowship funding.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Funding described is for full-time admitted scholars; do not assume part-time admission includes a stipend. Admission, tuition and living charges remain governed by the brochure.",
+      "goal": "Fund your studies"
+    },
+    {
+      "id": "fellowship-icssr-senior-second-call-2026",
+      "org": "Indian Council of Social Science Research",
+      "title": "Senior Fellowship — public-finance research route",
+      "kind": "Fellowship",
+      "country": "India",
+      "location": "India — eligible affiliating university or research institution",
+      "format": "Full-time research",
+      "careerTracks": [
+        "Public finance"
+      ],
+      "audience": [
+        "Experienced",
+        "Educator"
+      ],
+      "status": "open",
+      "deadline": "2026-11-20",
+      "deadlineAt": "2026-11-20T18:00:00+05:30",
+      "opensOn": "2026-10-21",
+      "benefit": "₹45,000/month and ₹40,000 annual contingency; exceptional salary-protection cases have separate rules.",
+      "duration": "Two years",
+      "eligibility": "Indian citizens aged 45–70 with a PhD, substantial research publications and affiliation to an eligible Indian institution. Previous ICSSR award and cooling-off restrictions apply.",
+      "description": "An established-researcher route for a suitable public-finance/economics proposal within the wider social-science fellowship scheme.",
+      "applicationSteps": "Confirm subject fit and institutional affiliation against the fellowship guidelines. Submit the prescribed online application and research-proposal format; obtain institutional forwarding.",
+      "sourceUrl": "https://icssr.org/announcements/2nd-call-applications-icssrs-senior-fellowship-2026",
+      "applyUrl": "https://app.icssr.org/",
+      "evidence": "Current second-call notice explicitly lists 21 October opening and 20 November 2026, 6 p.m. closing; scheme page specifies eligibility and funding.",
+      "sourceDate": "2026-10-21",
+      "checkedAt": "2026-11-02",
+      "caveat": "For senior researchers, not a graduate-entry fellowship. This is a broad social-science call; finance applicants must establish a suitable research proposal and subject fit.",
+      "goal": "Fund your studies"
+    },
+    {
+      "id": "scholarship-icsi-seft-watchlist",
+      "org": "Institute of Company Secretaries of India",
+      "title": "CS Students Education Fund Trust — verify application route",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — eligible CS-course candidates",
+      "format": "Institutional fee-support scheme",
+      "careerTracks": [
+        "Compliance & governance",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "CA / CMA / CS"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Conditional reimbursement/support for specified CS registration and examination fees under SEFT rules.",
+      "duration": "Progress-linked support through eligible CS stages",
+      "eligibility": "Published need-based route: family income up to ₹3 lakh, with 65% in Class XII or 60% in graduation. Merit route: 85% in Class XII or 70% in graduation without the income ceiling.",
+      "description": "A relevant professional-course funding route, retained for follow-up rather than counted as a verified live call.",
+      "applicationSteps": "Ask ICSI student services for the current SEFT application form and applicable rules before paying fees. Prepare marksheets and income evidence; confirm first-attempt and registration-time conditions.",
+      "sourceUrl": "https://www.icsi.edu/media/webmodules/Student_Services_links.pdf",
+      "applyUrl": "https://www.icsi.edu/",
+      "evidence": "Official student-services directory links the SEFT guidelines; 2026 ICSI journal material continues to describe the scheme. Linked forms were not reliably accessible during verification.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "Current form availability and submission acceptance remain unverified. This is not labelled open; stage, first-attempt and reimbursement conditions must be confirmed directly."
+    },
+    {
+      "id": "scholarship-icmai-fee-aid-watchlist",
+      "org": "Institute of Cost Accountants of India",
+      "title": "CMA fee waivers and scholarships — scheme directory",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — eligible CMA-course candidates",
+      "format": "Course-specific fee waiver or reimbursement",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "CA / CMA / CS"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Fee support varies by Foundation merit, Intermediate financial-need, disability and university-rank schemes.",
+      "duration": "Depends on course stage and scheme",
+      "eligibility": "Separate academic, financial, disability or university-rank criteria apply. Choose the scheme corresponding to your CMA stage and circumstances.",
+      "description": "ICMAI's official index brings together several distinct cost-accountancy funding routes.",
+      "applicationSteps": "Open the relevant scheme from the official financial-aid directory. Confirm current terms and availability with ICMAI before completing the linked form.",
+      "sourceUrl": "https://icmai.in/ClntStudents/Student_FinancialAids_Scholarships",
+      "applyUrl": "https://icmai.in/ClntStudents/Student_FinancialAids_Scholarships",
+      "evidence": "Official directory currently lists Foundation merit, Intermediate economically challenged, physically challenged and national university-rank scholarship schemes.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "A public 2026 application window could not be verified; several linked rule PDFs returned access errors. This directory is a watchlist resource, not proof of an open award."
+    },
+    {
+      "id": "scholarship-garp-academic-partner-watchlist",
+      "org": "Global Association of Risk Professionals",
+      "title": "FRM scholarship through a GARP Academic Partner",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "India — participating Academic Partner institutions",
+      "format": "University nomination",
+      "careerTracks": [
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Student",
+        "Educator"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "A limited scholarship route for FRM Part I; obtain the current fee coverage from the nominating institution.",
+      "duration": "Annual institutional nomination cycle",
+      "eligibility": "Students or faculty in eligible GARP Academic Partner programmes. The programme administrator nominates candidates; this is not a general direct-application award.",
+      "description": "A useful way to reduce risk-qualification costs if your Indian institution participates in GARP's academic network.",
+      "applicationSteps": "Check your institution and programme against GARP's Academic Partner list. Ask its programme administrator about current nominations, selection and fee coverage.",
+      "sourceUrl": "https://www.garp.org/frm/frequently-asked-questions",
+      "applyUrl": "https://www.garp.org/about/outreach/academic-partners",
+      "evidence": "GARP's FAQ restricts scholarships to partner-programme nominations and describes six student and one faculty nominations per programme annually.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "No public India-wide application window was verified. Your programme may not participate or may have exhausted nominations; do not assume a full fee waiver."
+    },
+    {
+      "id": "scholarship-nism-pgdm-watchlist",
+      "org": "National Institute of Securities Markets",
+      "title": "Securities Markets PGDM scholarships — next intake watch",
+      "kind": "Scholarship",
+      "country": "India",
+      "location": "Patalganga, Maharashtra",
+      "format": "Full-time campus programme with conditional tuition aid",
+      "careerTracks": [
+        "Investment research",
+        "Asset management",
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Graduate",
+        "Early career"
+      ],
+      "status": "watchlist",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Published merit route offers 50% tuition support to selected qualifying entrants; continuation has academic conditions.",
+      "duration": "Two-year PGDM in Securities Markets",
+      "eligibility": "Admission and scholarship selection are separate. Published merit criteria combine first-class graduation with specified entrance-test percentiles; second-year continuation requires academic performance.",
+      "description": "A finance-specific study-and-funding route worth tracking for the next announced admission cycle.",
+      "applicationSteps": "Monitor NISM's official programme page for the next dated admission notice. Review total course costs and each scholarship's conditions before applying.",
+      "sourceUrl": "https://www.nism.ac.in/revamp-nism/long-term-programs/post-graduate-diploma-in-management-securities-markets-pgdm-sm/",
+      "applyUrl": "https://www.nism.ac.in/revamp-nism/long-term-programs/post-graduate-diploma-in-management-securities-markets-pgdm-sm/",
+      "evidence": "The currently published 2026–28 application deadline was 15 April 2026. The page describes scholarship arrangements but does not establish a new open intake.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-02",
+      "caveat": "2026–28 admissions are closed; no 2027–29 window was verified. Tuition aid does not automatically cover every fee, accommodation or living cost."
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "RBI Scholarship Scheme for Faculty Members 2026",
+      "sourceUrl": "https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=4988",
+      "reason": "The published 2026 call closed on 15 May 2026. Not presented as a live application."
+    },
+    {
+      "title": "CFA Access Scholarship — February and May 2027 exams",
+      "sourceUrl": "https://www.cfainstitute.org/programs/cfa-program/scholarships/access",
+      "reason": "These application windows closed on 25 May and 1 September 2026; only the next August-exam window is included."
+    },
+    {
+      "title": "SSEI CFA Scholarship 2026 assessment",
+      "sourceUrl": "https://scholarship.ssei.co.in/",
+      "reason": "Published assessment dates were 11–12 October 2026; no later open intake verified."
+    },
+    {
+      "title": "Generic bank-sponsored school and undergraduate scholarships",
+      "sourceUrl": null,
+      "reason": "Not included merely because a financial institution sponsors them; this research set focuses on finance qualifications and finance research."
+    }
+  ]
+}
