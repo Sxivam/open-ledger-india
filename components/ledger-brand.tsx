@@ -267,7 +267,7 @@ export function LedgerFooter() {
               <span>
                 <strong>Shivam Meet</strong>
                 <small>
-                  131K+ on Instagram · Rank 1 on Unstop · 25+ case comp wins
+                  134K+ on Instagram · Rank 1 on Unstop · 25+ case comp wins
                 </small>
               </span>
             </div>
