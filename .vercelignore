@@ -1,0 +1,5 @@
+.admin-key.local
+.env*
+.claude
+_backup
+.DS_Store

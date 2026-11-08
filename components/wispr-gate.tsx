@@ -18,7 +18,7 @@ declare global {
   }
 }
 
-const KIT_VERSION = '5';
+const KIT_VERSION = '6';
 let mounts = 0; // the newest mount owns the gate
 
 // page="guide": no lock there; Wispr claim links send visitors who have not signed up to the home page gate.
