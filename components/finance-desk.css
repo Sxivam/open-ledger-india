@@ -1172,6 +1172,7 @@
   }
   .desk-results-toolbar {
     align-items: flex-start;
+    flex-wrap: wrap;
     font-size: 10px;
     gap: 7px;
   }
@@ -1179,8 +1180,9 @@
     line-height: 1.9;
   }
   .desk-results-toolbar > div {
-    flex-shrink: 0;
-    gap: 9px;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 100%;
   }
   .desk-share-label {
     display: none;

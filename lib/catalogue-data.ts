@@ -2,6 +2,10 @@ import { research, type Opportunity } from './research-data';
 import scholarships from './deep-scholarships.json';
 import programmes from './deep-programmes.json';
 import openings from './deep-openings.json';
+import publicRefresh from './refresh-nov9-public.json';
+import privateRefresh from './refresh-nov9-private.json';
+import bankingRefresh from './refresh-nov9-banking.json';
+import corporateRefresh from './refresh-nov9-corporate.json';
 import {
   opportunityKinds,
   type FinanceRoute,
@@ -17,7 +21,7 @@ const candidateMap: Record<string, string> = {
   Returner: 'Returner',
   'Not stated': 'Eligibility not stated',
 };
-export const catalogueCheckedAt = '2026-11-02';
+export const catalogueCheckedAt = '2026-11-09';
 function kindFor(item: Opportunity): OpportunityKind {
   if (/returnship/i.test(item.type)) return 'Returnship';
   if (/apprentic/i.test(item.type)) return 'Apprenticeship';
@@ -78,13 +82,18 @@ const originalRoutes: FinanceRoute[] = research.opportunities.map((item) => ({
   caveat: item.caveat,
   sourceType: item.sourceType,
   deadlineNote: item.deadlineNote,
-  firstVerifiedAt: item.firstVerifiedAt,
+  firstVerifiedAt: item.firstVerifiedAt ?? research.verifiedAt,
   reopened: research.refresh.reopenedIds.includes(item.id),
 }));
 
 export const deepBatches = [scholarships, programmes, openings];
 const researchedRoutes = deepBatches
-  .flatMap((batch) => batch.records as unknown as FinanceRoute[])
+  .flatMap((batch) =>
+    (batch.records as unknown as FinanceRoute[]).map((item) => ({
+      ...item,
+      firstVerifiedAt: item.firstVerifiedAt ?? batch.checkedAt,
+    })),
+  )
   .map((item) => ({
     ...item,
     format: [
@@ -101,14 +110,37 @@ const researchedRoutes = deepBatches
           : item.kind === 'Scholarship'
             ? 'Scholarship application'
             : item.format,
-    firstVerifiedAt: catalogueCheckedAt,
   }));
-export const catalogue: FinanceRoute[] = [
+export const preRefreshCatalogue: FinanceRoute[] = [
   ...originalRoutes.map((item) => ({
     ...item,
     format: item.format === 'Remote' ? 'Remote / online' : item.format,
   })),
   ...researchedRoutes,
+];
+export const refreshBatches = [
+  publicRefresh,
+  privateRefresh,
+  bankingRefresh,
+  corporateRefresh,
+];
+const removedIds = new Set(
+  refreshBatches.flatMap((batch) => batch.removals.map((item) => item.id)),
+);
+const updates: Record<string, Partial<FinanceRoute>> = Object.assign(
+  {},
+  ...refreshBatches.map((batch) => batch.updates),
+);
+export const catalogue: FinanceRoute[] = [
+  ...preRefreshCatalogue
+    .filter((item) => !removedIds.has(item.id))
+    .map((item) => ({ ...item, ...updates[item.id] })),
+  ...refreshBatches.flatMap((batch) =>
+    (batch.records as unknown as FinanceRoute[]).map((item) => ({
+      ...item,
+      firstVerifiedAt: batch.checkedAt,
+    })),
+  ),
 ];
 const ids = new Set<string>();
 for (const item of catalogue) {

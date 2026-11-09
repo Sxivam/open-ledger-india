@@ -1,0 +1,580 @@
+{
+  "checkedAt": "2026-11-09",
+  "auditedIds": [
+    "VC-07",
+    "VC-08",
+    "IB-05",
+    "PM-04",
+    "PM-05",
+    "PM-07",
+    "ER-02",
+    "PM-12",
+    "PM-14",
+    "PM-15",
+    "PM-18",
+    "PM-21",
+    "VL-03",
+    "VL-04",
+    "PM-24",
+    "PM-25",
+    "PM-26",
+    "PM-27",
+    "PM-28",
+    "PM-29",
+    "PM-30",
+    "PM-31",
+    "PM-32",
+    "PM-33",
+    "CF-20",
+    "DX-02"
+  ],
+  "updates": {
+    "VC-07": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct SucSEED LinkedIn page returned the Hyderabad fellowship, 12-month term, published compensation and active Apply control on 9 Nov."
+    },
+    "VC-08": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct SucSEED LinkedIn page returned the Hyderabad GSM fellowship, full-year commitment and Apply control on 9 Nov."
+    },
+    "IB-05": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official employer role detail and application route remained available on 9 Nov 2026."
+    },
+    "PM-04": {
+      "checkedAt": "2026-11-09",
+      "evidence": "PedalStart’s current official careers page still advertises Analyst—Startup Investments in Gurugram, 2–3 years, six office days and ₹10–12 LPA, with Apply Now."
+    },
+    "PM-05": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-12": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-14": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-18": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-21": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Ares Workday’s current R8502 posting returns the Mumbai credit-secondaries role and explicitly accepts applications until the search ends.",
+      "sourceDate": "2026-09-16",
+      "sourceDateText": "Official Workday posting date: 16 September 2026. Older requisition rechecked, not a new role."
+    },
+    "VL-03": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official employer role detail and application route remained available on 9 Nov 2026."
+    },
+    "VL-04": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official employer role detail and application route remained available on 9 Nov 2026."
+    },
+    "PM-24": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Udyat’s direct LinkedIn detail remains accessible on 9 Nov, explicitly inviting CVs at naman@udyatventures.com and describing a paid Noida investment internship."
+    },
+    "PM-25": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-26": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-27": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-28": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The current partner-company detail names StepUp, the company-domain application email, required investment note and 30 November 2026 deadline."
+    },
+    "PM-29": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official employer role detail and application route remained available on 9 Nov 2026."
+    },
+    "PM-30": {
+      "checkedAt": "2026-11-09",
+      "evidence": "BlackRock Workday’s current R265369 posting confirms Mumbai, the valuations mandate and 31 December end date.",
+      "sourceDate": "2026-10-07",
+      "sourceDateText": "Official Workday posting date: 7 October 2026; retained older requisition."
+    },
+    "PM-31": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "PM-33": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct employer LinkedIn detail checked on 9 Nov: the India role and Apply control remain available; no closure notice was returned."
+    },
+    "CF-20": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Keshav Agarwal’s attributable Daylight post remains accessible on 9 Nov, inviting emailed CVs for two Mumbai IB internships; no closure notice appears in the retrieved post."
+    },
+    "DX-02": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Alehar’s official Bengaluru internship page remains accessible with the ₹30,000 monthly stipend, 2–4-month duration and company-domain CV address."
+    }
+  },
+  "removals": [
+    {
+      "id": "PM-07",
+      "reason": "The direct LinkedIn URL now redirects to a generic job-search page with expired_jd_redirect; older indexed Apply content is stale.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/analyst-investments-at-bajaj-group-4461105752"
+    },
+    {
+      "id": "ER-02",
+      "reason": "The direct LinkedIn URL now redirects to a generic job-search page with expired_jd_redirect; older indexed Apply content is stale.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/research-intern-at-incred-money-4464853641"
+    },
+    {
+      "id": "PM-15",
+      "reason": "The direct LinkedIn URL now redirects to a generic job-search page with expired_jd_redirect; older indexed Apply content is stale.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/private-credit-research-analyst-at-crisil-4469673288"
+    },
+    {
+      "id": "PM-32",
+      "reason": "Official BlackRock role URL returns 404, and the employer Workday search returns zero results for requisition R266880 on 9 November.",
+      "sourceUrl": "https://careers.blackrock.com/en/job/mumbai/analyst-associate-private-high-grade-credit-middle-office-operations/45831/101987592544"
+    }
+  ],
+  "records": [
+    {
+      "id": "N9-VC-01",
+      "org": "ACHAL Family Office",
+      "title": "Equity Research Intern",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Hybrid",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "Full time; term not stated",
+      "eligibility": "Pursuing or completed finance, economics, accounting, business or related degree; financial-statement analysis and basic modelling. CFA Level I candidacy is an advantage, not mandatory.",
+      "description": "Research listed companies and sectors, update valuation models and write investment notes for a family-office portfolio.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/equity-research-intern-at-achal-family-office-4483419710",
+      "applyUrl": "https://in.linkedin.com/jobs/view/equity-research-intern-at-achal-family-office-4483419710",
+      "evidence": "Employer LinkedIn detail and active Apply control checked on 9 November 2026.",
+      "sourceDate": "2026-10-30",
+      "checkedAt": "2026-11-09",
+      "caveat": "Stipend and duration are undisclosed. Hybrid flexibility depends on business needs; prior research experience is preferred rather than required.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-10-30",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-02",
+      "org": "Kodo",
+      "title": "Finance / Investment Analyst Intern",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai Metropolitan Region",
+      "format": "Not stated",
+      "careerTracks": [
+        "Investment research",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Paid; amount not disclosed",
+      "duration": "Not stated",
+      "eligibility": "Master’s in economics, econometrics, statistics, mathematics, financial engineering, data science or related quantitative field; Python, SQL and forecasting skills. CFA is advantageous.",
+      "description": "Build cash-flow and treasury forecasts, financial risk models and investment-recommendation tools using economic and market data.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/finance-investment-analyst-intern-at-kodo-4486371999",
+      "applyUrl": "https://in.linkedin.com/jobs/view/finance-investment-analyst-intern-at-kodo-4486371999",
+      "evidence": "Employer LinkedIn detail and active Apply control checked on 9 November 2026.",
+      "sourceDate": "2026-11-04",
+      "checkedAt": "2026-11-09",
+      "caveat": "The quantitative master’s requirement makes this unsuitable as a general undergraduate finance internship. Work arrangement and duration are not published.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-11-04",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-03",
+      "org": "UBS",
+      "title": "CA Global Research Internship — Mumbai",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Not stated",
+      "careerTracks": [
+        "Investment research",
+        "Investment banking"
+      ],
+      "audience": [
+        "Student",
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "12 months",
+      "eligibility": "Pursuing chartered accountancy; Excel, financial modelling, clear writing and interest in capital markets.",
+      "description": "Support sell-side equity research covering Indian midcaps, pharmaceuticals and healthcare through company analysis and financial models.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/chartered-accountant-ca-global-research-internship-mumbai-at-ubs-4488140360",
+      "applyUrl": "https://in.linkedin.com/jobs/view/chartered-accountant-ca-global-research-internship-mumbai-at-ubs-4488140360",
+      "evidence": "UBS’s employer LinkedIn listing has Apply and the Mumbai 12-month role; requisition 345958BR also has a full official job description.",
+      "sourceDate": "2026-11-06",
+      "checkedAt": "2026-11-09",
+      "caveat": "Pay is not published. Confirm articleship/industrial-training recognition separately; the role is described as an off-cycle internship. LinkedIn’s Volunteer tag conflicts with the internship description.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-11-06",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-04",
+      "org": "Nomura",
+      "title": "CA Industrial Trainee — AeJ Securitized Products & Private Credit",
+      "kind": "Industrial training",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Not stated",
+      "careerTracks": [
+        "VC & private capital",
+        "Investment banking"
+      ],
+      "audience": [
+        "CA / CMA / CS",
+        "Student"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "12 months",
+      "eligibility": "CA Inter cleared, completed or pursuing BCom, eligible for 12 months of industrial training under ICAI rules and available to join immediately.",
+      "description": "Support private-credit due diligence, cash-flow and debt models, investment memos, covenant monitoring and transaction execution for Asia ex-Japan financing.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/global-markets-ca-industrial-trainee-%E2%80%93-aej-securitized-products-private-credit-at-nomura-4488838510",
+      "applyUrl": "https://in.linkedin.com/jobs/view/global-markets-ca-industrial-trainee-%E2%80%93-aej-securitized-products-private-credit-at-nomura-4488838510",
+      "evidence": "Direct employer LinkedIn page returned active Apply and published-date metadata of 9 November; Mumbai and 12-month industrial-training requirements are explicit.",
+      "sourceDate": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "caveat": "Eligibility is restricted to the stated CA/BCom industrial-training profile. Stipend and application deadline are undisclosed.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-11-09",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-05",
+      "org": "The Climate Guys / Felix Advisory",
+      "title": "CA Articleship — Investment Banking Analyst Accelerator",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Vikhroli West, Mumbai",
+      "format": "In person",
+      "careerTracks": [
+        "Investment banking",
+        "VC & private capital"
+      ],
+      "audience": [
+        "Student",
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": "2026-11-15",
+      "benefit": "₹12,000/month in year 1; ₹16,000/month in year 2. Variable incentives are conditional.",
+      "duration": "2 years; Monday–Friday, 11am–8pm",
+      "eligibility": "Both CA Inter groups cleared and pursuing CA Final; ready for a two-year articleship. Qualified CAs are excluded.",
+      "description": "Work on fundraising, M&A, valuation, diligence and sector research with structured reviews and transaction training.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/ca-articleship-investment-banking-tcg-analyst-accelerator-program-at-the-climate-guys-4481889984",
+      "applyUrl": "https://in.linkedin.com/jobs/view/ca-articleship-investment-banking-tcg-analyst-accelerator-program-at-the-climate-guys-4481889984",
+      "evidence": "Employer listing has Apply and a 15 November deadline; the company’s current final-call post separately says applications remain open.",
+      "sourceDate": "2026-10-27",
+      "checkedAt": "2026-11-09",
+      "caveat": "This is a CA articleship, not a short internship. The advert mentions both mid-articleship students and a fresh two-year commitment; transfer eligibility must be clarified.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-10-27",
+      "deadlineNote": "Employer states 2026-11-15; no cutoff time published.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-06",
+      "org": "Cushman & Wakefield",
+      "title": "EIC Apprentice — Valuations & Advisory — Mumbai",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "In person",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "6–12 months; full time",
+      "eligibility": "Undergraduate background in finance, engineering, marketing or data management; intermediate-to-advanced Excel and communication skills.",
+      "description": "Support real-estate valuation assignments, field surveys and research into asset classes, infrastructure and real-estate AIFs.",
+      "applicationSteps": "Apply through the official Cushman & Wakefield Workday requisition R340091.",
+      "sourceUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Mumbai-India/EIC-Apprentice---Valuations--Mumbai-_R340091",
+      "applyUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Mumbai-India/EIC-Apprentice---Valuations--Mumbai-_R340091",
+      "evidence": "The employer’s current Workday record returns canApply=true, the India location and full valuation-apprenticeship description.",
+      "sourceDate": "2026-10-13",
+      "checkedAt": "2026-11-09",
+      "caveat": "Stipend and conversion prospects are not stated. This is real-estate valuation and market research, with fieldwork; it is not an investment-decision seat.",
+      "sourceType": "Official employer Workday requisition",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-10-13",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-07",
+      "org": "Cushman & Wakefield",
+      "title": "EIC Apprentice — Valuations & Advisory — Gurugram",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Gurugram",
+      "format": "In person",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "6–12 months; full time",
+      "eligibility": "Undergraduate background in finance, engineering, marketing or data management; intermediate-to-advanced Excel and communication skills.",
+      "description": "Support real-estate valuation assignments, field surveys and research into asset classes, infrastructure and real-estate AIFs.",
+      "applicationSteps": "Apply through the official Cushman & Wakefield Workday requisition R327452.",
+      "sourceUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Gurgaon-India/EIC-Apprentice---Valuations-and-Advisory-Gurugram_R327452",
+      "applyUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Gurgaon-India/EIC-Apprentice---Valuations-and-Advisory-Gurugram_R327452",
+      "evidence": "The employer’s current Workday record returns canApply=true, the India location and full valuation-apprenticeship description.",
+      "sourceDate": "2026-10-23",
+      "checkedAt": "2026-11-09",
+      "caveat": "Stipend and conversion prospects are not stated. This is real-estate valuation and market research, with fieldwork; it is not an investment-decision seat.",
+      "sourceType": "Official employer Workday requisition",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-10-23",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-08",
+      "org": "Cushman & Wakefield",
+      "title": "Intern — Real Estate Strategic Advisory",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai; description also mentions Ahmedabad",
+      "format": "In person",
+      "careerTracks": [
+        "Investment research",
+        "Asset management"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "3–6 months",
+      "eligibility": "Pursuing finance, economics, real estate, urban planning, business administration or related degree; financial analysis, valuation, Excel and PowerPoint.",
+      "description": "Research demand, pricing and locations; support financial-feasibility studies, development strategies and client reports.",
+      "applicationSteps": "Apply through official Workday requisition R338331.",
+      "sourceUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Mumbai-India/Intern---Real-Estate-Advisory--Strategic-Advisory-_R338331",
+      "applyUrl": "https://cw.wd1.myworkdayjobs.com/External/job/Mumbai-India/Intern---Real-Estate-Advisory--Strategic-Advisory-_R338331",
+      "evidence": "Current official Workday search returns R338331 in Mumbai and its detail returns canApply=true.",
+      "sourceDate": "2026-09-28",
+      "checkedAt": "2026-11-09",
+      "caveat": "Workday lists Mumbai; the description also mentions Ahmedabad. Confirm placement during hiring. Stipend is not disclosed.",
+      "sourceType": "Official employer Workday requisition",
+      "sourceDateText": "Published date supplied in the employer listing’s structured metadata: 2026-09-28",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-09",
+      "org": "Aarii Ventures / Aurrevia",
+      "title": "Investment Systems & Quant Research Intern",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Lower Parel, Mumbai",
+      "format": "In person",
+      "careerTracks": [
+        "Investment research",
+        "Banking & markets"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "₹10,000–20,000/month; employer-provided range",
+      "duration": "3–6 months",
+      "eligibility": "Student or recent graduate from a top engineering/technology institute; Python, APIs, data analysis and interest in equity markets. Prior quant projects are advantageous.",
+      "description": "Build equity-screening tools, backtests and portfolio-risk dashboards with Aurrevia’s co-founder and CIO.",
+      "applicationSteps": "Email a CV and 2–3 lines about an investment/trading/quant project to hr@aariiventures.com; include a project or GitHub link if available.",
+      "sourceUrl": "https://www.glassdoor.co.in/job-listing/investment-systems-quant-research-intern-aarii-ventures-JV_KO0,40_KE41,55.htm?jl=1010278893871",
+      "applyUrl": "mailto:hr@aariiventures.com",
+      "evidence": "Glassdoor’s current full employer advertisement provides the Mumbai location, stipend, duration and company-domain application email.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "This is investment technology and research, with an explicitly selective institute preference. No deadline is given; confirm the joining slot and stipend before accepting.",
+      "sourceType": "Employer advertisement on Glassdoor",
+      "sourceDateText": "No exact publication date confirmed.",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    },
+    {
+      "id": "N9-VC-10",
+      "org": "Neve Jewels Group — India",
+      "title": "Legal Intern — Corporate & Ventures",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Not stated",
+      "careerTracks": [
+        "VC & private capital",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Not stated",
+      "duration": "Not stated",
+      "eligibility": "Final-year law students, recent law graduates or candidates with up to 1–2 years’ experience. Corporate or investment-law exposure helps but is not essential.",
+      "description": "Support investment documentation, shareholder agreements, legal diligence and company structures with the Chairman’s Office and New Ventures team.",
+      "applicationSteps": "Use the Apply control on the employer’s LinkedIn listing; sign-in may be required.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/legal-intern-corporate-ventures-at-neve-jewels-group-india-4478391367",
+      "applyUrl": "https://in.linkedin.com/jobs/view/legal-intern-corporate-ventures-at-neve-jewels-group-india-4478391367",
+      "evidence": "Employer LinkedIn detail and active Apply control checked on 9 November 2026.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "An investment-related legal route rather than an investing analyst role. Stipend, term and work arrangement are not published.",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "No exact publication date confirmed.",
+      "deadlineNote": "No stated application deadline.",
+      "firstVerifiedAt": "2026-11-09"
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "Light Hill Capital — Investment Banking Intern",
+      "url": "https://in.linkedin.com/jobs/view/investment-banking-intern-at-light-hill-capital-4487398284",
+      "reason": "Closed",
+      "detail": "Fresh direct-page HTML explicitly says No longer accepting applications, despite the search cache showing Apply."
+    },
+    {
+      "title": "MAVREK — Commercial Real Estate Investment Analyst Intern",
+      "url": "https://in.linkedin.com/jobs/view/commercial-real-estate-investment-analyst-intern-at-mavrek%E2%84%A2-4486713752",
+      "reason": "Application availability unconfirmed",
+      "detail": "Full employer description remains, but no active Apply control or explicit application instructions were returned. Not labelled closed; withheld pending an actionable route."
+    },
+    {
+      "title": "SilverX Fund — Investment Intern",
+      "url": "https://in.linkedin.com/jobs/view/intern-at-silverx-fund-4478419109",
+      "reason": "Application availability unconfirmed",
+      "detail": "Current public detail contains no Apply control or explicit application instructions; a job-poster messaging widget alone does not verify an open intake."
+    },
+    {
+      "title": "Valemont Capital — Equity Research Internship",
+      "url": "https://in.linkedin.com/jobs/view/equity-research-internship-at-valemont-capital-4465550892",
+      "reason": "Application availability unconfirmed",
+      "detail": "Description is accessible but no active application control or alternate application route was verified."
+    },
+    {
+      "title": "Nyasa Capital — Investment Banking Intern",
+      "url": "https://in.linkedin.com/jobs/view/investment-banking-intern-at-nyasa-capital-4441073035",
+      "reason": "Application availability unconfirmed",
+      "detail": "Public listing has no Apply control; no replacement current intake was verified."
+    },
+    {
+      "title": "OHO Wealth Studio — Investment Intern",
+      "url": "https://in.linkedin.com/jobs/view/investment-intern-at-oho%C2%AE-wealth-studio-4464269520",
+      "reason": "Expired listing",
+      "detail": "Fresh direct URL redirects with expired_jd_redirect."
+    },
+    {
+      "title": "Taurus Mutual Fund — Equity Research Intern",
+      "url": "https://in.linkedin.com/jobs/view/equity-research-intern-at-taurus-mutual-fund-4466057866",
+      "reason": "Expired listing",
+      "detail": "Direct role URL redirects to generic equity-research jobs; stale related-job cards are insufficient."
+    },
+    {
+      "title": "YourNest — Intern Investment Management",
+      "url": "https://in.linkedin.com/jobs/view/intern-investment-management-at-yournest-venture-capital-4486970913",
+      "reason": "Wrong functional scope",
+      "detail": "The advertised work is full-stack portal development rather than a finance/investment internship, despite its title."
+    },
+    {
+      "title": "Keynote — Equity Research Intern",
+      "url": "https://www.linkedin.com/posts/keynote-financial-services-limited_hiring-equityresearch-internship-activity-7434879694124244992-kh6x",
+      "reason": "Closed by employer",
+      "detail": "The company commented that it is no longer accepting applications."
+    },
+    {
+      "title": "Alkemi — Investment Team Intern",
+      "url": "https://www.linkedin.com/posts/alkemi-growth-capital_internship-hiring-venturecapital-activity-7502996131514241024-4X5H",
+      "reason": "Past deadline",
+      "detail": "Employer application deadline was 15 September 2026."
+    },
+    {
+      "title": "EQT — Deal Team Analyst 2026",
+      "url": "https://in.linkedin.com/jobs/view/deal-team-analyst-2026-at-eqt-group-4388907378",
+      "reason": "Closed",
+      "detail": "Employer LinkedIn page explicitly says No longer accepting applications."
+    },
+    {
+      "title": "Gruhas Collective Consumer Fund — VC Intern",
+      "url": "https://in.linkedin.com/company/gruhas-collective-consumer-fund",
+      "reason": "Closed by employer",
+      "detail": "Company update is edited to Applications Closed: enough applications received."
+    },
+    {
+      "title": "Precursor — AI Investment Operations Internship",
+      "url": "https://precursorvc.com/internship-aiinvestmentops/",
+      "reason": "Outside India scope",
+      "detail": "Requires US university enrolment and US work authorization; not an India opportunity."
+    },
+    {
+      "title": "Rebalance — Investment Analyst Fellowship / Investment & Legal Internship",
+      "url": "https://www.linkedin.com/posts/therebalance_hiring-activity-7495839240182829056-RKJl",
+      "reason": "Current intake unconfirmed",
+      "detail": "September–December intake advertised, but linked form could not be read and current late-entry availability was not verified. Not treated as closed."
+    },
+    {
+      "title": "3one4 Capital — Platform Programs & Strategic Alliances Intern",
+      "url": "https://jobs.3one4capital.com/companies/3one4-capital-2/jobs/93878274-intern-platform-programs-strategic-alliances",
+      "reason": "Current application unconfirmed",
+      "detail": "Official board listing discovered but repeated detail fetches timed out/returned access restrictions. Access failures are not evidence of closure."
+    }
+  ]
+}

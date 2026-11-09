@@ -1,0 +1,514 @@
+{
+  "checkedAt": "2026-11-09",
+  "auditedIds": [
+    "CF-01",
+    "CF-03",
+    "CF-09",
+    "CF-11",
+    "CF-12",
+    "CF-15",
+    "CF-17",
+    "CF-18",
+    "CF-19",
+    "BK-15",
+    "ongc-finance-accounts-apprentices-2026",
+    "illumina-finance-apprentice-43668",
+    "DX-03",
+    "DX-04",
+    "DX-05",
+    "DX-06",
+    "DX-08",
+    "DX-10",
+    "DX-11",
+    "DX-12",
+    "DX-13",
+    "DX-14"
+  ],
+  "updates": {
+    "CF-01": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Crisil’s employer-attributed LinkedIn listing still displays Apply on 9 Nov 2026, for the Mumbai financial-services consulting internship.",
+      "audience": [
+        "Student",
+        "CA / CMA / CS"
+      ]
+    },
+    "CF-03": {
+      "checkedAt": "2026-11-02",
+      "status": "watchlist",
+      "evidence": "Last successful application-page verification: 2 Nov 2026. On 9 Nov the direct Amazon requisition returned 404 although Amazon’s indexed search results still show 10498382. Current application availability could not be confirmed.",
+      "caveat": "The body mentions a 12-month remaining-articleship scenario, while availability is 12–18 months. Confirm ICAI eligibility and the team’s actual term before applying; do not rely on the older 18-month-completed wording. Application availability needs reconfirmation; the search index alone is not proof that applications remain open."
+    },
+    "CF-09": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked on 9 Nov 2026: the employer-attributed role page retains the India job description and application route."
+    },
+    "CF-12": {
+      "checkedAt": "2026-11-02",
+      "status": "watchlist",
+      "evidence": "Last successful application verification was 2 Nov. On 9 Nov the Fractal description remains published but a fresh direct request has no Apply control; current applications could not be confirmed.",
+      "caveat": "The description asks for two completed years of articleship and prior Big Four/mid-sized CA-firm work. No stipend, training term or closing date is published; do not treat the old relative posting age as a new November publication. Kept on watchlist until an active application route is verified."
+    },
+    "CF-15": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked on 9 Nov 2026: the employer-attributed role page retains the India job description and application route."
+    },
+    "CF-17": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked on 9 Nov 2026: the employer-attributed role page retains the India job description and application route."
+    },
+    "CF-18": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked on 9 Nov 2026: the employer-attributed role page retains the India job description and application route."
+    },
+    "CF-19": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked on 9 Nov 2026: the employer-attributed role page retains the India job description and application route."
+    },
+    "BK-15": {
+      "checkedAt": "2026-11-09",
+      "evidence": "HSBC’s official ATS returned requisition 65334 and full Mumbai finance/sustainability apprenticeship description on 9 Nov. The 16 Nov application deadline was recorded from the rendered portal on 2 Nov; generic structured-data expiry is not treated as a new deadline.",
+      "caveat": "Requisition 65339 has materially identical scope and is consolidated here. Despite the Assistant Manager title, the employer expressly describes a one-year apprenticeship; compensation is unstated. Confirm attendance arrangements: the current ATS metadata labels the role on-site whereas the earlier rendered portal showed hybrid.",
+      "format": "Not stated"
+    },
+    "ongc-finance-accounts-apprentices-2026": {
+      "checkedAt": "2026-11-09",
+      "evidence": "ONGC’s official 2026–27 apprenticeship PDF re-read on 9 Nov confirms applications 29 Oct–20 Nov and the Finance and Accounts Executive BCom route. The 3,047 total covers all trades, not finance seats alone."
+    },
+    "illumina-finance-apprentice-43668": {
+      "checkedAt": "2026-11-02",
+      "status": "watchlist",
+      "evidence": "Last verified 2 Nov. On 9 Nov the employer LinkedIn description remains visible but no Apply control is exposed; Workday returned a script-only shell and the job-data request was blocked. Closure is not proven, but current applications could not be confirmed.",
+      "caveat": "No published cutoff or stipend amount. Workday is script-rendered. Illumina prohibits generative AI in applications/interviews; no visa sponsorship. Application status needs reconfirmation; kept outside the open list rather than marked closed."
+    },
+    "DX-03": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct HTTP verification of Aleph’s official Lever page on 9 Nov 2026 returned the Mumbai hybrid finance-intern description and an active application link."
+    },
+    "DX-04": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct HTTP verification of Sprinto’s official Lever page on 9 Nov 2026 returned the remote-India finance-intern description and an active application link."
+    },
+    "DX-06": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Sigmoid’s official Greenhouse role and application form remained available on 9 Nov 2026 for the Bengaluru finance internship."
+    },
+    "DX-08": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The employer-attributed UBS LinkedIn posting 4482495806 displays Apply and the matching Hyderabad IB Product Control description on 9 Nov. The legacy UBS URL did not render the job, so the working employer listing is used.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/ca-intern-at-ubs-4482495806",
+      "applyUrl": "https://in.linkedin.com/jobs/view/ca-intern-at-ubs-4482495806",
+      "sourceType": "Employer-attributed LinkedIn job",
+      "applicationSteps": "Use Apply on UBS’s LinkedIn listing for the Hyderabad CA Intern / IB Product Control role; confirm the requisition on the employer destination."
+    },
+    "DX-10": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rubrik’s official accounting trainee role remains published with Bengaluru location and CA industrial-training eligibility on 9 Nov 2026."
+    },
+    "DX-11": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct HTTP verification of Inkle’s official careers page on 9 Nov 2026 shows Apply for this job, Bengaluru, mandatory CPA/EA and the disclosed annual salary range."
+    },
+    "DX-12": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Inkle’s official US Bookkeeper Intern page still offers Apply on 9 Nov 2026 and states the four-month Bengaluru internship and required software skills."
+    },
+    "DX-13": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Direct HTTP verification of Inkle’s official careers page on 9 Nov 2026 shows the Compliance Associate Intern application and ₹25,000 monthly stipend."
+    },
+    "DX-14": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rubrik’s official payroll trainee page remains published on 9 Nov 2026; its current education requirement explicitly states CA industrial-training eligibility.",
+      "audience": [
+        "CA / CMA / CS"
+      ],
+      "eligibility": "CA students eligible for industrial training; Excel, communication and accuracy required. Prior payroll knowledge is preferred.",
+      "caveat": "The current education requirement specifies CA industrial-training eligibility. Confirm recognised training arrangements and tenure with Rubrik; do not assume a general finance degree qualifies."
+    }
+  },
+  "removals": [
+    {
+      "id": "DX-05",
+      "reason": "Official Deloitte requisition now explicitly says the position has been filled.",
+      "sourceUrl": "https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Income-Tax-Laws-Bengaluru-Business-Tax/61205644/"
+    },
+    {
+      "id": "CF-11",
+      "reason": "Fresh direct request on 9 Nov redirects to LinkedIn expired_jd_redirect, confirming the specific CAPGRID listing has expired.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/ca-industrial-trainee-ca-intermediate-12-18-months-of-articleship-left-at-capgrid-4475733015"
+    }
+  ],
+  "records": [
+    {
+      "id": "N9-CF-01",
+      "org": "ONGC",
+      "title": "50 CA / CMA Industrial Trainees — 2026 intake",
+      "kind": "Industrial training",
+      "country": "India",
+      "location": "Delhi, Mumbai, Chennai, Vadodara and Kolkata",
+      "format": "In person",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": "2026-11-15",
+      "benefit": "₹22,000–₹27,000/month, depending on location and training year.",
+      "duration": "CA: 9–12 months; CMA: 15–18 months.",
+      "eligibility": "CA/CMA Intermediate passed; at least 60% overall in Class 12; born on or after 1 January 2000. First-attempt candidates and ONGC wards receive preference.",
+      "description": "25 CA and 25 CMA training places across five Indian cities. City and reservation allocations are specified in the notice.",
+      "applicationSteps": "Use the Google Form linked in ONGC’s notice; upload the listed academic, identity and applicable category documents.",
+      "sourceUrl": "https://ongcindia.com/documents/77751/2660534/Advertisement26-CACMA_IndustrialTrainee.pdf/43144617-01e6-d2ff-d5ce-6c88deffb436",
+      "applyUrl": "https://forms.gle/zpmfeDo9E3MGn2E19",
+      "evidence": "Official notice dated 23 Oct was downloaded and read on 9 Nov; it states 15 Nov 2026 as the application deadline.",
+      "sourceDate": "2026-10-23",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "Arrange accommodation and travel yourself. This is separate from ONGC’s graduate-apprentice recruitment; training does not promise employment.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "Official notice: 15 November 2026; no cutoff time stated.",
+      "sourceDateText": "Official notice dated 23 October 2026"
+    },
+    {
+      "id": "N9-CF-02",
+      "org": "Henkel",
+      "title": "Industrial Trainee — Finance (26102650)",
+      "kind": "Industrial training",
+      "country": "India",
+      "location": "Navi Mumbai, Maharashtra",
+      "format": "Not stated",
+      "careerTracks": [
+        "Corporate finance",
+        "Accounting & tax"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "CA / CMA / CS"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "benefit": "Compensation not disclosed.",
+      "duration": "Full-time, fixed term; length not stated.",
+      "eligibility": "Communication, analytical thinking, data analysis/automation and Microsoft Office/SAP skills. The listing does not specify a degree, CA stage or marks cutoff.",
+      "description": "Support finance, order-to-cash, treasury and tax teams with monthly reporting, business-data analysis and process improvements.",
+      "applicationSteps": "Select Apply for this role on Henkel’s page for job 26102650. Email applications are not accepted.",
+      "sourceUrl": "https://www.henkel.com/careers/find-your-job-apply/2259010-2259010",
+      "applyUrl": "https://henkel.csod.com/ux/ats/careersite/1/requisition/89522/application?c=henkel",
+      "evidence": "Official Henkel page and application route inspected on 9 Nov; employer explicitly accepts applications while the vacancy remains listed.",
+      "sourceDate": "2026-10-29",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "Industrial Trainee is the employer title. Confirm academic eligibility and any ICAI recognition before treating this as CA training.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "Employer accepts applications while the vacancy is listed.",
+      "sourceDateText": "Employer listing publication metadata (India date)."
+    },
+    {
+      "id": "N9-CF-03",
+      "org": "Henkel",
+      "title": "CA Industrial Trainee — Tax (26092626)",
+      "kind": "Industrial training",
+      "country": "India",
+      "location": "Navi Mumbai, Maharashtra",
+      "format": "Not stated",
+      "careerTracks": [
+        "Accounting & tax"
+      ],
+      "audience": [
+        "CA / CMA / CS"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "benefit": "Compensation not disclosed.",
+      "duration": "Full-time, fixed term; length not stated.",
+      "eligibility": "CA Intermediate with tax-compliance knowledge and communication skills. No marks or attempt cutoff is specified.",
+      "description": "Support GST and income-tax filings, TDS reconciliation, tax audits, invoice checks and compliance documentation.",
+      "applicationSteps": "Select Apply for this role for Henkel job 26092626; do not email a CV.",
+      "sourceUrl": "https://www.henkel.com/careers/find-your-job-apply/2131046-2131046",
+      "applyUrl": "https://henkel.csod.com/ux/ats/careersite/1/requisition/81109/application?c=henkel",
+      "evidence": "Official Henkel vacancy is published with its application route on 9 Nov; employer says applications are accepted while listed.",
+      "sourceDate": "2026-07-24",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "Confirm remaining articleship requirements, training recognition and duration directly with the employer.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "Employer accepts applications while the vacancy is listed.",
+      "sourceDateText": "Employer listing publication metadata (India date)."
+    },
+    {
+      "id": "N9-CF-04",
+      "org": "Stable Money",
+      "title": "CA Industrial Trainee — Finance",
+      "kind": "Industrial training",
+      "country": "India",
+      "location": "Bengaluru, Karnataka",
+      "format": "In person",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Stipend described as according to industry norms; amount not stated.",
+      "duration": "12 months.",
+      "eligibility": "CA Intermediate passed and at least one year of articleship completed; accounting, Excel and tax-compliance familiarity.",
+      "description": "Work on book closure, bank/payment reconciliation, MIS, GST/TDS compliance and audit support.",
+      "applicationSteps": "Apply through Stable Money’s official Lever vacancy.",
+      "sourceUrl": "https://jobs.lever.co/stable-money1/9d1707ee-726c-4126-a513-25eae28daabd",
+      "applyUrl": "https://jobs.lever.co/stable-money1/9d1707ee-726c-4126-a513-25eae28daabd/apply",
+      "evidence": "Official employer Lever page shows the Bengaluru contract role and Apply for this job on 9 Nov.",
+      "sourceDate": "2026-10-27",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "Confirm your remaining articleship term and ICAI requirements before accepting.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "No stated deadline",
+      "sourceDateText": "Employer listing publication metadata (India date)."
+    },
+    {
+      "id": "N9-CF-06",
+      "org": "ASA",
+      "title": "CA Articleship — Valuations",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai, Maharashtra",
+      "format": "Not stated",
+      "careerTracks": [
+        "Corporate finance",
+        "Accounting & tax"
+      ],
+      "audience": [
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Stipend not disclosed.",
+      "duration": "Two years of articleship.",
+      "eligibility": "CA Intermediate qualified; accounting fundamentals, numerical ability and basic Excel/PowerPoint skills.",
+      "description": "Assist business/share valuations, purchase-price allocation, financial projections, DCF and comparable analysis, research and valuation reports.",
+      "applicationSteps": "Use Apply on ASA’s employer-attributed LinkedIn job.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/article-trainee-valuations-at-asa-4486594607",
+      "applyUrl": "https://in.linkedin.com/jobs/view/article-trainee-valuations-at-asa-4486594607",
+      "evidence": "ASA’s employer-attributed posting displays Apply and the two-year Mumbai articleship details on 9 Nov.",
+      "sourceDate": "2026-11-05",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "This is a full articleship, not a short vacation internship. Confirm registration, supervision and stipend with ASA.",
+      "sourceType": "Employer-attributed LinkedIn job",
+      "deadlineNote": "No stated deadline",
+      "sourceDateText": "Employer listing publication metadata (India date)."
+    },
+    {
+      "id": "N9-CF-07",
+      "org": "CSC",
+      "title": "Corporate Finance / FP&A Intern",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Bengaluru, Karnataka",
+      "format": "Hybrid",
+      "careerTracks": [
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate",
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Compensation not disclosed.",
+      "duration": "45 hours per week; internship term not stated.",
+      "eligibility": "MBA or undergraduate/postgraduate Commerce qualification; 0–1 year of experience, financial-statement and US GAAP/IFRS knowledge, Excel and PowerPoint. ERP/SmartView familiarity preferred.",
+      "description": "Support budgeting, forecasts, variance analysis, periodic financial reporting and management dashboards.",
+      "applicationSteps": "Open the listing’s employer application route and select the Bangalore corporate-finance internship.",
+      "sourceUrl": "https://simplify.jobs/p/2d34f536-3933-4420-a565-f8b7d81fe7cf/Corporate-Finance-Intern",
+      "applyUrl": "https://hczw.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/17361",
+      "evidence": "Named-employer Simplify listing inspected on 9 Nov reports a live opening and supplies the full description. Its application link resolves to CSC’s Oracle recruiting requisition 17361.",
+      "sourceDate": "2026-10-23",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "No employer closing date or stipend is stated. Aggregator salary estimates and automated expiry dates are not used.",
+      "sourceType": "Third-party job listing",
+      "deadlineNote": "No stated deadline",
+      "sourceDateText": "Simplify listing metadata: 23 October 2026"
+    },
+    {
+      "id": "N9-CF-08",
+      "org": "Karbon / AI Accountant",
+      "title": "Finance Intern — Virtual Accountant",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Bengaluru, Karnataka",
+      "format": "In person",
+      "careerTracks": [
+        "Accounting & tax",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Paid internship; amount not disclosed.",
+      "duration": "Six months.",
+      "eligibility": "BCom Finance graduate from the 2025 or 2026 batch; hands-on Tally and Zoho, GST/TDS and income-tax basics, strong Excel and full-time office availability.",
+      "description": "Support bookkeeping, monthly close, bank/customer/vendor reconciliation and tax workings using the employer’s accounting product under senior review.",
+      "applicationSteps": "Apply through AI Accountant’s official Workable form.",
+      "sourceUrl": "https://apply.workable.com/ai-accountant/j/D5B431C77B/",
+      "applyUrl": "https://apply.workable.com/ai-accountant/j/D5B431C77B/apply",
+      "evidence": "Employer-provided Workable Markdown listing retrieved on 9 Nov confirms the India location, paid six-month term and active application link.",
+      "sourceDate": "2026-10-26",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "A full-time role may follow strong performance but is not guaranteed. This is a graduate accounting internship, not a confirmed CA articleship.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "No stated deadline",
+      "sourceDateText": "Official Workable listing: posted 26 October 2026"
+    },
+    {
+      "id": "N9-CF-09",
+      "org": "Paytm Payments Services",
+      "title": "Taxation Intern — Direct and Indirect Tax",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Noida, Uttar Pradesh",
+      "format": "Hybrid",
+      "careerTracks": [
+        "Accounting & tax"
+      ],
+      "audience": [
+        "Graduate",
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Stipend to be confirmed.",
+      "duration": "Six months; extension possible.",
+      "eligibility": "CA Intermediate, both groups cleared, with current articleship/industrial-training eligibility; or BCom/MCom with strong taxation knowledge. GST/TDS and Excel skills required.",
+      "description": "Assist GST and TDS reconciliation, cross-border tax documentation, corporate-tax schedules, notices and merchant-settlement compliance data.",
+      "applicationSteps": "Apply through Paytm Payments Services’ official Lever vacancy.",
+      "sourceUrl": "https://jobs.lever.co/paytmpayments/46e4c93e-1817-4b23-a601-027b2781d34e",
+      "applyUrl": "https://jobs.lever.co/paytmpayments/46e4c93e-1817-4b23-a601-027b2781d34e/apply",
+      "evidence": "Official Lever vacancy retrieved on 9 Nov includes the full tax-intern description and Apply for this job.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "The role body says hybrid, while the location label says on-site; confirm office attendance. CA training recognition and a future full-time offer are not guaranteed.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "No stated deadline"
+    },
+    {
+      "id": "N9-CF-10",
+      "org": "Finrep",
+      "title": "Content Writer Intern — Finance",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Bengaluru, Karnataka",
+      "format": "In person",
+      "careerTracks": [
+        "Accounting & tax",
+        "Investment research"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "CA / CMA / CS"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Stipend not disclosed.",
+      "duration": "Not stated; five office days per week, immediate start.",
+      "eligibility": "Final-year student or graduate in BBA/BCom/CA Intermediate or equivalent finance/accounting background; writing samples and financial-statement understanding.",
+      "description": "Research and explain US GAAP, financial reporting and SEC filings; check financial claims and sources in published content.",
+      "applicationSteps": "Use the application form on Finrep’s careers page with CV and a relevant writing sample; follow its sample task if you have no published work.",
+      "sourceUrl": "https://www.finrep.ai/careers/content-writer-intern-finance",
+      "applyUrl": "https://www.finrep.ai/careers/content-writer-intern-finance",
+      "evidence": "Official company careers page inspected on 9 Nov provides the Bengaluru role, requirements and application form.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "This is finance content and research work, not an investment-decision role. Confirm pay and duration before committing.",
+      "sourceType": "Official employer role",
+      "deadlineNote": "No stated deadline"
+    },
+    {
+      "id": "N9-CF-13",
+      "org": "MSC / MicroSave Consulting",
+      "title": "Finance Intern",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Greater Lucknow Area, Uttar Pradesh",
+      "format": "Not stated",
+      "careerTracks": [
+        "Corporate finance",
+        "Accounting & tax"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "benefit": "Stipend not disclosed.",
+      "duration": "Full-time; internship length not stated.",
+      "eligibility": "Basic accounting/finance, Excel or Google Sheets, reporting and analytical skills. No degree, grades or prior-experience cutoff is stated.",
+      "description": "Assist financial records, bookkeeping, invoices, expense tracking, basic analysis, budgets and periodic reporting.",
+      "applicationSteps": "Use Apply on MicroSave Consulting’s employer-attributed LinkedIn vacancy.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/finance-intern-at-msc-microsave-consulting-4485459294",
+      "applyUrl": "https://in.linkedin.com/jobs/view/finance-intern-at-msc-microsave-consulting-4485459294",
+      "evidence": "The employer-attributed listing displays Apply and the Lucknow finance-and-accounts internship on 9 Nov.",
+      "sourceDate": "2026-11-03",
+      "checkedAt": "2026-11-09",
+      "firstVerifiedAt": "2026-11-09",
+      "caveat": "Confirm student eligibility, compensation and term with the employer; unspecified criteria do not mean guaranteed eligibility.",
+      "sourceType": "Employer-attributed LinkedIn job",
+      "deadlineNote": "No stated deadline",
+      "sourceDateText": "Employer listing publication metadata (India date)."
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "GE HealthCare — Financial Management Program Intern R4049101",
+      "url": "https://hiresetu.org/jobs/ge-healthcare-financial-management-program-intern--e270d8ec-e2b6-4951-a389-30218115919b",
+      "reason": "Restricted campus recruitment",
+      "detail": "Full posting says applications are intended for individuals identified through partner colleges during this year’s recruitment; not added as a generally accessible opening."
+    },
+    {
+      "title": "RentoMojo — Industrial Trainee",
+      "url": "https://in.linkedin.com/jobs/view/industrial-trainee-at-rentomojo-4469030235",
+      "reason": "Closed",
+      "detail": "Employer-attributed LinkedIn page explicitly says no longer accepting applications."
+    },
+    {
+      "title": "P&G — Business Finance & Strategy Internship R000158846",
+      "url": "https://in.linkedin.com/jobs/view/p-g-business-finance-strategy-internship-at-procter-gamble-4463491248",
+      "reason": "Public availability not established",
+      "detail": "Listing refers to students at universities the employer hires from; active public application eligibility was not confirmed."
+    },
+    {
+      "title": "Stable Money — CS Management Trainee",
+      "url": "https://jobs.lever.co/stable-money1/8c68120a-a40c-407c-b839-3ca7a378e48b",
+      "reason": "Current application unavailable",
+      "detail": "Direct live request returned 404 despite a cached employer listing; not counted as a newly verified opening."
+    },
+    {
+      "title": "Genrobotics — Finance Intern — Six Months",
+      "url": "https://in.linkedin.com/jobs/view/finance-intern-6-month-internship-at-genrobotics-4474265674",
+      "reason": "Current application unavailable",
+      "detail": "Direct live request returned an expired-job redirect despite a cached LinkedIn description."
+    },
+    {
+      "title": "LeadSquared — Finance Intern",
+      "url": "https://in.linkedin.com/jobs/view/intern-finance-at-leadsquared-4472703957",
+      "reason": "Active application not confirmed",
+      "detail": "A fresh direct request returned the role description without an Apply control, despite the indexed version showing Apply. Not included as a verified live addition."
+    }
+  ]
+}

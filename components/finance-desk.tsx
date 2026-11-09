@@ -78,6 +78,7 @@ const options: Record<string, readonly string[]> = {
   format: ['Any format', ...catalogueFormats],
   availability: availabilities,
   sort: ['deadline', 'newest', 'organization'],
+  addedSince: ['', catalogueCheckedAt],
 };
 
 function readFilters(params: URLSearchParams): CatalogueFilters {
@@ -335,6 +336,9 @@ export function FinanceDesk() {
       ),
     [today, now],
   );
+  const newAvailableCount = available.filter(
+    (item) => item.firstVerifiedAt === catalogueCheckedAt,
+  ).length;
   const filtered = useMemo(
     () => filterCatalogue(catalogue, filters, today, saved, now),
     [filters, today, saved, now],
@@ -860,7 +864,7 @@ export function FinanceDesk() {
                       }
                     >
                       <option value="deadline">Closing soonest</option>
-                      <option value="newest">Recently researched</option>
+                      <option value="newest">Recently added</option>
                       <option value="organization">Organisation A–Z</option>
                     </select>
                   </label>
@@ -911,6 +915,20 @@ export function FinanceDesk() {
                 <div>
                   <button
                     type="button"
+                    aria-pressed={Boolean(filters.addedSince)}
+                    onClick={() =>
+                      updateFilters({
+                        addedSince: filters.addedSince
+                          ? ''
+                          : catalogueCheckedAt,
+                        sort: 'newest',
+                      })
+                    }
+                  >
+                    New this refresh <span>{newAvailableCount}</span>
+                  </button>
+                  <button
+                    type="button"
                     aria-pressed={filters.savedOnly}
                     onClick={() =>
                       updateFilters({ savedOnly: !filters.savedOnly })
@@ -946,10 +964,18 @@ export function FinanceDesk() {
                       }
                       aria-label={
                         'Remove filter ' +
-                        (key === 'savedOnly' ? 'shortlist' : filters[key])
+                        (key === 'savedOnly'
+                          ? 'shortlist'
+                          : key === 'addedSince'
+                            ? 'new this refresh'
+                            : filters[key])
                       }
                     >
-                      {key === 'savedOnly' ? 'Shortlist' : filters[key]}{' '}
+                      {key === 'savedOnly'
+                        ? 'Shortlist'
+                        : key === 'addedSince'
+                          ? 'New this refresh'
+                          : filters[key]}{' '}
                       <X size={11} />
                     </button>
                   ))}
@@ -966,6 +992,14 @@ export function FinanceDesk() {
                 <p className="desk-status-explainer">
                   Upcoming has an announced window. Watchlist means we could not
                   confirm a current intake. Neither is counted as open today.
+                </p>
+              ) : null}
+              {filters.addedSince ? (
+                <p className="desk-status-explainer">
+                  Added in the {dateLabel(filters.addedSince, true)} refresh.
+                  These include newly posted vacancies, newly found current
+                  openings and ongoing application schemes. Original posting
+                  dates are shown in the details when available.
                 </p>
               ) : null}
               <div className="opportunity-list desk-opportunity-list">

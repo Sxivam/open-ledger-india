@@ -1,0 +1,536 @@
+{
+  "checkedAt": "2026-11-09",
+  "auditedIds": [
+    "RT-02",
+    "BK-12",
+    "CF-16",
+    "BK-13",
+    "BK-14",
+    "BK-16",
+    "BK-17",
+    "BK-18",
+    "BK-19",
+    "DX-01",
+    "DX-07",
+    "DX-09"
+  ],
+  "updates": {
+    "RT-02": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rechecked Morgan Stanley's official programme page on 9 November: Mumbai and Bengaluru applications remain open through 30 November 2026 for the 18 January–10 May 2027 programme, with separate Workday links."
+    },
+    "BK-12": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Official Axis ARISE Homecoming page still displays Apply and year-round applications on 9 November. The programme targets Indian talent educated overseas with 0–2 years of experience."
+    },
+    "CF-16": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Yubi Markets' employer LinkedIn listing still displays Apply, Ahmedabad, six months and the stated ₹15,000 monthly stipend when checked on 9 November."
+    },
+    "BK-13": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Official requisition 57630 rechecked on 9 November displays Mumbai hybrid operations apprenticeship, 2026-graduate eligibility and the 22 October–15 November 2026 application window."
+    },
+    "BK-14": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rendered HSBC employer page rechecked on 9 November shows Apply now, requisition 65390, Mumbai, posted 1 November and Apply By 16 November 2026."
+    },
+    "BK-16": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rendered HSBC employer page rechecked on 9 November shows Apply now, requisition 64669, Bengaluru, posted 27 October and Apply By 10 November 2026."
+    },
+    "BK-17": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rendered HSBC employer page rechecked on 9 November shows Apply now, requisition 55307, Chennai, posted 23 October and Apply By 20 November 2026; mutual-fund sales and apprenticeship terms are retained."
+    },
+    "BK-19": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Citi's complete official requisition 26992827 still displays its Mumbai location, 19 October posting date and Workday Apply link when checked on 9 November."
+    },
+    "DX-01": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rendered State Street Workday page on 9 November displays Apply, requisition R-799807 and an explicit 13 November 2026 closing date for the January–July 2027 India internship."
+    },
+    "DX-07": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Rendered WTW employer page on 9 November displays the Gurugram 2027 actuarial graduate role and active Apply Now forms. No closing date is stated."
+    },
+    "DX-09": {
+      "checkedAt": "2026-11-09",
+      "evidence": "BNP Paribas' official role page still provides Apply for requisition 94226, India locations and four-month operations internship terms; the page labels its latest update 5 November 2026.",
+      "sourceDateText": "Employer page last updated 5 November 2026; original publication date not stated."
+    }
+  },
+  "removals": [
+    {
+      "id": "BK-18",
+      "reason": "Expired: official Apply By date was 5 November 2026; the rendered employer page no longer displays an Apply action on 9 November.",
+      "sourceUrl": "https://portal.careers.hsbc.com/careers/job/563774612284345?domain=hsbc.com"
+    }
+  ],
+  "records": [
+    {
+      "id": "N9-BK-01",
+      "org": "Standard Chartered",
+      "title": "Corporate & Investment Banking Apprentice — 2026 graduates (58822)",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "In person",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": "2026-11-15",
+      "opensOn": null,
+      "benefit": "Salary and benefits offered; amount not published.",
+      "duration": "12 months.",
+      "eligibility": "2026 graduates with the legal right to work in India. Any degree discipline considered; finance, banking, economics, mathematics and statistics are relevant. Strong analytical and communication skills.",
+      "description": "Support Corporate & Investment Banking operations and technology around transactions, capital flows, controls and client services.",
+      "applicationSteps": "Apply to official requisition 58822 by 15 November. The employer limits early-career applications to one in six months.",
+      "sourceUrl": "https://jobs.standardchartered.com/job/Apprentice-Corporate-%26amp%3B-Investment-Banking-India-2026/58822-en_GB/",
+      "applyUrl": "https://jobs.standardchartered.com/job/Apprentice-Corporate-%26amp%3B-Investment-Banking-India-2026/58822-en_GB/",
+      "evidence": "Official employer requisition states Mumbai, 3 November posting and 15 November 2026 closing date; complete role and eligibility were accessible on 9 November.",
+      "sourceDate": "2026-11-03",
+      "checkedAt": "2026-11-09",
+      "caveat": "A CIB apprenticeship does not guarantee a front-office investment-banking or deal-execution placement. Check the one-application rule before choosing between this and Operations.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS"
+    },
+    {
+      "id": "N9-BK-02",
+      "org": "Citi",
+      "title": "Young Apprentice — AML / KYC (26980896)",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Graduate",
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Full-time apprenticeship; stipend not disclosed.",
+      "duration": "Not stated.",
+      "eligibility": "Bachelor’s degree or equivalent experience; 0–2 years in banking, finance or law. EU AML/KYC knowledge, research and communication skills; prior compliance work and ACAMS are advantages.",
+      "description": "Research companies, validate ownership and identity documents, maintain KYC records, monitor workflows and escalate adverse news or high-risk cases.",
+      "applicationSteps": "Use Citi’s Workday Apply link for requisition 26980896.",
+      "sourceUrl": "https://jobs.citi.com/job/mumbai/young-apprentice-c00-mumbai/287/101394359392",
+      "applyUrl": "https://citi.wd5.myworkdayjobs.com/2/job/Mumbai-Maharashtra-India/Young-Apprentice---C00---MUMBAI_26980896/apply",
+      "evidence": "Live rendered Citi page on 9 November shows Mumbai, posted 4 November 2026 and an active Workday Apply link for 26980896.",
+      "sourceDate": "2026-11-04",
+      "checkedAt": "2026-11-09",
+      "caveat": "Business-time flexibility and basic AI literacy are requested. ACAMS is advantageous, not mandatory. No published closing date.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS"
+    },
+    {
+      "id": "N9-BK-03",
+      "org": "Citi",
+      "title": "Graduate Apprentice — Process Automation & Finance Intelligence (261000621)",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "Hybrid",
+      "careerTracks": [
+        "Banking & markets",
+        "Corporate finance"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Full-time apprenticeship; stipend not disclosed.",
+      "duration": "Not stated.",
+      "eligibility": "Graduate-apprentice role requiring Python or comparable automation tools, advanced Excel, AI-tool familiarity and basic P&L/expense understanding. Employer says prior experience is not a barrier; no degree subject or grade cutoff published.",
+      "description": "Automate reporting and financial-data workflows for the business-execution team, supporting expense discipline and management decisions.",
+      "applicationSteps": "Apply through Citi Workday requisition 261000621; demonstrate a relevant reporting or automation project.",
+      "sourceUrl": "https://jobs.citi.com/job/mumbai/young-apprentice-c00-mumbai/287/102767830768",
+      "applyUrl": "https://citi.wd5.myworkdayjobs.com/2/job/Mumbai-Maharashtra-India/Young-Apprentice---C00---MUMBAI_261000621/apply",
+      "evidence": "Live rendered employer page on 9 November retains Apply and states Mumbai hybrid, posted 2 November 2026, with finance-automation responsibilities.",
+      "sourceDate": "2026-11-02",
+      "checkedAt": "2026-11-09",
+      "caveat": "This is a finance-and-technology operations role. Duration, graduation window and any apprenticeship-registration restrictions must be confirmed with Citi.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS"
+    },
+    {
+      "id": "N9-BK-04",
+      "org": "Macquarie Group",
+      "title": "2027 Summer Internship — Risk Management & Internal Audit (24985)",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Gurugram",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial",
+        "Banking & markets",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Structured induction, training and networking; stipend not published.",
+      "duration": "8–10 weeks in summer 2027.",
+      "eligibility": "Penultimate- or final-year students in commerce, economics, mathematics or technology. No prior financial experience required.",
+      "description": "Potential teams cover counterparty credit reviews, credit systems and controls, internal audit, compliance, market risk, and model or AI risk oversight.",
+      "applicationSteps": "Apply through Macquarie’s official application route for job 24985.",
+      "sourceUrl": "https://recruitment.macquarie.com/en_US/careers/JobDetail?jobId=24985",
+      "applyUrl": "https://recruitment.macquarie.com/en_US/careers/ApplicationMethods?jobId=24985&record=24985",
+      "evidence": "Rendered official Macquarie page verified on 9 November shows Gurugram, 5 November 2026 publication, full eligibility and an active Apply now link.",
+      "sourceDate": "2026-11-05",
+      "checkedAt": "2026-11-09",
+      "caveat": "Team allocation is not guaranteed. The employer publishes no closing date; aggregator deadlines were not adopted.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS"
+    },
+    {
+      "id": "N9-BK-05",
+      "org": "WTW",
+      "title": "2026 Graduate Actuarial Trainee — Retirement Consulting Intern (202604931)",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Gurugram",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Full-time actuarial consulting exposure; stipend not disclosed.",
+      "duration": "Not stated; 2026 graduate intake.",
+      "eligibility": "2026 bachelor’s graduates in commerce, economics, mathematics, statistics, business or related fields. Strong Excel, Word, PowerPoint, English, analytical and research skills.",
+      "description": "Join retirement consulting, supporting employee-benefit and pension valuation work and analysis of benefit costs and risks.",
+      "applicationSteps": "Start the Apply Now form on WTW’s official role page for 202604931.",
+      "sourceUrl": "https://careers.wtwco.com/jobs/early-careers-2026-graduate-actuarial-trainee-intern-gurugram-gurugram-haryana-india",
+      "applyUrl": "https://careers.wtwco.com/jobs/early-careers-2026-graduate-actuarial-trainee-intern-gurugram-gurugram-haryana-india",
+      "evidence": "Official role and active application form rendered on 9 November. Requisition 202604931 explicitly specifies 2026 graduates and Gurugram.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "No minimum actuarial-exam count, pay, internship length or deadline is published. This is separate from WTW’s 2027 insurance-consulting graduate programme.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS",
+      "sourceDateText": "Exact publication date not stated."
+    },
+    {
+      "id": "N9-BK-06",
+      "org": "Milliman India",
+      "title": "Actuarial Associate — 2026–27 off-campus intake",
+      "kind": "Entry-level role",
+      "country": "India",
+      "location": "Mumbai or Gurugram",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Salary, performance bonus and actuarial-exam support; amounts not published.",
+      "duration": "Full-time associate role; joining schedule not stated.",
+      "eligibility": "Final-year bachelor’s students in actuarial science, mathematics, statistics, economics or related fields, pursuing professional actuarial exams. Relevant internship experience is desired; Python, R and SQL preferred.",
+      "description": "Support life-insurance actuarial modelling, valuation, pricing, business planning, transaction work and research.",
+      "applicationSteps": "Apply through Milliman India’s employer LinkedIn posting; confirm office and joining date.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/actuarial-associate-26-27-batch-off-campus-at-milliman-india-4487771348",
+      "applyUrl": "https://in.linkedin.com/jobs/view/actuarial-associate-26-27-batch-off-campus-at-milliman-india-4487771348",
+      "evidence": "Employer-attributed LinkedIn posting checked on 9 November retains Apply and describes a 2026–27 off-campus life-practice intake in Mumbai/Gurugram.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "Listed as full-time despite LinkedIn’s Internship seniority label; treated as an entry-level job. Flexible working does not establish a remote arrangement.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Recent relative posting age shown; exact publication date not stated."
+    },
+    {
+      "id": "N9-BK-07",
+      "org": "Acies",
+      "title": "Actuarial Intern — Balance Sheet Management",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Mumbai or Goa",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial",
+        "Banking & markets"
+      ],
+      "audience": [
+        "Student",
+        "Graduate",
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Compensation negotiated after selection; amount not published.",
+      "duration": "6–12 months, full time.",
+      "eligibility": "Graduates or students completing graduation; 0–2 years’ experience and Indian citizenship or valid India work permission. Python, advanced Excel and quantitative risk knowledge valued; actuarial credentials preferred, not required.",
+      "description": "Build and validate models for ALM, banking-book interest-rate risk, credit and market risk, cash flows, valuations and sensitivities.",
+      "applicationSteps": "Apply through the employer LinkedIn posting or Acies careers form. Expect at least two or three interviews and a compensation discussion.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/actuarial-intern-balance-sheet-management-at-acies-4487270593",
+      "applyUrl": "https://www.acies.consulting/careers-apply.html",
+      "evidence": "Acies employer posting and named talent-acquisition contact are visible with Apply on 9 November; it specifies Mumbai/Goa, 6–12 months and India work rights.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "The description also includes full-time probation wording. Confirm internship terms and any conversion option before accepting; conversion is not guaranteed.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "LinkedIn displayed 4 days ago; exact publication date not stated."
+    },
+    {
+      "id": "N9-BK-08",
+      "org": "Aspire",
+      "title": "Periodic Review Intern — Financial Crime & Compliance",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Gurugram",
+      "format": "Not stated",
+      "careerTracks": [
+        "Risk & actuarial",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Mentoring by a senior analyst; stipend not disclosed.",
+      "duration": "Not stated.",
+      "eligibility": "Final-year students or recent graduates in business, finance, law, economics or related fields. Strong online research, written English and spreadsheet skills; practical AI-tool knowledge requested.",
+      "description": "Research customer ownership, business activity, source of funds and adverse media; document inconsistencies and support AML/CFT risk reviews.",
+      "applicationSteps": "Use the employer’s LinkedIn Apply route for the Gurgaon Periodic Review internship.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/periodic-review-intern-at-aspire-4484672544",
+      "applyUrl": "https://in.linkedin.com/jobs/view/periodic-review-intern-at-aspire-4484672544",
+      "evidence": "Aspire’s employer-attributed listing checked on 9 November displays Apply, Gurgaon India and complete compliance-intern eligibility.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "The work supports international customers, but the advertised position is in India. Exact pay, duration, working arrangement and closing date are unstated.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Recent relative posting age shown; exact publication date not stated."
+    },
+    {
+      "id": "N9-BK-09",
+      "org": "Allianz Services",
+      "title": "Actuarial Intern — Reserving",
+      "kind": "Internship",
+      "country": "India",
+      "location": "Thiruvananthapuram (Trivandrum)",
+      "format": "In person",
+      "careerTracks": [
+        "Risk & actuarial"
+      ],
+      "audience": [
+        "Student",
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Six-month actuarial exposure; stipend not disclosed.",
+      "duration": "6 months; immediate availability requested.",
+      "eligibility": "Students or graduates in actuarial science, mathematics or statistics, including bachelor’s/master’s candidates. Reserving and basic chain-ladder knowledge, Excel, communication and analytical skills. Passing 1–3 actuarial exams is an advantage.",
+      "description": "Develop practical reserving and actuarial-analysis skills within Allianz Services’ Trivandrum team; pricing knowledge is also valued.",
+      "applicationSteps": "Apply through Allianz Services’ employer LinkedIn listing 4486587219.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/actuarial-intern-at-allianz-services-4486587219",
+      "applyUrl": "https://in.linkedin.com/jobs/view/actuarial-intern-at-allianz-services-4486587219",
+      "evidence": "Employer-attributed LinkedIn page checked on 9 November retains Apply and explicitly states six months, Trivandrum work from office and immediate joining.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "Exam passes are preferred rather than mandatory. This six-month posting is distinct from older three-month adverts; no deadline is stated.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "Recent relative posting age shown; exact publication date not stated."
+    },
+    {
+      "id": "N9-BK-10",
+      "org": "HSBC Asset Management (India)",
+      "title": "Sales & Distribution Apprentice — Mumbai (66160)",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Mumbai",
+      "format": "In person",
+      "careerTracks": [
+        "Banking & markets",
+        "Asset management"
+      ],
+      "audience": [
+        "Graduate",
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": "2026-11-20",
+      "opensOn": null,
+      "benefit": "NATS apprenticeship and applicable proficiency certificate; stipend not disclosed.",
+      "duration": "12 months, full time.",
+      "eligibility": "Graduate/postgraduate in finance, business or a related field. NISM Series V-A certification is mandatory; relationship management, presentation, Excel/CRM and basic portfolio-analysis skills requested.",
+      "description": "Build distributor and IFA relationships, present mutual-fund strategies, support portfolio discussions and work toward sales and assets-under-management targets.",
+      "applicationSteps": "Apply through HSBC requisition 66160 before 20 November; prepare certification and qualification details.",
+      "sourceUrl": "https://portal.careers.hsbc.com/careers/job?pid=563774612597981&domain=hsbc.com",
+      "applyUrl": "https://portal.careers.hsbc.com/careers/job?pid=563774612597981&domain=hsbc.com",
+      "evidence": "Rendered official HSBC page on 9 November shows Apply now, requisition 66160, posted 6 November and Apply By 20 November 2026.",
+      "sourceDate": "2026-11-06",
+      "checkedAt": "2026-11-09",
+      "caveat": "This is a target-driven mutual-fund distribution apprenticeship, despite the Assistant Manager wording in the source title. AML and sanctions training assessments are also required.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS"
+    },
+    {
+      "id": "N9-BK-11",
+      "org": "ICICI Bank",
+      "title": "Banking Apprenticeship Programme — Across India",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Across India; placement confirmed by bank",
+      "format": "Not stated",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Minimum ₹12,300 per month, or the applicable notified amount. No other allowances or benefits stated.",
+      "duration": "12 months, full time.",
+      "eligibility": "Graduation from a recognized university or institute; age up to 28 years. The programme is aimed at recent graduates.",
+      "description": "Combine structured learning with practical exposure to banking operations, customer service and financial management.",
+      "applicationSteps": "Select Apply Now on ICICI Bank’s official programme listing 2550803.",
+      "sourceUrl": "https://careers.icici.bank.in/CareerApplicant/Career/job-details/2550803",
+      "applyUrl": "https://careers.icici.bank.in/CareerApplicant/Career/job-details/2550803",
+      "evidence": "Rendered official ICICI listing verified on 9 November shows Apply Now, nationwide location, graduate/age eligibility and the stated monthly stipend.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "Standing programme newly verified for the ledger; no publication or closing date is shown. Apprenticeship is not a promise of permanent employment; placement availability varies.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS",
+      "sourceDateText": "Publication date not stated; newly discovered in this refresh."
+    },
+    {
+      "id": "N9-BK-12",
+      "org": "ANZ",
+      "title": "Operations Analyst — Retail Banking Customer Service (127401)",
+      "kind": "Entry-level role",
+      "country": "India",
+      "location": "Bengaluru",
+      "format": "Not stated",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Early career"
+      ],
+      "status": "open",
+      "deadline": "2026-11-10",
+      "opensOn": null,
+      "benefit": "Permanent role; salary not published.",
+      "duration": "Permanent; early-morning shifts and weekend flexibility.",
+      "eligibility": "Employer requests 1–2 years in customer service, ideally voice-based processes, with strong English, attention to detail and shift flexibility. Degree requirement not stated.",
+      "description": "Support bank-account applications, customer authentication, documentation and service requests for ANZ’s New Zealand personal-banking operation from Bengaluru.",
+      "applicationSteps": "Apply through ANZ Careers for requisition 127401 before the published 10 November closing date.",
+      "sourceUrl": "https://careers.anz.com/job/Bengaluru-Operations-Analyst/1369842766/",
+      "applyUrl": "https://careers.anz.com/job/Bengaluru-Operations-Analyst/1369842766/",
+      "evidence": "Official job page checked on 9 November displays Apply now, Bengaluru role location and an end date of 10 November 2026 at 11:59pm.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "This is an India-based service-operations role requiring experience. The published deadline time has no timezone; apply early. General hybrid benefits do not establish this role’s working arrangement.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Official employer ATS",
+      "sourceDateText": "Publication date not stated on the visible role page."
+    },
+    {
+      "id": "N9-BK-13",
+      "org": "Doha Bank — India",
+      "title": "Branch Banking Apprentice — Kochi",
+      "kind": "Apprenticeship",
+      "country": "India",
+      "location": "Kochi, Kerala — Lulu Mall branch",
+      "format": "In person",
+      "careerTracks": [
+        "Banking & markets"
+      ],
+      "audience": [
+        "Graduate"
+      ],
+      "status": "open",
+      "deadline": null,
+      "opensOn": null,
+      "benefit": "Proposed stipend ₹15,000; payment frequency is not specified in the source.",
+      "duration": "6–12 months.",
+      "eligibility": "Fresh graduates/postgraduates from recognized Indian universities across engineering, science, humanities or commerce. No self-employment, prior full-time employment, PF/UAN or ESIC/IP registration, or previous graduate/technician apprenticeship. Kochi-area candidates preferred.",
+      "description": "Assist the Kochi branch with MIS reports, reconciliations, customer service and coordination with internal teams and vendors.",
+      "applicationSteps": "Apply through Doha Bank’s employer LinkedIn posting for its Kochi branch.",
+      "sourceUrl": "https://in.linkedin.com/jobs/view/apprentice-at-doha-bank-4470855305",
+      "applyUrl": "https://in.linkedin.com/jobs/view/apprentice-at-doha-bank-4470855305",
+      "evidence": "Employer-attributed posting checked on 9 November retains Apply and explicitly locates this apprenticeship at the Kochi Lulu Mall branch in Kerala, India.",
+      "sourceDate": null,
+      "checkedAt": "2026-11-09",
+      "caveat": "This role is in India. The prior-employment and registration restrictions are material; confirm eligibility, stipend frequency and final training length before accepting.",
+      "firstVerifiedAt": "2026-11-09",
+      "sourceType": "Employer LinkedIn job",
+      "sourceDateText": "LinkedIn displayed a relative age of one week; exact publication date not stated."
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "Citi Business Analytics & Information Management Apprentice — 261008599",
+      "url": "https://jobs.citi.com/en/job/haryana/young-apprentice-c00-gurugram/287/102940386720",
+      "reason": "Closed on current employer page",
+      "detail": "Search cache retained the 6 November posting and Apply text, but live rendered employer page on 9 November explicitly says the position is no longer open. Cached evidence was overridden."
+    },
+    {
+      "title": "HSBC Asset Management Apprentice — Vadodara 65819",
+      "url": "https://portal.careers.hsbc.com/careers/job?pid=563774612587314&domain=hsbc.com",
+      "reason": "External eligibility unclear",
+      "detail": "Official page has Apply and 5–19 November window, but its eligibility section describes internal AMIN/entity employee tenure and approval rules only. Kept out rather than advertise an unrestricted fresh-graduate opportunity."
+    },
+    {
+      "title": "Crédit Agricole CIB — Trainee Global Markets 2026-116032",
+      "url": "https://groupecreditagricole.jobs/en/our-jobs-offer/579-170466-4-trainee---global-markets-division-reference--2026-116032--/",
+      "reason": "Current intake needs confirmation",
+      "detail": "Official role and guest-application route were accessible, but specified start date 3 November 2026 has passed. No evidence confirms that this intake still accepts late starters; not included in live opportunities."
+    },
+    {
+      "title": "First Citizens India — Technology Intern 24954",
+      "url": "https://svb.wd5.myworkdayjobs.com/en-US/firstcitizensindia/job/Intern---2-Months-Technology-2026_24954",
+      "reason": "Technology scope and conflicting dates",
+      "detail": "BTech/CS technology work rather than a finance role. Advertised outer closing date and body deadline also conflict; not used as a finance opportunity."
+    },
+    {
+      "title": "CNO Actuarial Intern — REMOTE JR170411-1",
+      "url": "https://cnoinc.wd5.myworkdayjobs.com/en-US/Careers/job/Actuarial-Intern---REMOTE_JR170411-1",
+      "reason": "Not an India role",
+      "detail": "Carmel IN denotes Indiana, United States; source requires US work authorization. Remote label does not create India eligibility."
+    },
+    {
+      "title": "GIC Actuarial Apprentices — 2025 notification",
+      "url": "https://www.actuariesindia.org/sites/default/files/2025-11/Detailed%20Advertisement_NEW.pdf",
+      "reason": "Old recruitment cycle",
+      "detail": "This discovery is a 2025 notification, not evidence of an open November 2026 intake."
+    }
+  ]
+}

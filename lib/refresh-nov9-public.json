@@ -1,0 +1,233 @@
+{
+  "checkedAt": "2026-11-09",
+  "auditedIds": [
+    "GV-03",
+    "GV-04",
+    "GV-01",
+    "GV-05",
+    "GV-06",
+    "GV-11",
+    "scholarship-cfa-access-august-2027",
+    "scholarship-cfa-student-2026-27",
+    "scholarship-cfa-professor-2026-27",
+    "scholarship-icai-student-support-2026",
+    "scholarship-kerala-minority-ca-cma-cs-2026",
+    "fellowship-bits-hyderabad-finance-phd-2027",
+    "fellowship-icssr-senior-second-call-2026",
+    "scholarship-icsi-seft-watchlist",
+    "scholarship-icmai-fee-aid-watchlist",
+    "scholarship-garp-academic-partner-watchlist",
+    "scholarship-nism-pgdm-watchlist",
+    "ssei-analyst-arena-2026",
+    "nism-sebi-investor-awareness-level1",
+    "forage-boa-investment-banking",
+    "forage-pgim-public-private-credit",
+    "forage-fidelity-investment-management",
+    "forage-boa-global-markets",
+    "forage-aig-actuarial",
+    "forage-vista-private-equity",
+    "forage-goldman-controllers",
+    "forage-h2-venture-capital",
+    "cfa-india-research-challenge-watch",
+    "nism-national-financial-literacy-quiz-watch",
+    "rbi-summer-placement-2027-watch"
+  ],
+  "updates": {
+    "GV-03": {
+      "checkedAt": "2026-11-09",
+      "evidence": "CCI's official internship page and full application form remain available. The standing rule is the 1st of the preceding month; 1 December is the next cutoff for January 2027. This is a recurring scheme, not a newly announced vacancy."
+    },
+    "GV-04": {
+      "checkedAt": "2026-11-09",
+      "evidence": "RBI's official scheme page was readable on rbi.org.in during this check. It confirms July–November applications for January starts, ₹45,000 monthly stipend and department-specific eligibility. This is the standing November application window.",
+      "sourceUrl": "https://rbi.org.in/scripts/Bs_viewcontent.aspx?Id=3496"
+    },
+    "GV-01": {
+      "checkedAt": "2026-11-09",
+      "evidence": "NITI's official Opportunities page still states applications are accepted from the 1st at 00:00 through the 10th at 23:59 each month; the November window is currently within those dates."
+    },
+    "GV-05": {
+      "checkedAt": "2026-11-09",
+      "evidence": "CAG's official Headquarters internship guidelines remain published, with the monthly 1st–20th application window and public-finance/commerce domains. Selection is discretionary and the internship is unpaid."
+    },
+    "GV-06": {
+      "caveat": "Unpaid and subject to office capacity and local work allocation. The field-office PDF CDN returned 403 during this audit; the stable official listing and functioning shared form support the recurring November intake. Recheck on 9 November did not establish a newer full verification; the prior checked date is retained."
+    },
+    "GV-11": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The NFPRC organisation's full research-intern hiring post remains visible, with employer attribution, in Katcheri's public LinkedIn repost. The post includes economic policy/public finance work and the employer application email; no closing date is supplied."
+    },
+    "scholarship-cfa-access-august-2027": {
+      "checkedAt": "2026-11-09",
+      "evidence": "CFA Institute's official schedule now places the August 2027 exam scholarship within its open window: 3–23 November 2026, with decisions on 18 December. The application route is displayed on the programme page.",
+      "status": "open",
+      "applicationSteps": "Apply through the official CFA Institute Access Scholarship page during 3–23 November 2026. CFA Institute states that scholarship applications must be completed on a computer; use a desktop or laptop rather than a phone."
+    },
+    "scholarship-cfa-student-2026-27": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The live official scholarship portal continues to specify 1 September 2026 opening and 15 July 2027 at 23:59 EDT closing. Enrolment in an affiliated university is required."
+    },
+    "scholarship-cfa-professor-2026-27": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The live official 2026–27 application portal continues to state 15 August 2027 at 23:59 EDT closing. The general-page date discrepancy remains disclosed in the caveat."
+    },
+    "scholarship-icai-student-support-2026": {
+      "checkedAt": "2026-11-09",
+      "evidence": "ICAI's official FAQ, revised 15 May 2026, remains available. It permits applications throughout the year; October–December applications fall in the January processing cycle, subject to the stated conditions."
+    },
+    "scholarship-kerala-minority-ca-cma-cs-2026": {
+      "checkedAt": "2026-11-09",
+      "evidence": "Kerala Minority Welfare's current official guideline table still lists CA/CMA/CS applications from 13 October through 25 November 2026 at 23:59:59."
+    },
+    "fellowship-icssr-senior-second-call-2026": {
+      "checkedAt": "2026-11-09",
+      "evidence": "ICSSR's current second-call announcement explicitly retains 21 October–20 November 2026, closing at 18:00. This is a senior-research fellowship with doctoral/experience requirements."
+    },
+    "scholarship-icsi-seft-watchlist": {
+      "caveat": "Current form availability and submission acceptance remain unverified. This is not labelled open; stage, first-attempt and reimbursement conditions must be confirmed directly. Recheck on 9 November did not establish a newer full verification; the prior checked date is retained.",
+      "sourceUrl": "https://www.icsi.edu/media/webmodules/CSJ/Feb2026/10.pdf",
+      "applyUrl": "https://www.icsi.edu/student/",
+      "evidence": "ICSI’s 2026 journal continues to reference the Students Education Fund Trust. The previous student-services PDF now fails to load and a current application form was not confirmed. The route remains on the watchlist."
+    },
+    "scholarship-icmai-fee-aid-watchlist": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official scholarship directory still lists the revised schemes, but the linked form/current application cycle could not be confirmed. It remains a watchlist route rather than an open scholarship."
+    },
+    "scholarship-garp-academic-partner-watchlist": {
+      "checkedAt": "2026-11-09",
+      "evidence": "GARP's current official FAQ confirms scholarships through Academic Partner nominations (up to six students and one faculty member per programme annually); no public India-wide application round is established."
+    },
+    "scholarship-nism-pgdm-watchlist": {
+      "caveat": "2026–28 admissions are closed; no 2027–29 window was verified. Tuition aid does not automatically cover every fee, accommodation or living cost. Recheck on 9 November did not establish a newer full verification; the prior checked date is retained."
+    },
+    "ssei-analyst-arena-2026": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official Analyst Arena page continues to display its free registration form, rounds and prize details. No closing date is published; entrants should check the current round before registering."
+    },
+    "nism-sebi-investor-awareness-level1": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official SEBI Investor Awareness Test programme page remains published. This is a free learning/assessment route, not employment or a recruitment examination."
+    },
+    "forage-boa-investment-banking": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-pgim-public-private-credit": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-fidelity-investment-management": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-boa-global-markets": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-aig-actuarial": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-vista-private-equity": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-goldman-controllers": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "forage-h2-venture-capital": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The original Forage provider page was reopened during this refresh and continues to describe this self-paced simulation. It remains classified as learning, not an internship or employment offer."
+    },
+    "cfa-india-research-challenge-watch": {
+      "checkedAt": "2026-11-09",
+      "evidence": "The official India page describes institutional invitations and business-school teams; no independently verified open 2026–27 team-entry deadline is supplied. It remains on the watchlist."
+    },
+    "nism-national-financial-literacy-quiz-watch": {
+      "checkedAt": "2026-11-09",
+      "evidence": "NISM's official quiz homepage already announces college winners and regional qualifiers. A college enquiry route exists, but fresh registration is not confirmed; it remains on the watchlist."
+    },
+    "rbi-summer-placement-2027-watch": {
+      "caveat": "Watchlist pending direct RBI verification; dates are third-party corroboration, not a freshly verified open form. No assumed ₹25,000 stipend without the current primary notice. Recheck on 9 November did not establish a newer full verification; the prior checked date is retained."
+    }
+  },
+  "removals": [
+    {
+      "id": "fellowship-bits-hyderabad-finance-phd-2027",
+      "reason": "Published application deadline was 6 November 2026; no extension was established in this refresh.",
+      "sourceUrl": "https://www.bits-pilani.ac.in/news/call-for-ph-d-applications-january-2027/"
+    }
+  ],
+  "records": [
+    {
+      "id": "N9-PF-01",
+      "org": "Insolvency and Bankruptcy Board of India",
+      "title": "Monthly Internship — Insolvency, Liquidation & Bankruptcy",
+      "kind": "Internship",
+      "country": "India",
+      "location": "New Delhi, India",
+      "format": "In person",
+      "careerTracks": [
+        "Public finance",
+        "Compliance & governance"
+      ],
+      "audience": [
+        "Student"
+      ],
+      "status": "rolling",
+      "deadline": null,
+      "benefit": "₹10,000 per month",
+      "duration": "Normally 1 month; extension up to 1 additional month at IBBI discretion",
+      "eligibility": "Students pursuing a 3- or 5-year law degree, or postgraduate/MPhil/PhD study in Economics, Commerce, Finance, Management or Law. Institutional recommendation is mandatory. A general undergraduate commerce degree alone does not qualify.",
+      "description": "Support an IBBI division on insolvency, liquidation and bankruptcy work and complete a supervised dissertation or report. Bring your own laptop.",
+      "applicationSteps": "Use the annexed form in the official guidelines, obtain the institution’s recommendation, and email it to intern@ibbi.gov.in at least 30 days before the proposed start. For a January placement, apply by 30 November following the guideline’s example. Include the requested motivation and dissertation proposal.",
+      "sourceUrl": "https://ibbi.gov.in/uploads/legalframwork/958002823ce7d34c0bf75d5bf90ca216.pdf",
+      "applyUrl": "https://ibbi.gov.in/uploads/legalframwork/958002823ce7d34c0bf75d5bf90ca216.pdf",
+      "evidence": "The official 2023 guidelines were downloaded and read on 9 November 2026. They establish recurring monthly applications, the email/form, eligibility and stipend; IBBI’s 2024–25 annual report also records the scheme in use.",
+      "sourceDate": "2023-11-14",
+      "checkedAt": "2026-11-09",
+      "caveat": "A standing application scheme newly added to this refresh, not a newly announced 2026 vacancy. Monthly intake depends on IBBI requirements and selection; submitting an application does not guarantee a place.",
+      "sourceType": "Official regulator guidelines",
+      "firstVerifiedAt": "2026-11-09"
+    }
+  ],
+  "exclusions": [
+    {
+      "title": "NIPFP Research Fellow — Cigarette Tax Design",
+      "url": "https://www.nipfp.org.in/media/documents/Call_for_Applications_Research_Fellow_260819_172302.pdf",
+      "reason": "Closed",
+      "detail": "Official PDF deadline 31 August 2026, despite prominent current careers listing."
+    },
+    {
+      "title": "NIPFP Research Fellows — NITI Aayog oil-price project",
+      "url": "https://www.nipfp.org.in/media/documents/Advertisement_Research_Fellow_NITI_Aayog_Project.pdf",
+      "reason": "Closed",
+      "detail": "Official PDF deadline 8 July 2026 at 17:00."
+    },
+    {
+      "title": "DPIIT internship",
+      "url": "https://apps.dpiit.gov.in/internship/",
+      "reason": "Closed",
+      "detail": "Official portal says applications reopen 1 March 2027."
+    },
+    {
+      "title": "CRISP Fellowship 2027",
+      "url": "https://fellowship.crispindia.net/downloads/CRISP_Fellowship_2027.pdf",
+      "reason": "Scope",
+      "detail": "Open public-policy fellowship, but inspected projects did not establish a specific finance placement."
+    },
+    {
+      "title": "NISM Assistant Professor vacancies",
+      "url": "https://www.nism.ac.in/recruitment",
+      "reason": "Application mismatch",
+      "detail": "Finance faculty notice is dated, but its linked form title refers to a different professor role; excluded pending clarification."
+    },
+    {
+      "title": "NIT Agartala Office Intern / Accountant",
+      "url": "https://nita.ac.in/",
+      "reason": "Insufficient primary detail",
+      "detail": "Aggregator deadline is 10 November; finance duties of Office Intern not established, and accountant posts are for retired officials. Not listed as student finance internships."
+    }
+  ]
+}

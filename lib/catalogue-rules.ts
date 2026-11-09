@@ -76,6 +76,7 @@ export type CatalogueFilters = {
   availability: string;
   sort: string;
   savedOnly: boolean;
+  addedSince: string;
 };
 export const defaultCatalogueFilters: CatalogueFilters = {
   query: '',
@@ -87,6 +88,7 @@ export const defaultCatalogueFilters: CatalogueFilters = {
   availability: 'Open now',
   sort: 'deadline',
   savedOnly: false,
+  addedSince: '',
 };
 export function routeLane(item: FinanceRoute) {
   if (item.goal === 'Fund your studies' || item.kind === 'Scholarship')
@@ -162,7 +164,11 @@ export function filterCatalogue(
           (filters.availability === 'Open now'
             ? isAvailable(item, today, now)
             : ['upcoming', 'watchlist'].includes(status))) &&
-        (!filters.savedOnly || saved.includes(item.id))
+        (!filters.savedOnly || saved.includes(item.id)) &&
+        (!filters.addedSince ||
+          Boolean(
+            item.firstVerifiedAt && item.firstVerifiedAt >= filters.addedSince,
+          ))
       );
     })
     .sort((a, b) => {
@@ -171,7 +177,9 @@ export function filterCatalogue(
         return (
           (b.firstVerifiedAt ?? b.checkedAt).localeCompare(
             a.firstVerifiedAt ?? a.checkedAt,
-          ) || a.org.localeCompare(b.org)
+          ) ||
+          (b.sourceDate ?? '').localeCompare(a.sourceDate ?? '') ||
+          a.org.localeCompare(b.org)
         );
       return (
         Number(!isAvailable(a, today, now)) -
