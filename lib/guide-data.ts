@@ -35,9 +35,9 @@ export const guideSources: GuideSource[] = [
     organization: 'Morgan Stanley',
     title:
       '2027 Investment Banking / Global Capital Markets GC Summer Analyst — Mumbai',
-    url: 'https://morganstanley.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-7397c0455c03/candidate/so/pm/1/pl/1/opp/21362-2027-Investment-Banking-Global-Capital-Markets-GC-Summer-Analyst-Program-Mumbai/en-GB',
+    url: 'https://morganstanley.tal.net/vx/lang-en-GB/mobile-0/brand-2/candidate/so/pm/1/pl/1/opp/21362-2027-Investment-Banking-Global-Capital-Markets-GC-Summer-Analyst-Program-Mumbai/en-GB',
     supports:
-      'The live employer campus page requires current postgraduate study or equivalent plus strong analytical and numerical ability, and covers modelling, valuation, research and execution support without publishing a numeric grade cutoff. Checked 2 November 2026.',
+      'Hiring example checked 10 November 2026, not an availability promise: this Mumbai Global Centres internship requires current postgraduate study or equivalent, analytical ability and communication. No numeric grade cutoff is published. The work includes valuation, research, presentations and deal-execution support; it should not be presented as identical to a client-coverage investment-banking seat.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -46,7 +46,7 @@ export const guideSources: GuideSource[] = [
     title: 'Private Credit Investing — Associate, Mumbai',
     url: 'https://higher.gs.com/roles/160621',
     supports:
-      'The live official Mumbai requisition requires 3–6 years in investment banking, private equity, leveraged finance or private credit and a relevant bachelor’s, master’s or equivalent qualification with a strong academic record; no numeric grade cutoff is published. This is experienced hiring, not a fresher route. Small deal teams cover origination, financial modelling, diligence, structuring, execution, investment-committee theses, monitoring and exits. Checked 2 November 2026.',
+      'Hiring example checked 10 November 2026: the Mumbai associate role requests 3–6 years in investment banking, PE, leveraged finance or private credit, a relevant degree and a strong academic record, without a numeric grade cutoff. Its work includes diligence, structuring, investment-committee analysis and monitoring. This illustrates an experienced route, not a universal prerequisite or a fresher vacancy.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -55,7 +55,7 @@ export const guideSources: GuideSource[] = [
     title: 'Kalaari Fellowship',
     url: 'https://kalaari.com/fellowship',
     supports:
-      'Historical programme benchmark, not an open application: the 2026 intake closed in October. The paid two-year apprenticeship describes a background-flexible VC route assessed through cases and interviews.',
+      'Programme example checked 10 November 2026: a paid, two-year, full-time Bengaluru fellowship with cases and interviews, no prescribed academic/professional background, and startup exposure valued. Its published application window closed 4 October 2026 for the March 2027 cohort. It does not accept short-duration summer interns. Use it to understand a route, not as a live application.',
     sourceType: 'Official programme',
   },
   {
@@ -64,7 +64,7 @@ export const guideSources: GuideSource[] = [
     title: 'PGP final placements 2025–26',
     url: 'https://www.iima.ac.in/inmediapgp-final-placements-2025-26',
     supports:
-      'Top-campus recruiting remains a real access channel for investment banking, markets, asset management, private equity and venture capital firms.',
+      'The official March 2026 placement report names IB/markets and PE/VC/asset-management recruiters. It supports campus recruitment as one access route, not a universal college requirement, an individual hiring probability or a published CGPA cutoff.',
     sourceType: 'Official programme',
   },
   {
@@ -73,25 +73,25 @@ export const guideSources: GuideSource[] = [
     title: 'Summer placements 2026',
     url: 'https://www.iimb.ac.in/index.php/iimb-summer-placements-2026',
     supports:
-      'The school reported 35 finance, banking and investment firms making 86 offers, including alternatives and front-office employers.',
+      'Historical campus-recruiting evidence: the school reported finance, banking and investment offers. Employer participation does not establish the grades required of every candidate or guarantee access to any particular finance role. This reference is not a currently open recruitment notice.',
     sourceType: 'Official programme',
   },
   {
     id: 'S06',
     organization: 'CFA Institute',
-    title: 'CFA Program',
-    url: 'https://www.cfainstitute.org/programs/cfa-program',
+    title: 'CFA charter requirements',
+    url: 'https://www.cfainstitute.org/programs/cfa-program/charter',
     supports:
-      'The programme has three exams; earning the charter also requires 4,000 hours of relevant experience completed over at least 36 months.',
+      'CFA Institute requires all three exam levels, the Practical Skills Modules, qualifying work experience of 4,000 hours over at least 36 months, and approved membership with professional references to use the charter. Passing Level I or all exams alone is not the charter. Checked 10 November 2026.',
     sourceType: 'Official programme',
   },
   {
     id: 'S07',
     organization: 'GARP',
-    title: 'Financial Risk Manager certification',
-    url: 'https://www.garp.org/frm',
+    title: 'FRM certification and exam eligibility',
+    url: 'https://www.garp.org/frm/frequently-asked-questions',
     supports:
-      'FRM requires two exams and at least two years of relevant professional experience for certification.',
+      'GARP has no educational or professional prerequisite to register for FRM exams. Certification requires both exam parts and two years of relevant full-time risk-management experience. Passing an exam and holding certification are distinct. Checked 10 November 2026.',
     sourceType: 'Official programme',
   },
   {
@@ -100,7 +100,7 @@ export const guideSources: GuideSource[] = [
     title: 'Series XV Research Analyst examination',
     url: 'https://www.nism.ac.in/research-analyst-certification-examination/',
     supports:
-      'The revised Series XV is the regulatory benchmark for covered research-analyst roles; it is a role-linked credential, not a VC or PE badge.',
+      'NISM’s revised Series XV began on 20 January 2026 and is the certification benchmark for covered research-analysis activity. Different rules can apply to research-services sales/support staff; a certificate alone does not establish permission to operate an independent research business.',
     sourceType: 'Official programme',
   },
   {
@@ -109,7 +109,7 @@ export const guideSources: GuideSource[] = [
     title: 'Investment Adviser examinations',
     url: 'https://www.nism.ac.in/investment-adviser/',
     supports:
-      'Series X-A and X-B align with investment-advice and wealth roles governed by India’s adviser framework.',
+      'NISM X-A and X-B relate to covered investment-advice activity. SEBI’s June 2026 circular distinguishes staff doing only sales/non-core services, for whom XXV-B applies subject to transition provisions. Match the exam to actual duties and confirm the employer’s compliance requirements.',
     sourceType: 'Official programme',
   },
   {
@@ -127,7 +127,7 @@ export const guideSources: GuideSource[] = [
     title: 'Industrial training announcement effective 1 January 2026',
     url: 'https://www.icai.org/post/23674',
     supports:
-      'Eligible CA students can undertake 9–12 months of industrial training after the stated practical-training milestone; ICAI lists a minimum monthly stipend of ₹15,000.',
+      'ICAI’s 12 January 2026 announcement states Intermediate passed and at least 12 months of practical training for industrial training; duration 9–12 months, three months’ advance notice to the principal, and at least ₹15,000 monthly stipend. Employer eligibility and registration arrangements also matter. Checked 10 November 2026.',
     sourceType: 'Official programme',
   },
   {
@@ -136,25 +136,25 @@ export const guideSources: GuideSource[] = [
     title: 'Internship guidelines',
     url: 'https://www.niti.gov.in/sites/default/files/2023-01/NITI_Internship_Guidelines_17012023.pdf',
     supports:
-      'A useful example of a true published academic cutoff: specified undergraduate applicants need 85% in Class XII, while specified graduate/postgraduate applicants need 70% at the preceding level.',
+      'Published scheme-specific thresholds: undergraduates who have completed/appeared in second-year/fourth-semester exams need at least 85% in Class XII; specified postgraduate/research and recent-graduate categories require at least 70% at the relevant prior level, with additional stage/timing conditions. These are not private-sector finance cutoffs. Checked 10 November 2026.',
     sourceType: 'Official programme',
   },
   {
     id: 'S13',
     organization: 'SEBI',
-    title: 'Research Analysts Regulations',
-    url: 'https://www.sebi.gov.in/legal/regulations/feb-2025/securities-and-exchange-board-of-india-research-analysts-regulations-2014-last-amended-on-february-10-2025-_92320.html',
+    title: '2026 Master Circular for Research Analysts',
+    url: 'https://www.sebi.gov.in/legal/master-circulars/feb-2026/master-circular-for-research-analysts_99571.html',
     supports:
-      'Research analysis is a regulated activity in India; qualification, certification and registration questions depend on the role and employment arrangement.',
+      'A primary reference for the research-analyst framework, read together with subsequent amendments and circulars. Qualifications, certification and registration are separate questions; requirements depend on the activity and employment arrangement. A course or exam pass is not a general licence to sell research.',
     sourceType: 'Official regulation',
   },
   {
     id: 'S14',
     organization: 'SEBI',
-    title: 'Investment Advisers Regulations',
-    url: 'https://www.sebi.gov.in/legal/regulations/feb-2025/securities-and-exchange-board-of-india-investment-advisers-regulations-2013-last-amended-on-february-10-2025-_92319.html',
+    title: '2026 Master Circular for Investment Advisers',
+    url: 'https://www.sebi.gov.in/legal/master-circulars/feb-2026/master-circular-for-investment-advisers_99569.html',
     supports:
-      'Personal investment advice sits within a distinct regulatory framework and should not be confused with general finance education or institutional investing.',
+      'A primary reference for investment advice, read with later changes including the June 2026 sales/non-core certification circular. Advice, distribution and client-service roles have distinct obligations; passing NISM exams alone does not establish independent adviser registration.',
     sourceType: 'Official regulation',
   },
   {
@@ -163,7 +163,7 @@ export const guideSources: GuideSource[] = [
     title: 'Early-career programmes',
     url: 'https://niifindia.in/careers/',
     supports:
-      'NIIF publishes distinct undergraduate research-analyst and postgraduate internship/analyst routes, and names analytical thinking, corporate-finance knowledge, investment mindset and communication as selection signals.',
+      'Programme-design reference: NIIF describes separate undergraduate research-analyst and postgraduate internship/analyst routes with analytical, corporate-finance and communication requirements. This is background evidence rather than a confirmed current opening; the page was not fully accessible in the 10 November check.',
     sourceType: 'Official programme',
   },
   {
@@ -172,7 +172,7 @@ export const guideSources: GuideSource[] = [
     title: 'Analyst, Portfolio Management — US Direct Lending',
     url: 'https://in.linkedin.com/jobs/view/analyst-portfolio-management-us-direct-lending-at-ares-management-4472684755',
     supports:
-      'The live employer-attributed Mumbai role asks for an MBA or equivalent and 0–3 years across investment banking, funds, advisory, credit analysis or valuation; work supports the US direct-lending portfolio through monitoring, quarterly valuation and restructuring analysis. Applications remain rolling while the search is active. Checked 2 November 2026.',
+      'Employer-attributed hiring example recorded in the ledger: Mumbai portfolio-management work asks for an MBA/equivalent and 0–3 years across funds, banking, advisory, credit analysis or valuation. It illustrates monitoring and valuation work supporting US direct lending, not the same mandate as an origination/investing seat. Vacancy availability belongs in the opportunities ledger.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -181,7 +181,7 @@ export const guideSources: GuideSource[] = [
     title: 'Analyst, Portfolio Analytics & Research — India',
     url: 'https://in.linkedin.com/jobs/view/analyst-portfolio-analytics-research-acumen-india-at-acumen-4359153623',
     supports:
-      'A company-attributable impact role asks for relevant experience across investment analysis, portfolio analytics, consulting, economics, finance or research alongside mission alignment.',
+      'Historical employer-attributed example of impact portfolio analytics and research, with relevant analysis/consulting/research experience and mission alignment. It illustrates a distinct function and does not establish an open vacancy, a universal grade rule or a guaranteed move into investing.',
     sourceType: 'Official hiring evidence',
   },
   {
@@ -190,7 +190,7 @@ export const guideSources: GuideSource[] = [
     title: 'India New Analyst Program — 2027 cycle eligibility benchmark',
     url: 'https://www.goldmansachs.com/careers/students/programs-and-internships/india/new-analyst-program',
     supports:
-      'Historical eligibility benchmark only: the 2027 cycle closed on 4 October 2026. The programme page shows how a large-bank graduate route defines degree and graduation-year eligibility across investment banking, research, markets, risk and wealth without a universal numeric percentage or certificate requirement.',
+      'Historical degree/graduation-year eligibility benchmark, not an open application: the 2027 cycle closed on 4 October 2026. Broad programme eligibility does not establish a numerical market-wide grade requirement or a compulsory certificate for every finance team.',
     sourceType: 'Official programme',
   },
   {
@@ -217,7 +217,71 @@ export const guideSources: GuideSource[] = [
     title: 'Investment Associate — Venture Capital',
     url: 'https://in.linkedin.com/jobs/view/investment-associate-%E2%80%93-venture-capital-at-rockstud-capital-4481047255',
     supports:
-      'The current employer-attributed role requests relevant investing, banking, advisory, consulting or sector experience and a relevant degree; CA, CFA progress or MBA are advantageous. It names sourcing, modelling and investment writing, but publishes no numerical years or grade cutoff. Checked 2 November 2026.',
+      'Employer-attributed VC hiring example recorded in the ledger: relevant investing, banking, advisory, consulting or sector experience and a relevant degree are requested; CA/CFA progress/MBA are advantageous. It supports sourcing, modelling and writing as useful evidence, without a universal numerical grade or experience rule.',
+    sourceType: 'Official hiring evidence',
+  },
+  {
+    id: 'S22',
+    organization: 'NISM',
+    title: 'Mutual Fund Distributors certification',
+    url: 'https://www.nism.ac.in/mutual-fund-distributors/',
+    supports:
+      'Series V-A is the role-linked certification for covered mutual-fund distribution. Distribution differs from investment advice; other registration/employer requirements still apply. It is not a general requirement for every finance career.',
+    sourceType: 'Official programme',
+  },
+  {
+    id: 'S23',
+    organization: 'SEBI',
+    title:
+      'Investment-advice sales and non-core staff certification — June 2026',
+    url: 'https://www.sebi.gov.in/sebi_data/attachdocs/jun-2026/1782299902147.pdf',
+    supports:
+      'The 24 June 2026 circular specifies XXV-B for advice-associated staff performing only sales/non-core services, while other covered advice staff retain X-A/X-B. Existing certificates have transition provisions. Check duties before selecting an exam.',
+    sourceType: 'Official regulation',
+  },
+  {
+    id: 'S24',
+    organization: 'NISM',
+    title: 'Research-services sales and non-core staff — March 2026 circular',
+    url: 'https://www.nism.ac.in/circular/sebi-circular-for-nism-series-xxv-a-persons-associated-with-research-services-sales-and-other-non-core-services-certification-examination-dated-march-11-2026/',
+    supports:
+      'NISM publishes the March 2026 SEBI circular on XXV-A for research-services sales and other non-core staff. Do not apply the research-analyst exam requirement indiscriminately to all support jobs.',
+    sourceType: 'Official regulation',
+  },
+  {
+    id: 'S25',
+    organization: 'NISM',
+    title: 'Category I and II AIF Managers certification',
+    url: 'https://www.nism.ac.in/certifications/nism-series-xix-d-category-i-and-ii-alternative-investment-fund-managers',
+    supports:
+      'AIF-manager certifications are a separate, role-linked subject. Fund category and key-team responsibilities affect the applicable requirements; they are not a universal fresher-admission test for every VC or PE job. Ask the fund’s compliance team which certification, if any, applies to your duties.',
+    sourceType: 'Official programme',
+  },
+  {
+    id: 'S26',
+    organization: 'Goldman Sachs',
+    title: 'India Summer Analyst — 2027 programme example',
+    url: 'https://www.goldmansachs.com/careers/students/programs-and-internships/india/summer-analyst-program/',
+    supports:
+      'Checked 10 November 2026: the India programme includes FICC and Equities (Sales and Trading), lasts 8–10 weeks and lists students graduating in 2028. This documents one programme’s eligibility, not a universal rule or confirmation that a particular desk is currently accepting applications.',
+    sourceType: 'Official programme',
+  },
+  {
+    id: 'S27',
+    organization: 'Goldman Sachs',
+    title: 'FICC and Equities — work and skills',
+    url: 'https://www.goldmansachs.com/careers/our-firm/FICC-and-equities',
+    supports:
+      'The official division description covers market-making, client execution, relationships and communicating market ideas. This supports distinguishing sales/trading preparation from quantitative research; it does not imply that every desk has the same technical test.',
+    sourceType: 'Official hiring evidence',
+  },
+  {
+    id: 'S28',
+    organization: 'Trexquant',
+    title: 'Quantitative Researcher — Early Career, Gurugram',
+    url: 'https://trexquant.com/careers/E5752CE983',
+    supports:
+      'Official full-time early-career hiring example checked 10 November 2026. It specifies STEM education, Python, alpha research, simulations and hypothesis testing, with institution and graduation-year restrictions. Those restrictions are employer-specific. This is not an internship or a claim of eligibility for all applicants.',
     sourceType: 'Official hiring evidence',
   },
 ];
@@ -225,52 +289,52 @@ export const guideSources: GuideSource[] = [
 export const gradeBands = [
   {
     lane: 'Investment banking · buyout PE',
-    target: '8.0–8.5+/10 or 80–85%+',
-    weight: 'High',
+    target: 'Employer and route specific',
+    weight: 'Check the published screen',
     reality:
-      'Aim for the top 10–20% of your class, strong Class X/XII consistency and no active backlogs. Direct megafund PE remains an unusually narrow funnel even with these marks.',
+      'Campus and experienced-hire routes differ. Strong academic record language is not evidence for a universal 8+/10 cutoff.',
     recovery:
-      'Enter through boutique IB, Big Four deals/FDD, valuation, CA industrial training or strategy consulting; build 18–36 months of transaction evidence before a lateral move.',
-    sources: ['S01', 'S04', 'S05', 'S18'],
+      'Explore boutique IB, deals/FDD, valuation, eligible CA training or consulting, then apply with relevant work evidence.',
+    sources: ['S01', 'S02', 'S04'],
   },
   {
     lane: 'Venture capital · growth investing',
-    target: '7.5–8.0+/10 or 75–80%+',
-    weight: 'Medium to high',
+    target: 'No universal score established',
+    weight: 'Role and fund specific',
     reality:
-      'Growth investing resembles PE and screens harder. Seed VC can trade some pedigree for sector knowledge, startup operating credibility, original writing and a real founder network.',
+      'Some programmes accept varied backgrounds; growth roles may ask for relevant transactions or research. Neither proves a common numeric cutoff.',
     recovery:
-      'Work in a founder’s office, accelerator, product/strategy team or sector startup; publish two defensible IC-style memos and a market map.',
+      'Build sector, research, operating or transaction evidence aligned to the exact fund mandate.',
     sources: ['S03', 'S21'],
   },
   {
     lane: 'Public markets · credit · deals',
-    target: '7.5–8.0+/10 or 75–80%+',
-    weight: 'Medium to high',
+    target: 'Read the exact vacancy',
+    weight: 'Degree and role specific',
     reality:
-      'Accounting depth, a stock or credit memo and evidence of disciplined analysis can compensate more than they can in a highly structured campus IB funnel.',
+      'Employer screening and regulatory qualifications are separate. A credential or portfolio does not waive a stated eligibility rule.',
     recovery:
-      'Start in ratings, audit, valuation, equity research support, corporate banking or NBFC underwriting; move after you can defend real analysis.',
-    sources: ['S06', 'S08', 'S13'],
+      'Use relevant ratings, audit, valuation, banking or research work to build demonstrable analysis.',
+    sources: ['S02', 'S08', 'S13'],
   },
   {
     lane: 'Markets · quant · model risk',
-    target: '8.5+/10 in quantitative work',
-    weight: 'High in relevant subjects',
+    target: 'Quantitative evidence where required',
+    weight: 'Specialism specific',
     reality:
-      'Averages matter less than hard evidence in probability, statistics, linear algebra, coding and numerical reasoning. Expect testing, not résumé-only selection.',
+      'Markets and quantitative research are different jobs. Check the degree, subjects, coding and assessment requirements of the chosen team.',
     recovery:
-      'Use a risk, analytics or data seat as the first door; publish reproducible research with clean methodology instead of a trading screenshot.',
+      'Build reproducible analysis and target matching analytics, model-risk or trading-technology roles.',
     sources: ['S07'],
   },
   {
     lane: 'FP&A · treasury · risk · wealth · operations',
-    target: '7.0–7.5+/10 or 70–75%+',
-    weight: 'Variable',
+    target: 'Published eligibility comes first',
+    weight: 'Employer specific',
     reality:
-      'The employer range is much broader. Role-aligned knowledge, Excel/SQL, accounting and communication often matter more than a prestige signal.',
+      'The same finance title can cover different work. Check graduation, qualification stage, activity and experience requirements before applying.',
     recovery:
-      'Take a credible analyst, apprenticeship or finance-operations seat, then move toward the exact work you want through internal projects and lateral hiring.',
+      'Choose a first role for relevant work and feedback; future movement depends on evidence and available openings.',
     sources: ['S07', 'S09', 'S10', 'S11'],
   },
 ];
@@ -284,7 +348,7 @@ export const credentials = [
     notEnough:
       'The qualification alone does not prove investment judgment, sourcing ability or deal leadership.',
     decision:
-      'High-value if you genuinely want the accounting route. Choose articleship and industrial training for relevant work content, not just the brand name.',
+      'Treat CA as a full professional route. ICAI industrial training requires Intermediate passed and at least 12 months of practical training; the 9–12 month training also requires advance notice and the prescribed registration arrangements. Choose work content carefully.',
     sources: ['S11'],
   },
   {
@@ -295,7 +359,7 @@ export const credentials = [
     notEnough:
       'Level I does not replace an internship, transaction, stock pitch, credit memo or operating experience.',
     decision:
-      'Worth studying when the curriculum matches the target job. The charter takes three exams plus qualifying work experience.',
+      'Choose it when investment analysis is relevant to the target role. The charter requires all three exams, Practical Skills Modules, 4,000 qualifying work hours over at least 36 months, and approved membership; Level I alone is not the charter.',
     sources: ['S06'],
   },
   {
@@ -316,19 +380,19 @@ export const credentials = [
       'Market, credit and liquidity risk, treasury, model risk and risk consulting.',
     notEnough: 'It is not the default credential for IB, VC or buyout PE.',
     decision:
-      'Choose it when risk is the destination, not as a generic finance badge. Certification requires two exams and relevant experience.',
+      'Choose it for a relevant risk role. Exam registration has no education/experience prerequisite; certification requires both exams and two years of relevant full-time experience. Employer eligibility remains separate.',
     sources: ['S07'],
   },
   {
     name: 'NISM role exams',
     verdict: 'Regulatory or role-linked, not prestige badges',
     bestFor:
-      'Series XV for covered research roles; X-A/X-B for investment advice; Series VII for covered operations/risk work.',
+      'Match the activity: XV for covered research analysis, X-A/X-B for covered advice, V-A for mutual-fund distribution, VII for covered securities operations. Sales/non-core functions have separate XXV-A/XXV-B routes.',
     notEnough:
-      'A NISM certificate by itself is not a meaningful VC, PE or investment-banking signal.',
+      'An unrelated NISM module does not demonstrate investing or deal skills. Specific regulated duties may require a particular module; ask the employer which one applies.',
     decision:
       'Take the exact series required by the job or regulation. Do not collect unrelated modules.',
-    sources: ['S08', 'S09', 'S10', 'S13', 'S14'],
+    sources: ['S08', 'S09', 'S10', 'S13', 'S14', 'S22', 'S23', 'S24'],
   },
   {
     name: 'Modelling · SQL · Python courses',
@@ -353,7 +417,7 @@ export const pathways: Pathway[] = [
     reality:
       'The work is sourcing, founder calls, market maps, customer research, screen notes, thesis building and portfolio help—not watching pitch decks all day.',
     academicSignal:
-      '7.5+/10 is a useful signal, but off-campus seed funds can overweight original judgment, writing, product sense and sector access.',
+      'No market-wide CGPA requirement. Kalaari’s fellowship example specifies no academic/professional background, while other funds may screen degrees or grades. Demonstrate startup exposure, research and writing, and check each vacancy’s criteria.',
     entryDoors: [
       'VC fellowship or internship',
       'Founder’s office, product or startup strategy',
@@ -363,26 +427,26 @@ export const pathways: Pathway[] = [
     hiringTest:
       'A short company note, market-sizing or sector case, founder judgment, partner interviews and references.',
     usefulCredentials:
-      'No universal certificate. CFA can help finance basics; product, technical or sector experience may be more relevant.',
+      'No universal entry certificate. Learn accounting and venture economics as needed; regulated key-team duties may have specific NISM requirements. Confirm the role before paying for a credential.',
     proof:
       'Two concise IC-style memos, a 40–60 company market map and 10–20 original founder/customer conversations with attributable insights.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Choose one India-specific vertical; learn the value chain and write a falsifiable thesis.',
       },
       {
-        period: '3–12 months',
+        period: 'Gain relevant practice',
         move: 'Join a fellowship, accelerator, founder’s office or sector startup; build real sourcing and customer-research reps.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Recruit for analyst/associate work using a measured record of sourced companies, screens and research used in decisions.',
       },
     ],
     hardTruth:
-      '“I love startups” is not a profile. A candidate who knows one market and can bring proprietary calls or companies usually wins.',
-    sources: ['S03'],
+      'Interest in startups is a starting point. Make your understanding of one market visible through research, considered founder/customer conversations and clear investment reasoning; hiring still depends on the fund’s needs.',
+    sources: ['S03', 'S25'],
   },
   {
     id: 'sector-vc',
@@ -393,7 +457,7 @@ export const pathways: Pathway[] = [
     reality:
       'Specialist funds need someone who can challenge product claims, map regulation and speak credibly with technical founders and customers.',
     academicSignal:
-      'Strong relevant coursework helps, but domain work—research, shipped product, patents, field experience or operating results—can carry more weight.',
+      'No universal grade cutoff is evidenced. Relevant scientific, engineering, clinical or sector training can support your case; translate it into commercial diligence and match the fund’s stated degree and experience requirements.',
     entryDoors: [
       'Deep-tech, climate, health or fintech operator',
       'Sector research or consulting',
@@ -408,15 +472,15 @@ export const pathways: Pathway[] = [
       'A technical-commercial diligence memo that separates what works in the lab from what customers will pay for in India.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Translate domain expertise into an investable landscape: buyers, budgets, regulation, unit economics and failure modes.',
       },
       {
-        period: '3–12 months',
+        period: 'Gain relevant practice',
         move: 'Build operator or research credibility and make useful introductions across the ecosystem.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Pitch specialist funds with a thesis and a network, not a generic request to “break into VC.”',
       },
     ],
@@ -433,7 +497,7 @@ export const pathways: Pathway[] = [
     reality:
       'This is a legitimate VC career: talent, go-to-market, portfolio finance, founder programmes and community. It is different from underwriting investments.',
     academicSignal:
-      'Grades usually carry less weight than functional achievement and evidence that founders trust your help.',
+      'Requirements follow the function: talent, growth, community or finance. Show functional results and stakeholder references; do not assume the entry criteria or progression are the same as investing.',
     entryDoors: [
       'Startup talent or people operations',
       'Growth, partnerships or community',
@@ -448,15 +512,15 @@ export const pathways: Pathway[] = [
       'One operator-grade playbook with outcomes: hiring funnel, sales process, reporting pack or founder programme you actually ran.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Choose the platform function where you already have evidence and learn the portfolio’s recurring problems.',
       },
       {
-        period: '3–12 months',
+        period: 'Gain relevant practice',
         move: 'Build the function inside a startup, accelerator or services firm and quantify the result.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Join a fund platform team or continue toward operating leadership across portfolio companies.',
       },
     ],
@@ -473,7 +537,7 @@ export const pathways: Pathway[] = [
     reality:
       'The work is commercial diligence, unit economics, operating models, valuation, cap tables, IC writing and portfolio monitoring.',
     academicSignal:
-      '8.0+/10 and a strong feeder employer are common competitive signals. Direct entry is possible but much less common than a post-IB, consulting or deals lateral.',
+      'Academic and prior-experience screens vary by fund. Campus placement evidence shows one entry route, not a universal GPA threshold. Build modelling and commercial-diligence evidence through relevant transaction or operating work.',
     entryDoors: [
       'Investment banking or M&A',
       'Big Four deals, FDD or valuation',
@@ -488,15 +552,15 @@ export const pathways: Pathway[] = [
       'A driver-based model, public/private comps, cap-table and dilution work, a downside case and a 6–10 page investment memo.',
     roadmap: [
       {
-        period: '0–6 months',
+        period: 'Build the foundation',
         move: 'Master accounting, unit economics, valuation, cap tables and integrated modelling.',
       },
       {
-        period: '6–24 months',
+        period: 'Gain relevant practice',
         move: 'Get live transaction, diligence or strategic-finance reps and keep a precise deal/work log.',
       },
       {
-        period: '18–36 months',
+        period: 'Apply with evidence',
         move: 'Lateral when you can own a model, frame management questions and defend a full memo.',
       },
     ],
@@ -513,7 +577,7 @@ export const pathways: Pathway[] = [
     reality:
       'You underwrite acquisitions, debt capacity and downside; coordinate diligence; assess management; and plan value creation and exit.',
     academicSignal:
-      'This is the most pedigree-sensitive lane at entry. Top-decile academics help, but the decisive signal is usually a top campus or 2–3 years in a feeder role.',
+      'No universal CGPA or feeder-experience rule. Selected campus routes exist, while many associate searches request relevant transaction experience. Check each team’s degree, experience and deal requirements before deciding whether to apply directly or via a feeder role.',
     entryDoors: [
       'M&A / investment banking',
       'Strategy consulting',
@@ -528,20 +592,20 @@ export const pathways: Pathway[] = [
       'Full sources-and-uses LBO, debt schedule and cash sweep, MOIC/IRR sensitivities, diligence list and 100-day value-creation plan.',
     roadmap: [
       {
-        period: '0–12 months',
+        period: 'Build the foundation',
         move: 'Choose a feeder route and learn accounting cold; become fast at a clean LBO without shortcuts.',
       },
       {
-        period: '12–36 months',
+        period: 'Gain relevant practice',
         move: 'Seek closed deals, management exposure, diligence ownership and high-quality modelling in IB, consulting or deals.',
       },
       {
-        period: '24–48 months',
+        period: 'Apply with evidence',
         move: 'Recruit for associate roles only when you can defend industry, downside, debt and exit assumptions under pressure.',
       },
     ],
     hardTruth:
-      'For a non-target graduate with no feeder experience, direct megafund entry is not a realistic primary plan. Use a two-step route.',
+      'Direct buyout entry is selective. Keep a credible transaction, diligence or consulting route alongside campus applications; completing that route still does not guarantee a PE offer.',
     sources: ['S04', 'S05'],
   },
   {
@@ -553,7 +617,7 @@ export const pathways: Pathway[] = [
     reality:
       'The job is cash-flow underwriting, leverage and coverage, covenant design, legal-document review, recovery analysis and portfolio monitoring.',
     academicSignal:
-      '7.5+/10 is useful. Technical credit work from ratings, banking, NBFCs and audit can substitute for a top-campus route more often than in buyout PE.',
+      'Read the exact credit mandate and seniority. The Goldman Sachs associate example requests 3–6 years in named feeder fields and a strong academic record, without a numerical cutoff; monitoring and graduate-credit roles can have different requirements.',
     entryDoors: [
       'Credit ratings or credit research',
       'Corporate/commercial banking',
@@ -568,20 +632,20 @@ export const pathways: Pathway[] = [
       'A 5–8 page credit memo, liquidity downside, leverage/coverage bridge, covenant package and security/recovery waterfall.',
     roadmap: [
       {
-        period: '0–6 months',
+        period: 'Build the foundation',
         move: 'Learn cash conversion, leverage, coverage, security, priority, covenants and insolvency/recovery logic.',
       },
       {
-        period: '6–24 months',
+        period: 'Gain relevant practice',
         move: 'Underwrite in ratings, banking, project finance, an NBFC, audit/FDD or credit research.',
       },
       {
-        period: '18–36 months',
+        period: 'Apply with evidence',
         move: 'Lateral into alternatives after you can own a credit view and monitor it after close.',
       },
     ],
     hardTruth:
-      'This can be the most accessible private-markets lane from a non-elite college—but only if you become genuinely strong at accounting and downside analysis.',
+      'Credit analysis and portfolio monitoring can build relevant evidence, but moving into private-credit investing is competitive and depends on underwriting responsibility, team needs and hiring requirements.',
     sources: ['S02', 'S06', 'S07', 'S16'],
   },
   {
@@ -593,7 +657,7 @@ export const pathways: Pathway[] = [
     reality:
       'The work combines conventional underwriting with theory of change, impact diligence, metric design, stakeholder questions and reporting.',
     academicSignal:
-      '7.5+/10 is a reasonable target. Sector credibility and rigorous commercial thinking matter more than a generic claim of mission alignment.',
+      'Match the degree and experience requirements of the actual role. Commercial analysis and sector/impact evidence are useful; a portfolio-analytics job and an investment-underwriting job are distinct entry routes.',
     entryDoors: [
       'Mission-led company or climate operator',
       'Development consulting or economics research',
@@ -608,15 +672,15 @@ export const pathways: Pathway[] = [
       'Commercial memo plus theory of change, impact-risk/additionality analysis, metric set and measurement plan.',
     roadmap: [
       {
-        period: '0–6 months',
+        period: 'Build the foundation',
         move: 'Choose one problem area and learn both its economics and on-the-ground beneficiary/customer reality.',
       },
       {
-        period: '6–24 months',
+        period: 'Gain relevant practice',
         move: 'Build sector, finance or measurement reps in an operator, research, consulting or investment role.',
       },
       {
-        period: '18–36 months',
+        period: 'Apply with evidence',
         move: 'Apply with a sample that can survive both commercial and impact scrutiny.',
       },
     ],
@@ -633,7 +697,7 @@ export const pathways: Pathway[] = [
     reality:
       'Analysts build valuations and models, research companies, draft presentations and support diligence and execution. The hours can be severe and the work is detail-heavy.',
     academicSignal:
-      '8.0–8.5+/10 is the safest competitive target for large-bank campus funnels. Current official roles often ask for strong analytical and numerical ability without publishing a grade cutoff.',
+      'No universal IB grade cutoff. Morgan Stanley’s Mumbai Global Centres internship example requires postgraduate study/equivalent and analytical ability, without numerical grades. Other campus, boutique and execution roles have their own screens and responsibilities.',
     entryDoors: [
       'Large-bank internship or analyst programme',
       'Boutique investment bank',
@@ -648,15 +712,15 @@ export const pathways: Pathway[] = [
       'A clean three-statement model, DCF and comps, one transaction rationale and a short pitch you can explain without reading slides.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Master statements, valuation and presentation basics; rebuild one public-company model yourself.',
       },
       {
-        period: '3–18 months',
+        period: 'Gain relevant practice',
         move: 'Win the closest execution-heavy seat—boutique, Big Four, CA training, corp dev or bank internship.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Lateral using named responsibilities, closed transactions and strong references—not vague “deal exposure.”',
       },
     ],
@@ -673,7 +737,7 @@ export const pathways: Pathway[] = [
     reality:
       'Work can include business valuation, financial due diligence, purchase-price analysis, data books, quality of earnings and transaction support.',
     academicSignal:
-      '7.5+/10 is a useful target; accounting strength and internships can compensate. Team and mandate quality vary materially.',
+      'Check whether the role is CA articleship, industrial training, graduate analyst or experienced hiring. These have different eligibility. Relevant accounting, Excel and valuation work supports your application but does not override a stated cutoff.',
     entryDoors: [
       'Big Four or specialist advisory',
       'Valuation boutique',
@@ -688,15 +752,15 @@ export const pathways: Pathway[] = [
       'One valuation report and a simplified diligence/QoE case with a bridge from reported EBITDA to sustainable earnings.',
     roadmap: [
       {
-        period: '0–6 months',
+        period: 'Build the foundation',
         move: 'Build accounting and Excel depth; learn what each deals subteam actually owns.',
       },
       {
-        period: '6–24 months',
+        period: 'Gain relevant practice',
         move: 'Seek client-facing analysis, manager access and end-to-end work rather than repetitive data processing only.',
       },
       {
-        period: '18–36 months',
+        period: 'Apply with evidence',
         move: 'Move toward IB, corp dev, credit or investing with transaction-specific evidence.',
       },
     ],
@@ -713,7 +777,7 @@ export const pathways: Pathway[] = [
     reality:
       'You build forecasts and valuations, track companies, speak with industry participants, write research and update views when facts change.',
     academicSignal:
-      '7.5+/10 helps. A genuinely good stock pitch and accounting fluency can be more differentiating than another generic internship.',
+      'Degree and grade screens vary by employer. Show financial-statement analysis, a sourced model and a defensible investment case. For covered research activity, regulatory qualifications/certification are separate from the employer’s academic preferences.',
     entryDoors: [
       'Brokerage or independent research',
       'AMC, PMS or family office internship',
@@ -723,26 +787,26 @@ export const pathways: Pathway[] = [
     hiringTest:
       'Stock pitch, accounting red flags, forecast drivers, valuation, variant perception and questions about how your view could be wrong.',
     usefulCredentials:
-      'CFA is highly aligned. NISM Series XV may be required for covered research roles; confirm the exact regulatory position.',
+      'CFA aligns with investment analysis. NISM XV applies to covered research activity; sales/non-core roles may fall under XXV-A. Confirm qualifications and certification with the employer. An exam pass alone is not SEBI registration.',
     proof:
       'Two dated stock memos with a model, thesis, valuation, risks, disconfirming evidence and a post-mortem—not target-price theatre.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Choose one sector, read filings and build a model from raw statements.',
       },
       {
-        period: '3–12 months',
-        move: 'Publish a small, dated research archive and seek an apprenticeship with real analyst feedback.',
+        period: 'Gain relevant practice',
+        move: 'Build a dated practice-research archive for applications and seek feedback from an analyst. Use public data and exclude confidential employer/client material.',
       },
       {
-        period: '12–30 months',
-        move: 'Use a defensible research record to move into an AMC, PMS, family office or stronger sell-side team.',
+        period: 'Apply with evidence',
+        move: 'Apply to relevant AMC, PMS, family-office or sell-side teams when you can defend the model, thesis, risks and changes in your view; selection is employer-specific.',
       },
     ],
     hardTruth:
       'Passing CFA Level I does not show that you can form, update or abandon an investment view.',
-    sources: ['S06', 'S08', 'S13'],
+    sources: ['S06', 'S08', 'S13', 'S24'],
   },
   {
     id: 'corp-finance',
@@ -753,7 +817,7 @@ export const pathways: Pathway[] = [
     reality:
       'FP&A owns budgets, forecasts and business partnering; treasury manages liquidity, banking, FX and funding; corporate development adds strategic transactions.',
     academicSignal:
-      '7.0–7.5+/10 is often workable. Employers care about accounting, Excel, communication and whether you can explain business drivers.',
+      'Requirements vary across FP&A, controllership and treasury. Check degree, CA/CMA stage, graduation year and any marks cutoff in the vacancy; build evidence in accounting, forecasting, cash management and communication for your chosen function.',
     entryDoors: [
       'Finance graduate or management-trainee programme',
       'Startup finance or business finance',
@@ -768,15 +832,15 @@ export const pathways: Pathway[] = [
       'A driver-based forecast, cash runway model, monthly variance pack and one recommendation tied to operating decisions.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Learn statements, planning, variance analysis and how the target industry makes money.',
       },
       {
-        period: '3–18 months',
+        period: 'Gain relevant practice',
         move: 'Own a forecast, close process, treasury workflow or business unit—not only reporting production.',
       },
       {
-        period: '12–36 months',
+        period: 'Apply with evidence',
         move: 'Move toward business partnering, treasury, corp dev or finance leadership based on owned decisions.',
       },
     ],
@@ -793,7 +857,7 @@ export const pathways: Pathway[] = [
     reality:
       'Roles span borrower analysis, ratings, market and liquidity risk, model validation, limits, stress testing and risk reporting.',
     academicSignal:
-      '7.0–8.0+/10 depending on technical intensity. Relevant accounting, statistics and coding performance matters more than one blended average.',
+      'Select a risk specialism before judging eligibility. Credit underwriting emphasises accounting and borrower analysis; model risk can demand quantitative degrees and coding. FRM registration has no academic prerequisite, but employers set separate hiring criteria.',
     entryDoors: [
       'Credit-rating agency',
       'Bank or NBFC credit underwriting',
@@ -808,15 +872,15 @@ export const pathways: Pathway[] = [
       'A credit note or reproducible stress-test/model-validation notebook with clear assumptions, limitations and decision thresholds.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Pick one risk family. Credit, market, model and operational risk have different skill stacks.',
       },
       {
-        period: '3–18 months',
+        period: 'Gain relevant practice',
         move: 'Get a seat that makes or challenges real limits, ratings, models or underwriting decisions.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Specialise toward portfolio risk, treasury, private credit, model risk or leadership based on owned decisions.',
       },
     ],
@@ -829,11 +893,11 @@ export const pathways: Pathway[] = [
     family: 'finance',
     title: 'Markets / quant / trading analytics',
     shortLabel: 'Markets & quant',
-    fit: 'Fast numerical thinkers who enjoy probability, coding, microstructure and decisions with immediate feedback.',
+    fit: 'People interested in products, market views and client needs, or in the distinct mathematical and programming craft of quantitative work.',
     reality:
       'Work ranges from sales and trading support to pricing, systematic research, execution, derivatives, desk strategy and quantitative risk.',
     academicSignal:
-      'Strong marks in mathematics, statistics, computer science or engineering matter. For quant seats, evidence of depth is more important than a generic finance credential.',
+      'Separate markets sales/trading from quantitative research and model development. Quantitative subjects and coding depth matter in technical roles, while degree and grade thresholds are employer-specific. No single CGPA establishes readiness for all these jobs.',
     entryDoors: [
       'Bank markets or risk internship',
       'Quant research or analytics',
@@ -841,28 +905,28 @@ export const pathways: Pathway[] = [
       'Data engineering around trading systems',
     ],
     hiringTest:
-      'Mental maths, probability, statistics, coding, market intuition and the ability to reason aloud under time pressure.',
+      'For sales/trading: market discussion, instrument payoffs, mental maths and clear reasoning. Quantitative roles additionally test probability, statistics, coding and research validation. Check the actual desk’s assessment.',
     usefulCredentials:
-      'FRM can help risk; CFA can help markets context. Neither replaces mathematics, coding or a tested research process.',
+      'FRM can support risk study; CFA can support investment knowledge. Neither replaces the product and market judgement, or technical research skills, tested by the specific role.',
     proof:
-      'A reproducible strategy or pricing notebook with clean data, transaction costs, out-of-sample testing and documented failure modes.',
+      'For sales/trading, a sourced market and product brief with payoffs, catalysts and downside scenarios. For quantitative roles, a reproducible pricing, risk or strategy notebook with appropriate validation and documented limitations.',
     roadmap: [
       {
-        period: '0–6 months',
-        move: 'Build probability, statistics, linear algebra, Python and market-microstructure fundamentals.',
+        period: 'Build the foundation',
+        move: 'Learn instruments, market structure and risk; add probability, statistics, linear algebra and coding for quantitative roles.',
       },
       {
-        period: '6–18 months',
+        period: 'Gain relevant practice',
         move: 'Enter via markets, analytics, model risk or trading technology and learn from production constraints.',
       },
       {
-        period: '12–30 months',
+        period: 'Apply with evidence',
         move: 'Move toward the desk or strategy whose test you can now pass with real research evidence.',
       },
     ],
     hardTruth:
-      'A backtest chart is not proof. Most amateur strategies disappear after leakage, costs and regime changes are handled correctly.',
-    sources: ['S07'],
+      'A market view needs a clear risk case. A quantitative result needs validation against leakage, costs and changing conditions. Neither a persuasive pitch nor a backtest demonstrates live trading experience.',
+    sources: ['S06', 'S07', 'S26', 'S27', 'S28'],
   },
   {
     id: 'wealth-advice',
@@ -873,7 +937,7 @@ export const pathways: Pathway[] = [
     reality:
       'The work blends relationship management, portfolio construction, product due diligence, suitability, compliance and long-term client trust.',
     academicSignal:
-      '7.0–7.5+/10 is often workable. Communication, integrity, product knowledge and a credible client-service record can dominate.',
+      'Check whether the job is regulated advice, distribution, relationship management or support. Academic criteria vary; the required NISM series follows the activity, and a certificate alone does not authorise independent advisory practice.',
     entryDoors: [
       'Bank or wealth-management analyst',
       'Mutual-fund or distribution role',
@@ -883,26 +947,26 @@ export const pathways: Pathway[] = [
     hiringTest:
       'Client scenario, product/risk comparison, suitability reasoning, communication and knowledge of the applicable compliance boundaries.',
     usefulCredentials:
-      'NISM modules may be mandatory for specific activities. CFA can help investment depth; advice and distribution have distinct regulatory obligations.',
+      'Covered advice roles use NISM X-A/X-B; advice sales/non-core roles may use XXV-B. Mutual-fund distribution is a separate V-A route. Confirm the applicable activity, registration and transition rules with the employer.',
     proof:
       'An investment-policy statement, risk-profile rationale and model portfolio with costs, tax assumptions, rebalancing rules and plain-language explanation.',
     roadmap: [
       {
-        period: '0–3 months',
+        period: 'Build the foundation',
         move: 'Choose advice, relationship management, research or operations and identify the exact regulatory requirement.',
       },
       {
-        period: '3–18 months',
+        period: 'Gain relevant practice',
         move: 'Build product and client reps under an appropriately registered or regulated employer.',
       },
       {
-        period: '12–36 months',
+        period: 'Apply with evidence',
         move: 'Progress toward advisory, portfolio or relationship ownership without crossing compliance boundaries.',
       },
     ],
     hardTruth:
       'Good sales is not automatically good advice. Reputation compounds only if suitability, disclosure and client outcomes are treated as core work.',
-    sources: ['S09', 'S14'],
+    sources: ['S09', 'S14', 'S22', 'S23'],
   },
 ];
 

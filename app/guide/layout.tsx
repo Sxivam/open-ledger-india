@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The India Finance Break-in Guide · Open Ledger · Shivam Meet',
+  title: 'Interactive India Finance Roadmaps · Open Ledger · Shivam Meet',
   description:
-    'A realistic, evidence-backed guide to grades, credentials and entry routes for venture capital, private equity and finance careers in India.',
+    'Explore 14 interactive career pathways for venture capital, private equity and finance in India. Compare entry routes, build practical proof and track your preparation.',
 };
 
 export default function GuideLayout({
